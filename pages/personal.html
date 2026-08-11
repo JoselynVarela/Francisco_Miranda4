@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Personal | Instituto Francisco Miranda</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/personal.css">
+
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+    <header class="header">
+
+        <div class="nav-container">
+
+            <a href="../index.html" class="logo">
+                <div class="logo-placeholder">FM</div>
+
+                <div class="logo-text">
+                    <strong>Instituto Humanal Técnico</strong>
+                    <span>Francisco Miranda</span>
+                </div>
+            </a>
+
+            <nav class="nav-menu">
+
+                <a href="../index.html">
+                    Inicio
+                </a>
+
+                <a href="../index.html#institucion">
+                    Nosotros
+                </a>
+
+                <a href="../index.html#carreras">
+                    Oferta Académica
+                </a>
+
+                <a href="../index.html#talleres">
+                    Talleres
+                </a>
+
+                <a href="personal.html" class="active">
+                    Personal
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- HERO -->
+
+    <section class="staff-hero">
+
+        <div class="staff-hero-content">
+
+            <span>
+                COMUNIDAD MIRANDINA
+            </span>
+
+            <h1>
+                Nuestro equipo
+            </h1>
+
+            <p>
+                Conoce a las personas que forman parte
+                de nuestra comunidad educativa.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- PERSONAL -->
+
+    <section class="staff-directory">
+
+        <div class="staff-directory-container">
+
+            <div class="directory-heading">
+
+                <div>
+
+                    <span>
+                        PERSONAL INSTITUCIONAL
+                    </span>
+
+                    <h2>
+                        Autoridades, docentes y personal
+                    </h2>
+
+                </div>
+
+                <div class="staff-counter">
+
+                    <strong id="staffCount">
+                        38
+                    </strong>
+
+                    <small>
+                        integrantes
+                    </small>
+
+                </div>
+
+            </div>
+
+
+            <!-- BUSCADOR -->
+
+            <div class="staff-tools">
+
+                <div class="search-box">
+
+                    <input
+                        type="text"
+                        id="staffSearch"
+                        placeholder="Buscar por nombre..."
+                    >
+
+                </div>
+
+
+                <div class="filter-buttons">
+
+                    <button
+                        class="filter-btn active"
+                        data-filter="todos">
+
+                        Todos
+
+                    </button>
+
+                    <button
+                        class="filter-btn"
+                        data-filter="docente">
+
+                        Docentes
+
+                    </button>
+
+                    <button
+                        class="filter-btn"
+                        data-filter="direccion">
+
+                        Dirección
+
+                    </button>
+
+                    <button
+                        class="filter-btn"
+                        data-filter="administracion">
+
+                        Administración
+
+                    </button>
+
+                    <button
+                        class="filter-btn"
+                        data-filter="servicios">
+
+                        Servicios
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- AQUÍ APARECEN LAS TARJETAS -->
+
+            <div
+                class="staff-grid"
+                id="staffContainer">
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- MODAL -->
+
+    <div
+        class="profile-modal"
+        id="profileModal">
+
+        <div class="profile-modal-content">
+
+            <button
+                class="modal-close"
+                id="modalClose">
+
+                ×
+
+            </button>
+
+
+            <div class="modal-photo">
+
+                <img
+                    id="modalPhoto"
+                    src=""
+                    alt="Fotografía">
+
+            </div>
+
+
+            <div class="modal-info">
+
+                <span id="modalCargo">
+                    Cargo
+                </span>
+
+                <h2 id="modalNombre">
+                    Nombre
+                </h2>
+
+                <div class="modal-section">
+
+                    <h3>
+                        Reseña del docente
+                    </h3>
+
+                    <p id="modalResena">
+                    </p>
+
+                </div>
+
+                <div class="modal-section">
+
+                    <h3>
+                        Proyectos destacados
+                    </h3>
+
+                    <p id="modalProyectos">
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- SOLO ESTE JS -->
+
+   
+   <script src="../datos/docentes.js"></script>
+   <script src="../js/personal.js"></script>
+</body>
+
+</html>
