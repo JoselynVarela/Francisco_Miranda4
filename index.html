@@ -313,14 +313,37 @@
 
                 <div class="institution-gallery">
 
-                    <div class="gallery-main image-placeholder">
-                        <i class="fa-solid fa-image"></i>
-                        <span>Foto de la institución</span>
+                    <div class="gallery-slider" aria-live="polite">
+
+                        <div class="gallery-slide active">
+                            <img src="img/Institucion/Actividades.jpg" alt="Fachada del instituto">
+                        </div>
+
+                        <div class="gallery-slide">
+                            <img src="img/Institucion/Alumnado.jpg" alt="Actividades comunitarias">
+                        </div>
+
+                        <div class="gallery-slide">
+                            <img src="img/Institucion/Desfile 2025.jpg" alt="Comunidad estudiantil">
+                        </div>
+
+                        <div class="gallery-slide">
+                            <img src="img/Institucion/Acctos Civicos.jpg" alt="Desfile institucional 2025">
+                        </div>
+
+                        <div class="gallery-controls">
+                            <button class="gallery-btn prev" type="button" aria-label="Anterior">
+                                <i class="fa-solid fa-chevron-left"></i>
+                            </button>
+                            <button class="gallery-btn next" type="button" aria-label="Siguiente">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </button>
+                        </div>
+
                     </div>
 
                     <div class="gallery-small image-placeholder">
-                        <i class="fa-solid fa-image"></i>
-                        <span>Comunidad estudiantil</span>
+                        <img src="img/Institucion/Actividades(1).jpg" alt="Comunidad estudiantil">
                     </div>
 
                 </div>
@@ -411,7 +434,7 @@
                             al servicio del futuro.
                         </p>
 
-                        <a href="pages/informatica.html">
+                        <a href="#" aria-label="Conocer más de informática">
                             Conocer más
                             <i class="fa-solid fa-arrow-right"></i>
                         </a>
@@ -436,7 +459,7 @@
                             con responsabilidad y eficiencia.
                         </p>
 
-                        <a href="pages/contaduria.html">
+                        <a href="#" aria-label="Conocer más de contaduría">
                             Conocer más
                             <i class="fa-solid fa-arrow-right"></i>
                         </a>
@@ -461,7 +484,7 @@
                             agroindustriales.
                         </p>
 
-                        <a href="pages/agroindustria.html">
+                        <a href="#" aria-label="Conocer más de agroindustria">
                             Conocer más
                             <i class="fa-solid fa-arrow-right"></i>
                         </a>
@@ -500,7 +523,7 @@
                 <div class="services-grid">
 
 
-                    <article class="service-card">
+                    <article class="service-card service-band">
 
                         <div class="service-icon music">
                             <i class="fa-solid fa-music"></i>
@@ -513,14 +536,14 @@
                             trabajo en equipo y pasión.
                         </p>
 
-                        <a href="pages/banda.html">
+                        <button class="band-trigger" type="button">
                             Conocer más
-                        </a>
+                        </button>
 
                     </article>
 
 
-                    <article class="service-card">
+                    <article class="service-card service-sports">
 
                         <div class="service-icon sports">
                             <i class="fa-solid fa-futbol"></i>
@@ -533,14 +556,14 @@
                             y desarrollo deportivo.
                         </p>
 
-                        <a href="pages/deportes.html">
+                        <button class="service-trigger" type="button">
                             Conocer más
-                        </a>
+                        </button>
 
                     </article>
 
 
-                    <article class="service-card">
+                    <article class="service-card service-workshops">
 
                         <div class="service-icon workshops">
                             <i class="fa-solid fa-screwdriver-wrench"></i>
@@ -553,9 +576,9 @@
                             haciendo.
                         </p>
 
-                        <a href="pages/talleres.html">
+                        <button class="service-trigger" type="button">
                             Conocer más
-                        </a>
+                        </button>
 
                     </article>
 

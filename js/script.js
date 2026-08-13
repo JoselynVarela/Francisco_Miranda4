@@ -147,3 +147,77 @@ animatedElements.forEach(element => {
     animationObserver.observe(element);
 
 });
+
+/* =========================================
+   PORTADA Y GALERÍA
+========================================= */
+
+const hero = document.querySelector(".hero");
+
+if (hero) {
+    hero.style.backgroundImage = "linear-gradient(90deg, rgba(255,255,255,0.98) 0%, rgba(255,255,255,0.88) 42%, rgba(255,255,255,0.15) 100%), url('img/Portada/Foto de portada.jpg')";
+    hero.style.backgroundSize = "cover";
+    hero.style.backgroundPosition = "center";
+}
+
+const gallerySlides = Array.from(document.querySelectorAll(".gallery-slide"));
+const nextBtn = document.querySelector(".gallery-btn.next");
+const prevBtn = document.querySelector(".gallery-btn.prev");
+let currentSlide = 0;
+
+function showSlide(index) {
+    if (!gallerySlides.length) return;
+
+    currentSlide = (index + gallerySlides.length) % gallerySlides.length;
+
+    gallerySlides.forEach((slide, i) => {
+        slide.classList.toggle("active", i === currentSlide);
+    });
+}
+
+if (gallerySlides.length) {
+    showSlide(0);
+
+    if (nextBtn) {
+        nextBtn.addEventListener("click", () => showSlide(currentSlide + 1));
+    }
+
+    if (prevBtn) {
+        prevBtn.addEventListener("click", () => showSlide(currentSlide - 1));
+    }
+
+    setInterval(() => showSlide(currentSlide + 1), 4500);
+}
+
+/* =========================================
+   MODAL BANDA LATINA
+========================================= */
+
+const bandModal = document.getElementById("bandModal");
+const bandTrigger = document.querySelector(".band-trigger");
+const bandClose = document.querySelector(".band-modal-close");
+
+if (bandModal && bandTrigger) {
+    const toggleModal = () => {
+        bandModal.classList.toggle("active");
+        bandModal.setAttribute("aria-hidden", String(!bandModal.classList.contains("active")));
+    };
+
+    bandTrigger.addEventListener("click", toggleModal);
+
+    if (bandClose) {
+        bandClose.addEventListener("click", toggleModal);
+    }
+
+    bandModal.addEventListener("click", (event) => {
+        if (event.target === bandModal) {
+            toggleModal();
+        }
+    });
+
+    document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape" && bandModal.classList.contains("active")) {
+            toggleModal();
+        }
+    });
+}
