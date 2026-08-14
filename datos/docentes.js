@@ -9,7 +9,7 @@ const docentes = [
 
     {
         nombre: "ANA LILIAM SOTO AGUILERA",
-        cargo: "Dato NO proporcionado",
+        cargo: "Docente del area de ciencias naturales ",
         resena: "Dato NO proporcionado",
         proyectos: "Dato NO proporcionado",
         foto: "../img/sin-foto.svg"
@@ -17,7 +17,7 @@ const docentes = [
 
     {
         nombre: "ANA GABRIELA SIMONS ZELAYA",
-        cargo: "Profesora de Matemáticas, con una trayectoria de 12 años de experiencia docente en Tegucigalpa, Francisco Miranda. Clases impartidas: Matemáticas, Física y Dibujo Técnico.",
+        cargo: "Docente de Matemáticas, con una trayectoria de 12 años de experiencia docente en Tegucigalpa, Francisco Miranda. Clases impartidas: Matemáticas, Física y Dibujo Técnico.",
         resena: "Ana Gabriela Simons Zelaya, nacida el 31 de julio de 1990 en Tegucigalpa, Francisco Morazán, es una destacada educadora de 35 años y Licenciada en Matemáticas por la UPNFM. Actualmente se desempeña como docente en el Instituto Técnico Francisco Miranda, donde aporta sus 12 años de sólida experiencia (2014-2026) impartiendo asignaturas clave como Matemáticas, F+isica, Dibujo Técnico. A lo largo de su carrera, Ana Gabriela se ha distinguido no solo por su labor en el aula, sino también por su compromiso con el talento acádemico júvenil, impulsando activamente a sus alumnos como tutora en las Olimpiadas de Matemáticas y aportando su criterio y experiencia como jurado en las ediciones a nivel nacional.",
         proyectos: "",
         foto: "../img/Ana Simons.png"
@@ -25,7 +25,7 @@ const docentes = [
 
     {
         nombre: "CELESTE MARIA MACHUCA TEJEDA",
-        cargo: "PROFESORA Y ASISTENTE DE EL LABORATORIO DE CIENCIAS NATURALES (9 AÑOS DE SERVICIO)",
+        cargo: "DOCENTE Y ASISTENTE DE EL LABORATORIO DE CIENCIAS NATURALES (9 AÑOS DE SERVICIO)",
         resena: "PROFESIONAL DE LA EDUCACIÓN CON 9 AÑOS DE EXPERIENCIA EN LA ENSEÑANZA DE LAS CIENCIAS NATURALES. ES LICENCIADA EN CIENCIAS NATURALES CON ORIENTACIÓN EN QUÍMICA Y BIOLOGÍA, ADEMÁS DE CONTAR CON UNA ESPECIALIDAD EN TECNOLOGÍA Y ALIMENTOS. ORIGINARIA DE LA PAZ, SE HA DESTACADO POR SU COMPROMISO CON LA FORMACIÓN CIENTÍFICA DE LOS ESTUDIANTES, FOMENTANDO LA INVESTIGACIÓN, EL TRABAJO EXPERIMENTAL Y LA PARTICIPACIÓN EN PROYECTOS DE FERIA CIENTÍFICA, CONTRIBUYENDO AL FORTALECIMIENTO DEL APRENDIZAJE Y LA INNOVACIÓN EDUCATIVA EN EL INSTITUTO.",
         proyectos: "ASISTENCIA Y COORDINACIÓN DE LAS PRÁCTICAS EN EL LABORATORIO DE CIENCIAS NATURALES.\n\nORIENTACIÓN DE LOS ESTUDIANTES EN ACTIVIDADES EXPERIMENTALES Y DE INVESTIGACIÓN CIENTÍFICA.\n\nORGANIZACIÓN Y DESARROLLO DE PROYECTOS PARA LA FERIA CIENTÍFICA.\n\nPROMOCIÓN DEL APRENDIZAJE PRÁCTICO Y DEL USO ADECUADO DE LOS RECURSOS DEL LABORATORIO.",
         foto: "../img/Ceteste Machuca.jpg"
@@ -33,7 +33,7 @@ const docentes = [
 
     {
         nombre: "CHRISTIAN OBED MEDINA ALVARADO",
-        cargo: "PROFESOR DE DIBUJO TECNICO, DOCENTE ENCARGADO DEL TALLER DE ELECTRICIDAD (3 AÑOS EN EL INSTITUTO FRANCISCO MIRANDA, 9 COMO DOCENTE EN SERVICIO ELECTRICO.)",
+        cargo: "DOCENTE DE DIBUJO TECNICO, DOCENTE ENCARGADO DEL TALLER DE ELECTRICIDAD (3 AÑOS EN EL INSTITUTO FRANCISCO MIRANDA, 9 COMO DOCENTE EN SERVICIO ELECTRICO.)",
         resena: "NACIÓ EN SAN PEDRO SULA EL 18 DE MARZO DE 1994. CURSÓ EL BACHILLERATO TÉCNICO INDUSTRIAL CON ORIENTACIÓN EN MECÁNICA AUTOMOTRIZ EN EL INSTITUTO TÉCNICO LUIS BOGRÁN, ENTRE LOS AÑOS 2006 Y 2011. CRECIÓ EN LA ALDEA MONTE REDONDO, KM 27 DE LA CARRETERA A OLANCHO. DURANTE SU FORMACIÓN UNIVERSITARIA SE DESEMPEÑÓ COMO VICEPRESIDENTE DE LA CARRERA DE EDUCACIÓN TECNOLÓGICA EN LA UPFM. ADEMÁS, HA EJERCIDO COMO CONTRATISTA INDEPENDIENTE, DESTACÁNDOSE POR SU LIDERAZGO, COMPROMISO Y VOCACIÓN DE SERVICIO EN EL ÁMBITO EDUCATIVO Y TÉCNICO.",
         proyectos: "PROYECTOS DE FORMACIÓN TÉCNICA EN ELECTRICIDAD, DESARROLLO DE PRÁCTICAS DE TALLER Y ACOMPAÑAMIENTO EN PROYECTOS TECNOLÓGICOS PARA LA FORMACIÓN PROFESIONAL DE LOS ESTUDIANTES DEL INSTITUTO TÉCNICO FRANCISCO MIRANDA.",
         foto: "../img/CHRISTIAN MEDINA.jpeg"
@@ -73,7 +73,7 @@ const docentes = [
 
     {
         nombre: "FRANCIS ELIZABETH MONCADA SILVA",
-        cargo: "Cargo actual: Docente del taller de Hogar area de Belleza,Cosmetologia,Corte,Nutrición y Alimentos.",
+        cargo: "Docente del taller de Hogar area de Belleza,Cosmetologia,Corte,Nutrición y Alimentos.",
         resena: "Francis Elizabeth Moncada Silva, nacida el 8 de abril de 1970, es una destacada educadora con una sólida trayectoria de 21 años de servicio en el Instituto Técnico Francisco Miranda. Licenciada en Taller de Hogar en el Área de Belleza, Cosmetología, Corte, Nutrición y Alimentos, egresada de la UPNFM, con formación previa en instituciones como la Escuela Marcos Carías Reyes, el Instituto Técnico Mixto Hibueras y el Instituto Mixto Santa Teresita. A lo largo de su carrera, se ha desarrollado con alta vocación en el desarrollo de los talleres de nutrición, corte y confección, y belleza y cosmetología (incluyendo especialidades en cuidado facial, estética de uñas y cortes). Su labor se ha distinguido por fomentar el emprendimiento, la innovación práctica y la formación integral de los jóvenes, contribuyendo de manera significativa al fortalecimiento educativo del Instituto.",
         proyectos: "Proyectos de Belleza y Estética: Cursos y talleres prácticos de barbería, maquillaje, uñas acrílicas y cuidado facial.\nProyectos Manuales y Artesanales: Elaboración de manualidades, piñatas, jabones artesanales, pesos absorbentes y tarjetería.\nProyectos de Nutrición y Gastronomía: Cursos de comida navideña, elaboración de boquitas y talleres de salud y nutrición.",
         foto: "../img/Profe Francis.jpg"
@@ -81,7 +81,7 @@ const docentes = [
 
     {
         nombre: "FREDIS ARMANDO DOMINGUEZ MEDINA",
-        cargo: "Cargo actual: Docente en Matematica y cargo administrativo.",
+        cargo: "Docente en Matematica y cargo administrativo.",
         resena: "Actualmente cuenta con 19 años dentro de la institución.",
         proyectos: "",
         foto: "../img/Fredy Dominguez.jpg"
@@ -89,7 +89,7 @@ const docentes = [
 
     {
         nombre: "GABRIELA ARELY BELTRAN RODIRGUEZ",
-        cargo: "Cargo actual: Docente de Educación Artística en el centro educativo",
+        cargo: "Docente de Educación Artística en el centro educativo",
         resena: "Nombre: Gabriela Arely Beltrán Rodríguez.\nFecha de nacimiento: 5 de diciembre de 1992.\nCargo actual: Docente de Educación Artística en el centro educativo (ingresó el 1 de abril de 2024).\nExperiencia: Cuenta con 14 años de trayectoria docente (iniciando su labor profesional a los 18 años). Posee 13 años de experiencia en el sector privado y 3 años en el sector público.",
         proyectos: "",
         foto: "../img/Gabriela Rodriguez.jpg"
@@ -146,7 +146,7 @@ const docentes = [
     {
         nombre: "KAREN LETICIA SANCHEZ BAUTISTA",
         cargo: "Docente del Area de Ciencias Sociales",
-        resena: "maestra de educación primaria, graduada en la Escuela \"Normal Mixta Pedro Nufio\" a nivel universitario soy Licenciada en Ciencias Sociales, graduada en la Universidad Pedagógica Nacional \"Francisco Morazán\" Experiencia Labore 2 años en un instituto privado llamado Federico Froebel. Posteriormente aquí en el Francisco Miranda desde el 2001 donde cuento con una antigüedad de 25 años en total tengo 27 años de experiencia. Cuento con un diplomado en Estudios Morazanicos",
+        resena: "Maestra de educación primaria, graduada en la Escuela \"Normal Mixta Pedro Nufio\" a nivel universitario soy Licenciada en Ciencias Sociales, graduada en la Universidad Pedagógica Nacional \"Francisco Morazán\" Experiencia Labore 2 años en un instituto privado llamado Federico Froebel. Posteriormente aquí en el Francisco Miranda desde el 2001 donde cuento con una antigüedad de 25 años en total tengo 27 años de experiencia. Cuento con un diplomado en Estudios Morazanicos",
         proyectos: "Ha participado en diversas actividades y proyectos educativos dentro del centro, como la organización y desarrollo del Día de las Américas y el Día de la Independencia, en colaboración con la profesora Wendy Andino. Asimismo, ha trabajado en jornadas de limpieza de los baños del colegio, así como en actividades relacionadas con el área de Ciencias Sociales, promoviendo la formación integral de los estudiantes.",
         foto: "../img/Karen Sanchez.png"
     },
