@@ -416,8 +416,8 @@ img {
 .service-trigger,
 .band-trigger {
     border: none;
-    background: rgba(143, 23, 53, 0.96);
-    color: white;
+    background: white;
+    color: var(--vino);
     width: calc(100% - 50px);
     margin: 0 25px 25px;
     padding: 11px 16px;
