@@ -1,0 +1,178 @@
+:root {
+    --taller-ink: #202020;
+    --taller-muted: #686868;
+    --taller-line: #e9e1d6;
+    --taller-paper: #fffdf8;
+}
+
+.workshops-hero {
+    min-height: 430px;
+    padding: 72px 8%;
+    background: #f5ead7;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+.workshops-hero::after {
+    content: "";
+    position: absolute;
+    width: 430px;
+    height: 430px;
+    border: 1px solid rgba(143, 23, 53, 0.16);
+    border-radius: 50%;
+    right: -120px;
+    top: -100px;
+}
+
+.workshops-hero-content {
+    max-width: 680px;
+    position: relative;
+    z-index: 1;
+}
+
+.back-link {
+    color: var(--vino);
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    font-size: 13px;
+    font-weight: 800;
+    margin-bottom: 42px;
+}
+
+.workshops-hero .section-label {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    color: var(--vino);
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin-bottom: 16px;
+}
+
+.workshops-hero h1 {
+    color: var(--taller-ink);
+    font-family: "Poppins", sans-serif;
+    font-size: clamp(36px, 5vw, 68px);
+    line-height: 1.08;
+    margin-bottom: 20px;
+}
+
+.workshops-hero h1 span { color: var(--vino); }
+
+.workshops-hero p {
+    color: var(--taller-muted);
+    font-size: 17px;
+    line-height: 1.7;
+    max-width: 570px;
+}
+
+.workshops-hero-mark {
+    width: 190px;
+    height: 190px;
+    border: 1px solid rgba(143, 23, 53, 0.28);
+    border-radius: 50%;
+    color: var(--vino);
+    display: grid;
+    place-items: center;
+    align-content: center;
+    gap: 7px;
+    position: relative;
+    z-index: 1;
+    flex-shrink: 0;
+}
+
+.workshops-hero-mark i { font-size: 42px; }
+.workshops-hero-mark span { font: 800 20px "Poppins", sans-serif; letter-spacing: 3px; }
+
+.workshops-section {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 92px 5% 110px;
+}
+
+.workshops-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 40px;
+    margin-bottom: 55px;
+}
+
+.eyebrow, .workshop-type, .workshops-cta > span {
+    color: var(--vino);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.4px;
+}
+
+.workshops-heading h2 {
+    font: 700 clamp(27px, 3vw, 40px)/1.15 "Poppins", sans-serif;
+    margin-top: 12px;
+    max-width: 590px;
+}
+
+.workshops-heading p {
+    max-width: 330px;
+    color: var(--taller-muted);
+    line-height: 1.7;
+}
+
+.workshop-list { display: grid; gap: 48px; }
+
+.workshop-item {
+    display: grid;
+    grid-template-columns: minmax(280px, 0.95fr) minmax(300px, 1.05fr);
+    min-height: 310px;
+    background: white;
+    border: 1px solid var(--taller-line);
+    box-shadow: 0 14px 35px rgba(60, 30, 30, 0.06);
+}
+
+.workshop-item-reverse { grid-template-columns: minmax(300px, 1.05fr) minmax(280px, 0.95fr); }
+.workshop-item-reverse .workshop-image { order: 2; }
+
+.workshop-image { min-height: 310px; margin: 0; position: relative; overflow: hidden; background: #eee8dd; }
+.workshop-image img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
+.workshop-item:hover .workshop-image img { transform: scale(1.04); }
+.workshop-number { position: absolute; left: 22px; top: 20px; background: var(--amarillo); color: var(--vino-dark); padding: 8px 12px; font: 800 13px "Poppins", sans-serif; }
+
+.workshop-copy { padding: 48px 55px; display: flex; flex-direction: column; justify-content: center; }
+.workshop-copy h3 { font: 700 clamp(24px, 3vw, 35px)/1.15 "Poppins", sans-serif; margin: 12px 0 16px; color: var(--vino-dark); }
+.workshop-copy p { color: var(--taller-muted); line-height: 1.75; max-width: 450px; }
+.workshop-detail { display: flex; align-items: center; gap: 10px; border-top: 1px solid var(--taller-line); margin-top: 28px; padding-top: 17px; color: var(--vino); font-size: 12px; font-weight: 800; }
+
+.image-slot { height: 100%; min-height: 310px; display: grid; place-items: center; align-content: center; gap: 12px; color: #9a8e7e; background: repeating-linear-gradient(135deg, #eee8dd, #eee8dd 10px, #e9e1d6 10px, #e9e1d6 20px); }
+.image-slot i { font-size: 34px; }
+.image-slot span { font-size: 12px; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; }
+
+.workshops-cta { background: var(--vino); color: white; text-align: center; padding: 70px 5%; }
+.workshops-cta > span { color: var(--amarillo); }
+.workshops-cta h2 { font: 700 clamp(26px, 4vw, 42px)/1.2 "Poppins", sans-serif; max-width: 620px; margin: 13px auto 25px; }
+.workshops-cta .btn { display: inline-flex; }
+
+@media (max-width: 800px) {
+    .nav-menu, .btn-header { display: none; }
+    .workshops-hero { min-height: auto; padding: 52px 7%; }
+    .workshops-hero-mark { width: 120px; height: 120px; }
+    .workshops-hero-mark i { font-size: 28px; }
+    .workshops-heading { display: block; }
+    .workshops-heading p { margin-top: 18px; }
+    .workshop-item, .workshop-item-reverse { display: block; }
+    .workshop-item-reverse .workshop-image { order: initial; }
+    .workshop-image, .image-slot { min-height: 250px; }
+    .workshop-copy { padding: 34px 28px; }
+}
+
+@media (max-width: 520px) {
+    .logo-text strong { font-size: 11px; }
+    .logo-text span { font-size: 15px; }
+    .workshops-hero { display: block; }
+    .workshops-hero-mark { margin: 35px 0 0 auto; }
+    .workshops-section { padding-top: 65px; }
+}
