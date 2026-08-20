@@ -2002,3 +2002,160 @@ img {
     opacity: 1;
     transform: translateY(0);
 }
+.historia-encabezado {
+    background: var(--crema);
+}
+
+.historia-encabezado .section-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    gap: 45px;
+}
+
+@media (max-width: 900px) {
+    .historia-encabezado .section-container {
+        grid-template-columns: 1fr;
+    }
+}
+.historia-encabezado {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.historia-encabezado + .careers {
+    padding-top: 30px;
+}
+.careers + .institution {
+    padding-top: 30px;
+}
+
+.careers:has(+ .institution) {
+    padding-bottom: 30px;
+}
+.institution + .gallery-section {
+    padding-top: 30px;
+}
+
+.institution:has(+ .gallery-section) {
+    padding-bottom: 30px;
+}
+.photo-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(2, 220px);
+    gap: 18px;
+}
+
+.photo-placeholder.large {
+    grid-row: span 2;
+}
+
+.photo-placeholder {
+    overflow: hidden;
+    border-radius: var(--radio);
+}
+
+.photo-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.photo-placeholder {
+    border: none !important;
+}
+/* ===== MEJORAS VISUALES - PÁGINA DE HISTORIA ===== */
+
+/* Tarjetas de texto (Fundación, Misión y visión) con más presencia */
+.band-section {
+    box-shadow: var(--sombra);
+    border-left: 4px solid var(--amarillo);
+    transition: var(--transicion);
+}
+
+.band-section:hover {
+    transform: translateY(-3px);
+}
+
+.band-section h2 {
+    color: var(--vino-dark);
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 14px;
+}
+
+/* Timeline con más peso visual */
+.timeline-item {
+    box-shadow: var(--sombra);
+    background: white;
+    border-radius: 16px;
+    padding: 20px 22px;
+    transition: var(--transicion);
+}
+
+.timeline-item:hover {
+    transform: translateY(-4px);
+    border-left-color: var(--vino);
+}
+
+.timeline-item span {
+    display: inline-block;
+    background: var(--amarillo-light);
+    color: var(--vino);
+    padding: 4px 12px;
+    border-radius: 999px;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 10px;
+}
+
+/* Mini-cards de datos institucionales */
+.mini-card {
+    box-shadow: var(--sombra);
+    transition: var(--transicion);
+}
+
+.mini-card:hover {
+    transform: translateY(-5px);
+}
+
+.mini-card i {
+    background: var(--amarillo-light);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    margin: 0 auto 12px;
+}
+
+.mini-card h3 {
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    color: var(--negro);
+    margin-bottom: 6px;
+}
+
+.mini-card p {
+    color: var(--vino);
+    font-weight: 800;
+    font-size: 18px;
+}
+
+/* Galería con efecto zoom al pasar el mouse */
+.photo-placeholder img {
+    transition: transform 0.4s ease;
+}
+
+.photo-placeholder:hover img {
+    transform: scale(1.06);
+}
+
+/* Título principal con acento de color */
+.historia-encabezado h1 span,
+.historia-encabezado h1 {
+    font-family: "Poppins", sans-serif;
+}
+
+.historia-encabezado .section-heading {
+    text-align: left;
+}
