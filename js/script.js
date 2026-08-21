@@ -1,6 +1,39 @@
-/* =========================================
-   MENÚ MÓVIL
-========================================= */
+/* MENÃš MÃ“VIL */
+
+const decodeMojibake = value => {
+    const replacements = {
+        "\u00c3\u00a1": "\u00e1",
+        "\u00c3\u00a9": "\u00e9",
+        "\u00c3\u00ad": "\u00ed",
+        "\u00c3\u00b3": "\u00f3",
+        "\u00c3\u00ba": "\u00fa",
+        "\u00c3\u00b1": "\u00f1",
+        "\u00c3\u0091": "\u00d1",
+        "\u00c3\u0093": "\u00d3",
+        "\u00c2\u00bf": "\u00bf",
+        "\u00c2\u00a1": "\u00a1",
+        "\u00c2\u00ba": "\u00ba",
+        "\u00c3\u00bc": "\u00fc"
+    };
+
+    return Object.entries(replacements).reduce(
+        (text, [broken, fixed]) => text.replaceAll(broken, fixed),
+        value
+    );
+};
+
+document.title = decodeMojibake(document.title);
+document.querySelectorAll("body *").forEach(element => {
+    element.childNodes.forEach(node => {
+        if (node.nodeType === Node.TEXT_NODE) node.nodeValue = decodeMojibake(node.nodeValue);
+    });
+
+    ["alt", "aria-label", "title"].forEach(attribute => {
+        if (element.hasAttribute(attribute)) {
+            element.setAttribute(attribute, decodeMojibake(element.getAttribute(attribute)));
+        }
+    });
+});
 
 const menuToggle = document.getElementById("menuToggle");
 const mobileMenu = document.getElementById("mobileMenu");
@@ -40,9 +73,7 @@ if (menuToggle && mobileMenu) {
 }
 
 
-/* =========================================
-   CONTADORES
-========================================= */
+/* CONTADORES */
 
 const counters = document.querySelectorAll(".counter");
 
@@ -77,9 +108,7 @@ const startCounters = () => {
 };
 
 
-/* =========================================
-   ACTIVAR CONTADORES AL APARECER
-========================================= */
+/* ACTIVAR CONTADORES AL APARECER */
 
 const statsSection = document.querySelector(".stats-section");
 
@@ -110,9 +139,7 @@ if (statsSection) {
 }
 
 
-/* =========================================
-   ANIMACIONES AL HACER SCROLL
-========================================= */
+/* ANIMACIONES AL HACER SCROLL */
 
 const animatedElements = document.querySelectorAll(
     ".career-card, .service-card, .staff-card, .stat-card"
@@ -148,17 +175,12 @@ animatedElements.forEach(element => {
 
 });
 
-/* =========================================
-   PORTADA Y GALERÍA
-========================================= */
-
 const hero = document.querySelector(".hero");
 
 if (hero) {
     hero.style.setProperty("--hero-image", "url('../img/Portada/Foto de portada.jpg')");
 }
 
-<<<<<<< HEAD
 document.querySelectorAll(".gallery-slider").forEach(slider => {
     const slides = Array.from(slider.querySelectorAll(".gallery-slide"));
     const nextBtn = slider.querySelector(".gallery-btn.next");
@@ -172,10 +194,7 @@ document.querySelectorAll(".gallery-slider").forEach(slider => {
 
     const showSlide = index => {
         currentSlide = (index + slides.length) % slides.length;
-
-        slides.forEach((slide, slideIndex) => {
-            slide.classList.toggle("active", slideIndex === currentSlide);
-        });
+        slides.forEach((slide, slideIndex) => slide.classList.toggle("active", slideIndex === currentSlide));
 
         if (indicators) {
             indicators.querySelectorAll(".gallery-indicator").forEach((indicator, indicatorIndex) => {
@@ -198,26 +217,10 @@ document.querySelectorAll(".gallery-slider").forEach(slider => {
             indicator.setAttribute("aria-label", `Ver imagen ${index + 1}`);
             indicator.addEventListener("click", () => showSlide(index));
             indicators.appendChild(indicator);
-=======
-document.querySelectorAll(".gallery-slider").forEach(gallerySlider => {
-    const gallerySlides = Array.from(gallerySlider.querySelectorAll(".gallery-slide"));
-    const nextBtn = gallerySlider.querySelector(".gallery-btn.next");
-    const prevBtn = gallerySlider.querySelector(".gallery-btn.prev");
-    let currentSlide = 0;
-
-    function showSlide(index) {
-        if (!gallerySlides.length) return;
-
-        currentSlide = (index + gallerySlides.length) % gallerySlides.length;
-
-        gallerySlides.forEach((slide, i) => {
-            slide.classList.toggle("active", i === currentSlide);
->>>>>>> be3b316f0de4564c97e3e3d4a98dee0d8c6997a7
         });
     }
 
     showSlide(0);
-
     nextBtn?.addEventListener("click", () => showSlide(currentSlide + 1));
     prevBtn?.addEventListener("click", () => showSlide(currentSlide - 1));
 
@@ -225,30 +228,20 @@ document.querySelectorAll(".gallery-slider").forEach(gallerySlider => {
     slider.addEventListener("touchstart", event => {
         touchStartX = event.changedTouches[0].clientX;
     }, { passive: true });
-
-<<<<<<< HEAD
     slider.addEventListener("touchend", event => {
         const distance = event.changedTouches[0].clientX - touchStartX;
         if (Math.abs(distance) > 45) showSlide(currentSlide + (distance < 0 ? 1 : -1));
     }, { passive: true });
 
     const startAutoplay = () => {
+        clearInterval(autoplay);
         autoplay = setInterval(() => showSlide(currentSlide + 1), 4500);
     };
 
     slider.addEventListener("mouseenter", () => clearInterval(autoplay));
     slider.addEventListener("mouseleave", startAutoplay);
     startAutoplay();
-=======
-    if (gallerySlides.length) {
-        setInterval(() => showSlide(currentSlide + 1), 4500);
-    }
->>>>>>> be3b316f0de4564c97e3e3d4a98dee0d8c6997a7
 });
-
-/* =========================================
-   MODAL BANDA LATINA
-========================================= */
 
 const bandModal = document.getElementById("bandModal");
 const bandTrigger = document.querySelector(".band-trigger");
@@ -261,20 +254,11 @@ if (bandModal && bandTrigger) {
     };
 
     bandTrigger.addEventListener("click", toggleModal);
-
-    if (bandClose) {
-        bandClose.addEventListener("click", toggleModal);
-    }
-
-    bandModal.addEventListener("click", (event) => {
-        if (event.target === bandModal) {
-            toggleModal();
-        }
+    bandClose?.addEventListener("click", toggleModal);
+    bandModal.addEventListener("click", event => {
+        if (event.target === bandModal) toggleModal();
     });
-
-    document.addEventListener("keydown", (event) => {
-        if (event.key === "Escape" && bandModal.classList.contains("active")) {
-            toggleModal();
-        }
+    document.addEventListener("keydown", event => {
+        if (event.key === "Escape" && bandModal.classList.contains("active")) toggleModal();
     });
 }

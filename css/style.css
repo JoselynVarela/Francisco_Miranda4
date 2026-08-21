@@ -1,6 +1,4 @@
-/* =========================================
-   VARIABLES
-========================================= */
+/* VARIABLES */
 
 :root {
     --vino: #8f1735;
@@ -35,9 +33,7 @@
 }
 
 
-/* =========================================
-   RESET
-========================================= */
+/* RESET */
 
 * {
     margin: 0;
@@ -50,45 +46,11 @@ html {
 }
 
 body {
-<<<<<<< Updated upstream
     font-family: var(--font-body, "Manrope", sans-serif);
     background: #f3eee5;
     color: #29231f;
     overflow-x: hidden;
     line-height: 1.65;
-=======
-    font-family: var(--font-body);
-    background:
-        radial-gradient(circle 1000px at 10% 5%, rgba(245,196,0,0.08), transparent 35%),
-        radial-gradient(circle 800px at 90% 95%, rgba(31,95,174,0.04), transparent 40%),
-        linear-gradient(135deg, #0a0a0a 0%, #1a1310 50%, #151515 100%);
-    color: #f0e6d2;
-    overflow-x: hidden;
-    line-height: 1.65;
-
-
-h1, h2, h3, h4, .logo-text strong, .logo-text span {
-    font-family: var(--font-display);
-    letter-spacing: -0.03em;
-    font-weight: 600;
-    color: #f5f0e8;
-}
-
-.section {
-    position: relative;
-    overflow: hidden;
-}
-
-.section::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background:
-        radial-gradient(circle 1200px at 20% 30%, rgba(245,196,0,0.04), transparent 50%),
-        radial-gradient(circle 800px at 80% 70%, rgba(31,95,174,0.02), transparent 50%);
-    pointer-events: none;
-    z-index: 1;
->>>>>>> Stashed changes
 }
 
 h1,
@@ -114,38 +76,23 @@ img {
 }
 
 
-/* =========================================
-   BARRA SUPERIOR
-========================================= */
+/* BARRA SUPERIOR */
 
 .top-bar {
-<<<<<<< HEAD
     background: linear-gradient(100deg, var(--vino-dark), var(--vino), var(--azul-dark));
     color: rgb(255, 250, 250);
     font-size: 13px;
     letter-spacing: 0.1px;
-=======
-<<<<<<< Updated upstream
     background: var(--vino-dark);
     color: #f8eaca;
-=======
-    background: linear-gradient(90deg, rgba(10,10,10,0.95) 0%, rgba(26,19,16,0.95) 50%, rgba(21,21,21,0.95) 100%);
-    border-bottom: 2px solid rgba(245,196,0,0.25);
-    color: #e8dcc8;
->>>>>>> Stashed changes
     font-size: 13px;
     backdrop-filter: blur(10px);
->>>>>>> be3b316f0de4564c97e3e3d4a98dee0d8c6997a7
 }
 
 .top-bar-container {
     max-width: 1400px;
     margin: auto;
-<<<<<<< HEAD
     padding: 9px 5%;
-=======
-    padding: 14px 5%;
->>>>>>> be3b316f0de4564c97e3e3d4a98dee0d8c6997a7
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -153,47 +100,21 @@ img {
 
 .top-info {
     display: flex;
-<<<<<<< HEAD
     gap: 10px;
-=======
-    gap: 18px;
->>>>>>> be3b316f0de4564c97e3e3d4a98dee0d8c6997a7
 }
 
 .top-info span {
     display: flex;
     align-items: center;
-<<<<<<< HEAD
     gap: 8px;
     padding: 5px 12px;
     border: 1px solid rgba(255, 255, 255, 0.18);
     border-radius: 999px;
     background: rgba(255, 255, 255, 0.08);
-=======
-    gap: 10px;
-    padding: 8px 16px;
-    background: linear-gradient(135deg, rgba(245,196,0,0.08), rgba(245,196,0,0.04));
-    border: 1px solid rgba(245,196,0,0.2);
-    border-radius: 22px;
-    transition: all 0.4s cubic-bezier(0.22, 1, 0.36, 1);
-    cursor: default;
-}
-
-.top-info span:hover {
-    background: linear-gradient(135deg, rgba(245,196,0,0.15), rgba(245,196,0,0.08));
-    border-color: rgba(245,196,0,0.35);
-    box-shadow: 0 8px 20px rgba(245,196,0,0.12);
-}
-
-.top-info span i {
-    color: var(--amarillo);
-    font-size: 14px;
->>>>>>> be3b316f0de4564c97e3e3d4a98dee0d8c6997a7
 }
 
 .top-social {
     display: flex;
-<<<<<<< HEAD
     gap: 8px;
 }
 
@@ -205,22 +126,6 @@ img {
     border: 1px solid rgba(255, 255, 255, 0.25);
     border-radius: 50%;
     transition: var(--transicion);
-=======
-    gap: 10px;
-}
-
-.top-social a {
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    background: linear-gradient(135deg, rgba(245,196,0,0.1), rgba(245,196,0,0.05));
-    border: 1px solid rgba(245,196,0,0.25);
-    color: var(--amarillo);
-    transition: all 0.4s cubic-bezier(0.22, 1, 0.36, 1);
->>>>>>> be3b316f0de4564c97e3e3d4a98dee0d8c6997a7
 }
 
 .top-social a:hover {
@@ -232,25 +137,16 @@ img {
 }
 
 
-/* =========================================
-   HEADER
-========================================= */
+/* HEADER */
 
 .header {
     position: sticky;
     top: 0;
     z-index: 1000;
-<<<<<<< Updated upstream
     background: rgba(255, 253, 248, 0.96);
     backdrop-filter: blur(14px);
     border-bottom: 1px solid rgba(143, 23, 53, 0.14);
     box-shadow: 0 8px 24px rgba(48, 22, 24, 0.06);
-=======
-    background: linear-gradient(90deg, rgba(10,10,10,0.97) 0%, rgba(26,19,16,0.97) 50%, rgba(21,21,21,0.97) 100%);
-    backdrop-filter: blur(16px);
-    border-bottom: 2px solid rgba(245,196,0,0.15);
-    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.4);
->>>>>>> Stashed changes
 }
 
 .nav-container {
@@ -358,7 +254,7 @@ img {
     font-size: 18px;
     color: var(--amarillo);
     letter-spacing: -0.02em;
-}}
+}
 
 .nav-menu {
     display: flex;
@@ -369,12 +265,8 @@ img {
 .nav-link {
     font-size: 14px;
     font-weight: 800;
-<<<<<<< Updated upstream
     color: #3b302b;
     letter-spacing: 0.01em;
-=======
-    letter-spacing: 0.02em;
->>>>>>> Stashed changes
     position: relative;
     padding: 8px 0;
     color: #e8dcc8;
@@ -528,20 +420,12 @@ img {
 }
 
 .career-it {
-<<<<<<< HEAD
     background-image: linear-gradient(135deg, rgba(231,241,255,0.9), rgba(231,241,255,0.62)), url("../img/Portada/Docentes.jpg");
-=======
-    background-image: linear-gradient(135deg, rgba(10,10,10,0.82), rgba(26,19,16,0.78)), url("../img/Carreras/Imagen para la carrera de Agroindustria.jpg");
->>>>>>> be3b316f0de4564c97e3e3d4a98dee0d8c6997a7
     background-position: center;
 }
 
 .career-accounting {
-<<<<<<< HEAD
-    background-image: linear-gradient(135deg, rgba(255,253,248,0.91), rgba(255,253,248,0.63)), url("../img/Portada/Niños.jpg");
-=======
-    background-image: linear-gradient(135deg, rgba(10,10,10,0.88), rgba(26,19,16,0.72)), url("../img/Carreras/Imagen para la carrera de Agroindustria.jpg");
->>>>>>> be3b316f0de4564c97e3e3d4a98dee0d8c6997a7
+    background-image: linear-gradient(135deg, rgba(255,253,248,0.91), rgba(255,253,248,0.63)), url("../img/Portada/NiÃ±os.jpg");
     background-position: center top;
 }
 
@@ -929,9 +813,7 @@ img {
     }
 }
 
-/* =========================================
-   MENÚ MÓVIL
-========================================= */
+/* MENÃš MÃ“VIL */
 
 .mobile-menu {
     position: fixed;
@@ -957,7 +839,7 @@ img {
     inset: 0;
     background: rgba(10, 10, 10, 0.7);
     z-index: -1;
-}}
+}
 
 .mobile-menu.active {
     right: 0;
@@ -977,34 +859,17 @@ img {
 }
 
 
-/* =========================================
-   HERO
-========================================= */
+/* HERO */
 
 .hero {
     min-height: 620px;
-<<<<<<< Updated upstream
 
-=======
->>>>>>> Stashed changes
     position: relative;
     display: flex;
     align-items: center;
-<<<<<<< HEAD
 
     background-color: var(--vino-dark);
     color: white;
-=======
-    background:
-<<<<<<< Updated upstream
-        linear-gradient(90deg, rgba(255,253,248,0.98) 0%, rgba(255,253,248,0.91) 38%, rgba(255,253,248,0.28) 100%),
-        url("../img/Institucion/Actividades.jpg") center / cover;
->>>>>>> be3b316f0de4564c97e3e3d4a98dee0d8c6997a7
-
-=======
-        linear-gradient(135deg, rgba(10,10,10,0.98) 0%, rgba(26,19,16,0.98) 50%, rgba(21,21,21,0.98) 100%),
-        radial-gradient(circle 900px at 100% 20%, rgba(245,196,0,0.08), transparent 60%);
->>>>>>> Stashed changes
     overflow: hidden;
 }
 
@@ -1022,19 +887,12 @@ img {
 .hero::before {
     content: "";
     position: absolute;
-<<<<<<< Updated upstream
 
     inset: 0;
     width: 100%;
     height: 100%;
-<<<<<<< HEAD
     background: linear-gradient(90deg, rgba(20, 10, 18, 0.9) 0%, rgba(82, 15, 38, 0.7) 48%, rgba(21, 63, 120, 0.2) 100%);
-=======
 
-    background: linear-gradient(90deg, rgba(255,253,248,0.9), transparent 42%);
->>>>>>> be3b316f0de4564c97e3e3d4a98dee0d8c6997a7
-
-=======
     right: -80px;
     top: -120px;
     width: 800px;
@@ -1042,27 +900,14 @@ img {
     border-radius: 50%;
     background:
         radial-gradient(circle, rgba(245,196,0,0.12), transparent 60%);
->>>>>>> Stashed changes
     z-index: 1;
 }
 
 .hero-overlay {
     position: absolute;
     inset: 0;
-<<<<<<< Updated upstream
 
-<<<<<<< HEAD
     background: linear-gradient(135deg, rgba(245,196,0,0.18), transparent 42%);
-=======
-    background: linear-gradient(135deg, rgba(245,196,0,0.12), transparent 48%);
-    z-index: 1;
-=======
-    background:
-        linear-gradient(135deg, rgba(245,196,0,0.04), transparent 50%),
-        linear-gradient(45deg, transparent 40%, rgba(31,95,174,0.02) 100%);
-    z-index: 0;
->>>>>>> Stashed changes
->>>>>>> be3b316f0de4564c97e3e3d4a98dee0d8c6997a7
 }
 
 .hero-container {
@@ -1078,18 +923,13 @@ img {
 }
 
 .hero-content {
-<<<<<<< Updated upstream
     max-width: 620px;
-=======
-    max-width: 700px;
->>>>>>> Stashed changes
     position: relative;
     z-index: 2;
 }
 
 .section-tag {
     display: inline-block;
-<<<<<<< Updated upstream
 
     color: var(--vino-dark);
 
@@ -1113,68 +953,31 @@ img {
     letter-spacing: -0.025em;
 
     margin-bottom: 22px;
-=======
-    background: linear-gradient(135deg, rgba(245,196,0,0.15), rgba(212,175,55,0.1));
-    color: var(--amarillo);
-    font-size: 12px;
-    font-weight: 900;
-    letter-spacing: 2px;
-    margin-bottom: 28px;
-    padding: 9px 18px;
-    border-radius: 50px;
-    border: 1px solid rgba(245,196,0,0.3);
-    text-transform: uppercase;
-    box-shadow: 0 6px 16px rgba(245,196,0,0.1);
-}
-
-.hero h1 {
-    font-family: var(--font-display);
-    font-size: clamp(64px, 7.5vw, 96px);
-    line-height: 0.88;
-    letter-spacing: -0.04em;
-    margin-bottom: 26px;
-    color: #f5f0e8;
-    font-weight: 700;
->>>>>>> Stashed changes
 }
 
 .hero h1 span {
     color: var(--amarillo);
-<<<<<<< HEAD
 }
 
 .hero .section-tag {
     color: var(--amarillo);
-=======
-    background: linear-gradient(135deg, var(--amarillo), #d4af37);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
->>>>>>> be3b316f0de4564c97e3e3d4a98dee0d8c6997a7
 }
 
 .hero p {
-<<<<<<< Updated upstream
     max-width: 530px;
 
-<<<<<<< HEAD
     color: rgba(255, 255, 255, 0.84);
-=======
-    color: #4d413a;
->>>>>>> be3b316f0de4564c97e3e3d4a98dee0d8c6997a7
 
     font-size: 17px;
     line-height: 1.7;
 
     margin-bottom: 30px;
-=======
     max-width: 580px;
     color: #d4c9b8;
     font-size: 18px;
     line-height: 1.8;
     margin-bottom: 40px;
     font-weight: 500;
->>>>>>> Stashed changes
 }
 
 .hero-buttons {
@@ -1184,9 +987,7 @@ img {
 }
 
 
-/* =========================================
-   BOTONES
-========================================= */
+/* BOTONES */
 
 .btn {
     display: inline-flex;
@@ -1255,9 +1056,7 @@ img {
 }
 
 
-/* =========================================
-   ESTADÍSTICAS
-========================================= */
+/* ESTADÃSTICAS */
 
 .stats-section {
     position: relative;
@@ -1341,18 +1140,12 @@ img {
 }
 
 
-/* =========================================
-   SECCIONES
-========================================= */
+/* SECCIONES */
 
 .section {
-<<<<<<< Updated upstream
     padding: 112px 0;
     position: relative;
     overflow: hidden;
-=======
-    padding: 120px 0;
->>>>>>> Stashed changes
 }
 
 .section-container {
@@ -1368,7 +1161,6 @@ img {
 }
 
 .section-heading h2 {
-<<<<<<< Updated upstream
     font-family: var(--font-display, "Cormorant Garamond", Georgia, serif);
 
     font-size: clamp(30px, 4vw, 42px);
@@ -1383,19 +1175,6 @@ img {
 
     max-width: 600px;
 
-=======
-    font-family: var(--font-display);
-    font-size: clamp(48px, 5vw, 72px);
-    line-height: 0.92;
-    margin: 18px 0 16px;
-    color: #f5f0e8;
-    font-weight: 700;
-}
-
-.section-heading p {
-    color: #d4c9b8;
-    max-width: 650px;
->>>>>>> Stashed changes
     margin: auto;
     line-height: 1.8;
     font-size: 18px;
@@ -1403,7 +1182,6 @@ img {
 }
 
 .section-label {
-<<<<<<< Updated upstream
     color: var(--vino);
 
     font-size: 12px;
@@ -1414,26 +1192,10 @@ img {
     background: rgba(245, 196, 0, 0.14);
     padding: 7px 13px;
     border-radius: 999px;
-=======
-    color: var(--amarillo);
-    font-size: 11px;
-    font-family: var(--font-alt);
-    letter-spacing: 2.2px;
-    font-weight: 900;
-    text-transform: uppercase;
-    background: linear-gradient(135deg, rgba(245,196,0,0.12), rgba(212,175,55,0.08));
-    display: inline-block;
-    padding: 9px 18px;
-    border-radius: 50px;
-    border: 1px solid rgba(245,196,0,0.25);
-    box-shadow: 0 6px 16px rgba(245,196,0,0.08);
->>>>>>> Stashed changes
 }
 
 
-/* =========================================
-   INSTITUCIÓN
-========================================= */
+/* INSTITUCIÃ“N */
 
 .institution {
     background:
@@ -1588,9 +1350,7 @@ img {
 }
 
 
-/* =========================================
-   CARRERAS
-========================================= */
+/* CARRERAS */
 
 .careers {
     background: white;
@@ -1696,7 +1456,7 @@ img {
     color: #66572c;
 
     border: 1px solid #eee5c9;
-    background-image: linear-gradient(135deg, rgba(255,253,248,0.91), rgba(255,253,248,0.63)), url("../img/Portada/Niños.jpg");
+    background-image: linear-gradient(135deg, rgba(255,253,248,0.91), rgba(255,253,248,0.63)), url("../img/Portada/NiÃ±os.jpg");
     background-size: cover;
     background-position: center top;
 }
@@ -1720,9 +1480,7 @@ img {
 }
 
 
-/* =========================================
-   SERVICIOS
-========================================= */
+/* SERVICIOS */
 
 .services {
     background: #0a0a0a;
@@ -1833,9 +1591,7 @@ img {
 }
 
 
-/* =========================================
-   PERSONAL
-========================================= */
+/* PERSONAL */
 
 .staff {
     background:
@@ -1853,18 +1609,12 @@ img {
 }
 
 .staff-card {
-<<<<<<< Updated upstream
     background: rgba(255, 255, 255, 0.96);
 
     border-radius: 22px;
 
     padding: 14px;
 
-=======
-    background: linear-gradient(135deg, #fffef9 0%, #f9f3ef 100%);
-    border-radius: 26px;
-    padding: 22px 24px;
->>>>>>> Stashed changes
     display: flex;
     align-items: center;
     gap: 18px;
@@ -1875,23 +1625,9 @@ img {
     transition: all 0.4s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-<<<<<<< Updated upstream
-    gap: 15px;
-    border: 1px solid rgba(143, 23, 53, 0.1);
-    box-shadow: 0 14px 30px rgba(48, 22, 24, 0.09);
-    transition: var(--transicion);
-}
-
 .staff-card:hover {
     transform: translateY(-6px);
     box-shadow: 0 20px 38px rgba(48, 22, 24, 0.15);
-=======
-.staff-card:hover {
-    transform: translateY(-4px);
-    box-shadow:
-        0 24px 52px rgba(143,23,53,0.1),
-        inset 0 1px 1px rgba(255,255,255,0.3);
->>>>>>> Stashed changes
 }
 
 .staff-photo {
@@ -1903,28 +1639,15 @@ img {
     overflow: hidden;
 }
 
-<<<<<<< Updated upstream
-    border-radius: 18px;
-
-    border: 3px solid rgba(245, 196, 0, 0.7);
-    overflow: hidden;
-    background: linear-gradient(135deg, var(--vino-dark), var(--vino));
-}
-
-=======
->>>>>>> Stashed changes
 .staff-photo img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-<<<<<<< Updated upstream
     transition: transform 0.45s ease;
 }
 
 .staff-card:hover .staff-photo img {
     transform: scale(1.06);
-=======
->>>>>>> Stashed changes
 }
 
 .staff-photo i {
@@ -1941,16 +1664,10 @@ img {
 
 .staff-info span {
     color: var(--vino);
-<<<<<<< Updated upstream
 
     font-size: 12px;
     font-weight: 800;
     letter-spacing: 0.08em;
-=======
-    font-size: 11px;
-    font-weight: 900;
-    letter-spacing: 1.2px;
->>>>>>> Stashed changes
     text-transform: uppercase;
 }
 
@@ -2010,12 +1727,8 @@ img {
 }
 
 .staff-total span {
-<<<<<<< Updated upstream
     color: rgba(255, 255, 255, 0.8);
 
-=======
-    color: #d4c9b8;
->>>>>>> Stashed changes
     font-size: 13px;
     letter-spacing: 0.2px;
 }
@@ -2024,7 +1737,6 @@ img {
     grid-column: 1 / -1;
     justify-self: start;
     margin-top: 8px;
-<<<<<<< Updated upstream
 
     background: linear-gradient(135deg, var(--amarillo), #dda900);
 
@@ -2032,11 +1744,6 @@ img {
 
     padding: 10px 16px;
 
-=======
-    background: linear-gradient(135deg, var(--amarillo), #e5a900);
-    color: #0a0a0a;
-    padding: 11px 18px;
->>>>>>> Stashed changes
     border-radius: 25px;
     font-size: 12px;
     font-weight: 800;
@@ -2044,9 +1751,7 @@ img {
 }
 
 
-/* =========================================
-   GALERÍA
-========================================= */
+/* GALERÃA */
 
 .gallery-section {
     background: var(--crema);
@@ -2112,9 +1817,7 @@ img {
 }
 
 
-/* =========================================
-   CTA
-========================================= */
+/* CTA */
 
 .cta {
     background:
@@ -2192,9 +1895,7 @@ img {
 }
 
 
-/* =========================================
-   FOOTER
-========================================= */
+/* FOOTER */
 
 .footer {
     background: #181c25;
@@ -2295,9 +1996,7 @@ img {
 }
 
 
-/* =========================================
-   RESPONSIVE TABLET
-========================================= */
+/* RESPONSIVE TABLET */
 
 @media (max-width: 1100px) {
 
@@ -2338,9 +2037,7 @@ img {
 }
 
 
-/* =========================================
-   RESPONSIVE MÓVIL
-========================================= */
+/* RESPONSIVE MÃ“VIL */
 
 @media (max-width: 800px) {
 
@@ -2462,9 +2159,7 @@ img {
 }
 
 
-/* =========================================
-   MÓVILES PEQUEÑOS
-========================================= */
+/* MÃ“VILES PEQUEÃ‘OS */
 
 @media (max-width: 500px) {
 
@@ -2530,9 +2225,7 @@ img {
     }
 }
 
-/* =========================================
-   PRESENTACIÓN FINAL DEL INDEX
-========================================= */
+/* PRESENTACIÃ“N FINAL DEL INDEX */
 
 .career-it {
     background-image: linear-gradient(135deg, rgba(231, 241, 255, 0.9), rgba(231, 241, 255, 0.6)), url("../img/Carreras/12vo info.jpeg");
@@ -2702,9 +2395,7 @@ h3,
         font-size: 25px;
     }
 }
-/* =========================================
-   ANIMACIONES
-========================================= */
+/* ANIMACIONES */
 
 .career-it,
 .career-accounting {
@@ -2741,9 +2432,7 @@ h3,
     transform: translateY(0);
 }
 
-/* =========================================
-   ACABADO INSTITUCIONAL
-========================================= */
+/* ACABADO INSTITUCIONAL */
 
 .top-bar-container,
 .nav-container,
@@ -2855,9 +2544,7 @@ h3,
     gap: 45px;
 }
 
-/* =========================================
-   PÁGINA DE TALLERES
-========================================= */
+/* PÃGINA DE TALLERES */
 
 .workshops-page {
     background: #fbfaf7;
@@ -3296,9 +2983,7 @@ h3,
     }
 }
 
-/* =========================================
-   ACABADO VISUAL INSTITUCIONAL
-========================================= */
+/* ACABADO VISUAL INSTITUCIONAL */
 
 :root {
     --sombra-elevada: 0 20px 55px rgba(51, 18, 30, 0.14);
@@ -3625,9 +3310,9 @@ h3,
 .photo-placeholder {
     border: none !important;
 }
-/* ===== MEJORAS VISUALES - PÁGINA DE HISTORIA ===== */
+/* ===== MEJORAS VISUALES - PÃGINA DE HISTORIA ===== */
 
-/* Tarjetas de texto (Fundación, Misión y visión) con más presencia */
+/* Tarjetas de texto (FundaciÃ³n, MisiÃ³n y visiÃ³n) con mÃ¡s presencia */
 .band-section {
     box-shadow: var(--sombra);
     border-left: 4px solid var(--amarillo);
@@ -3644,7 +3329,7 @@ h3,
     margin-bottom: 14px;
 }
 
-/* Timeline con más peso visual */
+/* Timeline con mÃ¡s peso visual */
 .timeline-item {
     box-shadow: var(--sombra);
     background: white;
@@ -3701,7 +3386,7 @@ h3,
     font-size: 18px;
 }
 
-/* Galería con efecto zoom al pasar el mouse */
+/* GalerÃ­a con efecto zoom al pasar el mouse */
 .photo-placeholder img {
     transition: transform 0.4s ease;
 }
@@ -3710,7 +3395,7 @@ h3,
     transform: scale(1.06);
 }
 
-/* Título principal con acento de color */
+/* TÃ­tulo principal con acento de color */
 .historia-encabezado h1 span,
 .historia-encabezado h1 {
     font-family: "Poppins", sans-serif;
@@ -3720,7 +3405,6 @@ h3,
     text-align: left;
 }
 
-<<<<<<< HEAD
 .historia-encabezado h1,
 .historia-encabezado h2,
 .historia-encabezado .section-heading h1,
@@ -3762,68 +3446,4 @@ h3,
     .history-gallery {
         min-height: 320px;
     }
-=======
-/* =========================================
-   ACABADO SOBRIO Y FOTOGRAFICO
-========================================= */
-
-.careers,
-.services,
-.gallery-section,
-.historia-encabezado {
-    background:
-        linear-gradient(rgba(255, 253, 248, 0.94), rgba(255, 253, 248, 0.94)),
-        url("../img/Institucion/Actividades.jpg") center / cover;
-}
-
-.section-heading h2,
-.institution-text h2,
-.historia-encabezado h1 {
-    color: #302621;
-    letter-spacing: -0.02em;
-}
-
-.section-heading p,
-.institution-text p,
-.career-card p,
-.service-card p {
-    color: #51463e;
-}
-
-.career-card,
-.service-card,
-.stat-card,
-.quick-access {
-    box-shadow: 0 16px 34px rgba(48, 22, 24, 0.1);
-    border: 1px solid rgba(143, 23, 53, 0.11);
-}
-
-.career-card,
-.service-card {
-    border-radius: 18px;
-}
-
-.timeline-item {
-    background:
-        linear-gradient(rgba(255, 253, 248, 0.92), rgba(255, 253, 248, 0.92)),
-        url("../img/Institucion/Actividades.jpg") center / cover;
-}
-
-.timeline-item p,
-.mini-card h3,
-.mini-card p,
-.person-item strong,
-.person-item span {
-    color: #443932;
-}
-
-.timeline-item span,
-.mini-card i {
-    color: var(--vino-dark);
-}
-
-.timeline-item span,
-.section-label {
-    letter-spacing: 0.08em;
->>>>>>> be3b316f0de4564c97e3e3d4a98dee0d8c6997a7
 }
