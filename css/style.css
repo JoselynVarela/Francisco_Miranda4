@@ -438,6 +438,7 @@ img {
 .service-trigger {
     display: block;
     text-align: center;
+    color: var(--blanco);
 }
 
 .service-card h3 {
