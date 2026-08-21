@@ -160,22 +160,22 @@ if (hero) {
     hero.style.backgroundPosition = "center";
 }
 
-const gallerySlides = Array.from(document.querySelectorAll(".gallery-slide"));
-const nextBtn = document.querySelector(".gallery-btn.next");
-const prevBtn = document.querySelector(".gallery-btn.prev");
-let currentSlide = 0;
+document.querySelectorAll(".gallery-slider").forEach(gallerySlider => {
+    const gallerySlides = Array.from(gallerySlider.querySelectorAll(".gallery-slide"));
+    const nextBtn = gallerySlider.querySelector(".gallery-btn.next");
+    const prevBtn = gallerySlider.querySelector(".gallery-btn.prev");
+    let currentSlide = 0;
 
-function showSlide(index) {
-    if (!gallerySlides.length) return;
+    function showSlide(index) {
+        if (!gallerySlides.length) return;
 
-    currentSlide = (index + gallerySlides.length) % gallerySlides.length;
+        currentSlide = (index + gallerySlides.length) % gallerySlides.length;
 
-    gallerySlides.forEach((slide, i) => {
-        slide.classList.toggle("active", i === currentSlide);
-    });
-}
+        gallerySlides.forEach((slide, i) => {
+            slide.classList.toggle("active", i === currentSlide);
+        });
+    }
 
-if (gallerySlides.length) {
     showSlide(0);
 
     if (nextBtn) {
@@ -186,8 +186,10 @@ if (gallerySlides.length) {
         prevBtn.addEventListener("click", () => showSlide(currentSlide - 1));
     }
 
-    setInterval(() => showSlide(currentSlide + 1), 4500);
-}
+    if (gallerySlides.length) {
+        setInterval(() => showSlide(currentSlide + 1), 4500);
+    }
+});
 
 /* =========================================
    MODAL BANDA LATINA
