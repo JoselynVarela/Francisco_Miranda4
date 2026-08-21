@@ -2082,6 +2082,132 @@ img {
     line-height: 1.7;
 }
 
+.workshops-carousel-section {
+    padding: 55px 5% 0;
+    background: #fbfaf7;
+}
+
+.workshops-carousel {
+    position: relative;
+    max-width: 1180px;
+    height: min(54vw, 560px);
+    min-height: 390px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 22px;
+    background: var(--vino-dark);
+    box-shadow: 0 18px 45px rgba(60, 30, 30, 0.16);
+}
+
+.workshops-slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.7s ease, visibility 0.7s ease;
+}
+
+.workshops-slide.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.workshops-slide::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, rgba(28, 12, 18, 0.82), rgba(28, 12, 18, 0.18) 65%, rgba(28, 12, 18, 0.08));
+}
+
+.workshops-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.workshops-slide-caption {
+    position: absolute;
+    z-index: 1;
+    left: clamp(28px, 6vw, 78px);
+    bottom: clamp(70px, 10vw, 105px);
+    max-width: 560px;
+    color: white;
+}
+
+.workshops-slide-caption span {
+    color: var(--amarillo);
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.workshops-slide-caption p {
+    margin-top: 14px;
+    font-family: "Poppins", sans-serif;
+    font-size: clamp(24px, 3.5vw, 42px);
+    line-height: 1.2;
+}
+
+.workshops-carousel-button {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    display: grid;
+    width: 44px;
+    height: 44px;
+    place-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.42);
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.12);
+    color: white;
+    cursor: pointer;
+    transform: translateY(-50%);
+    transition: var(--transicion);
+}
+
+.workshops-carousel-button:hover,
+.workshops-carousel-button:focus-visible {
+    background: var(--amarillo);
+    color: var(--vino-dark);
+    outline: none;
+}
+
+.workshops-carousel-prev {
+    left: 22px;
+}
+
+.workshops-carousel-next {
+    right: 22px;
+}
+
+.workshops-carousel-dots {
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    bottom: 26px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    gap: 9px;
+}
+
+.workshops-carousel-dots button {
+    width: 9px;
+    height: 9px;
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.52);
+    cursor: pointer;
+    transition: var(--transicion);
+}
+
+.workshops-carousel-dots button.active {
+    width: 28px;
+    border-radius: 10px;
+    background: var(--amarillo);
+}
+
 .workshops-content {
     padding: 80px 5% 110px;
 }
@@ -2202,6 +2328,17 @@ img {
     line-height: 1.75;
 }
 
+.workshop-motto {
+    margin: 20px 0 0;
+    padding-left: 15px;
+    border-left: 3px solid var(--amarillo);
+    color: var(--vino);
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.6;
+}
+
 .workshop-tags {
     display: flex;
     flex-wrap: wrap;
@@ -2225,6 +2362,33 @@ img {
 @media (max-width: 800px) {
     .workshops-hero {
         padding: 70px 7% 80px;
+    }
+
+    .workshops-carousel-section {
+        padding: 35px 7% 0;
+    }
+
+    .workshops-carousel {
+        height: 460px;
+        min-height: 0;
+    }
+
+    .workshops-slide::after {
+        background: linear-gradient(0deg, rgba(28, 12, 18, 0.82), rgba(28, 12, 18, 0.12) 72%);
+    }
+
+    .workshops-slide-caption {
+        right: 28px;
+        bottom: 70px;
+        left: 28px;
+    }
+
+    .workshops-carousel-prev {
+        left: 14px;
+    }
+
+    .workshops-carousel-next {
+        right: 14px;
     }
 
     .workshops-content {
