@@ -43,6 +43,7 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
@@ -425,7 +426,7 @@ img {
 }
 
 .career-accounting {
-    background-image: linear-gradient(135deg, rgba(255,253,248,0.91), rgba(255,253,248,0.63)), url("../img/Portada/NiÃ±os.jpg");
+    background-image: linear-gradient(135deg, rgba(255,253,248,0.91), rgba(255,253,248,0.63)), url("../img/Carreras/12vo finanzas.jpeg");
     background-position: center top;
 }
 
@@ -1456,7 +1457,7 @@ img {
     color: #66572c;
 
     border: 1px solid #eee5c9;
-    background-image: linear-gradient(135deg, rgba(255,253,248,0.91), rgba(255,253,248,0.63)), url("../img/Portada/NiÃ±os.jpg");
+    background-image: linear-gradient(135deg, rgba(255,253,248,0.91), rgba(255,253,248,0.63)), url("../img/Carreras/12vo finanzas.jpeg");
     background-size: cover;
     background-position: center top;
 }
@@ -1999,6 +2000,15 @@ img {
 /* RESPONSIVE TABLET */
 
 @media (max-width: 1100px) {
+
+    .nav-menu,
+    .btn-header {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
 
     .nav-menu {
         gap: 15px;
@@ -3403,6 +3413,127 @@ h3,
 
 .historia-encabezado .section-heading {
     text-align: left;
+}
+
+/* PALETA INSTITUCIONAL OCRE Y AMARILLA */
+
+:root {
+    --vino: #8a5a12;
+    --vino-dark: #62400d;
+    --amarillo: #d6a928;
+    --amarillo-light: #fff4c7;
+    --azul: #b88720;
+    --azul-dark: #62400d;
+    --verde: #9b7820;
+    --verde-dark: #62400d;
+    --crema: #fffdf7;
+    --gris-texto: #665c4d;
+    --negro: #302a21;
+    --sombra: 0 14px 32px rgba(98, 64, 13, 0.12);
+}
+
+body {
+    background: #fffdf7;
+    color: var(--negro);
+}
+
+.top-bar {
+    background: linear-gradient(100deg, #62400d, #a87918, #d6a928);
+    color: #fffaf0;
+}
+
+.header {
+    background: rgba(255, 253, 247, 0.97);
+    border-bottom-color: rgba(138, 90, 18, 0.18);
+}
+
+.logo-placeholder,
+.footer-logo {
+    border-color: #d6a928;
+    box-shadow: 0 8px 20px rgba(98, 64, 13, 0.16);
+}
+
+.logo-text span,
+.nav-link:hover,
+.nav-link.active,
+.section-label,
+.career-card a,
+.service-card a,
+.staff-info span {
+    color: #8a5a12;
+}
+
+.nav-link::after,
+.btn-header,
+.btn-secondary,
+.stat-icon,
+.staff-total-icon,
+.gallery-indicator.active {
+    background: #d6a928;
+}
+
+.hero::before {
+    background: linear-gradient(90deg, rgba(54, 35, 9, 0.87), rgba(138, 90, 18, 0.68), rgba(214, 169, 40, 0.22));
+}
+
+.hero h1 span,
+.hero .section-tag,
+.cta span {
+    color: #ffe28a;
+}
+
+.btn-primary,
+.quick-button,
+.service-card button,
+.service-trigger,
+.band-trigger,
+.staff-total a {
+    background: #8a5a12;
+}
+
+.institution,
+.services,
+.staff-directory,
+.gallery-section {
+    background: #fffdf7;
+}
+
+.quick-access,
+.band-highlight-card,
+.staff-total {
+    background: linear-gradient(135deg, #fff4c7, #fffdf7);
+    border-color: rgba(214, 169, 40, 0.35);
+}
+
+.career-it,
+.career-accounting,
+.career-agro {
+    border-color: rgba(138, 90, 18, 0.18);
+}
+
+.career-it .career-icon,
+.career-accounting .career-icon,
+.career-agro .career-icon {
+    background: #b88720;
+    color: white;
+}
+
+.timeline-item,
+.mini-card,
+.staff-card,
+.service-card {
+    border-color: rgba(138, 90, 18, 0.12);
+    box-shadow: 0 14px 32px rgba(98, 64, 13, 0.1);
+}
+
+.footer {
+    background: #62400d;
+}
+
+.footer-brand span,
+.footer-column span i,
+.footer-column a:hover {
+    color: #ffe28a;
 }
 
 .historia-encabezado h1,
