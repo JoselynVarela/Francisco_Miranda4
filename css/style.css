@@ -436,10 +436,8 @@ img {
 }
 
 .service-trigger {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
+    display: block;
+    text-align: center;
 }
 
 .service-card h3 {
