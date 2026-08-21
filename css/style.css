@@ -2321,10 +2321,37 @@ img {
     font-size: clamp(24px, 3vw, 34px);
 }
 
+.workshop-copy h4 {
+    margin: 24px 0 9px;
+    color: var(--vino-dark);
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
 .workshop-copy p {
     max-width: 560px;
     color: var(--gris-texto);
     line-height: 1.75;
+}
+
+.workshop-offer {
+    display: grid;
+    gap: 10px;
+    max-width: 590px;
+    padding-left: 20px;
+    color: var(--gris-texto);
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.workshop-offer li::marker {
+    color: var(--amarillo);
+}
+
+.workshop-offer strong {
+    color: var(--vino-dark);
 }
 
 .workshop-motto {
