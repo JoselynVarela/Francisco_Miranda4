@@ -1,3 +1,20 @@
+const decodeMojibake = value => value
+    .replaceAll("\u00c3\u00a1", "\u00e1")
+    .replaceAll("\u00c3\u00a9", "\u00e9")
+    .replaceAll("\u00c3\u00ad", "\u00ed")
+    .replaceAll("\u00c3\u00b3", "\u00f3")
+    .replaceAll("\u00c3\u00ba", "\u00fa")
+    .replaceAll("\u00c3\u00b1", "\u00f1")
+    .replaceAll("\u00c2\u00bf", "\u00bf")
+    .replaceAll("\u00c2\u00a1", "\u00a1");
+
+document.title = decodeMojibake(document.title);
+document.querySelectorAll("body *").forEach(element => {
+    element.childNodes.forEach(node => {
+        if (node.nodeType === Node.TEXT_NODE) node.nodeValue = decodeMojibake(node.nodeValue);
+    });
+});
+
 const personal = docentes.map((persona, index) => {
     const slug = persona.nombre
         .normalize("NFD")
