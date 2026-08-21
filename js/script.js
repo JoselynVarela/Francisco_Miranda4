@@ -158,6 +158,7 @@ if (hero) {
     hero.style.setProperty("--hero-image", "url('../img/Portada/Foto de portada.jpg')");
 }
 
+<<<<<<< HEAD
 document.querySelectorAll(".gallery-slider").forEach(slider => {
     const slides = Array.from(slider.querySelectorAll(".gallery-slide"));
     const nextBtn = slider.querySelector(".gallery-btn.next");
@@ -197,6 +198,21 @@ document.querySelectorAll(".gallery-slider").forEach(slider => {
             indicator.setAttribute("aria-label", `Ver imagen ${index + 1}`);
             indicator.addEventListener("click", () => showSlide(index));
             indicators.appendChild(indicator);
+=======
+document.querySelectorAll(".gallery-slider").forEach(gallerySlider => {
+    const gallerySlides = Array.from(gallerySlider.querySelectorAll(".gallery-slide"));
+    const nextBtn = gallerySlider.querySelector(".gallery-btn.next");
+    const prevBtn = gallerySlider.querySelector(".gallery-btn.prev");
+    let currentSlide = 0;
+
+    function showSlide(index) {
+        if (!gallerySlides.length) return;
+
+        currentSlide = (index + gallerySlides.length) % gallerySlides.length;
+
+        gallerySlides.forEach((slide, i) => {
+            slide.classList.toggle("active", i === currentSlide);
+>>>>>>> be3b316f0de4564c97e3e3d4a98dee0d8c6997a7
         });
     }
 
@@ -210,6 +226,7 @@ document.querySelectorAll(".gallery-slider").forEach(slider => {
         touchStartX = event.changedTouches[0].clientX;
     }, { passive: true });
 
+<<<<<<< HEAD
     slider.addEventListener("touchend", event => {
         const distance = event.changedTouches[0].clientX - touchStartX;
         if (Math.abs(distance) > 45) showSlide(currentSlide + (distance < 0 ? 1 : -1));
@@ -222,6 +239,11 @@ document.querySelectorAll(".gallery-slider").forEach(slider => {
     slider.addEventListener("mouseenter", () => clearInterval(autoplay));
     slider.addEventListener("mouseleave", startAutoplay);
     startAutoplay();
+=======
+    if (gallerySlides.length) {
+        setInterval(() => showSlide(currentSlide + 1), 4500);
+    }
+>>>>>>> be3b316f0de4564c97e3e3d4a98dee0d8c6997a7
 });
 
 /* =========================================
