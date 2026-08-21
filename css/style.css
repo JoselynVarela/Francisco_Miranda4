@@ -46,10 +46,11 @@ html {
 }
 
 body {
-    font-family: "Nunito", sans-serif;
-    background: var(--crema);
-    color: var(--negro);
+    font-family: var(--font-body, "Manrope", sans-serif);
+    background: #f3eee5;
+    color: #29231f;
     overflow-x: hidden;
+    line-height: 1.65;
 }
 
 a {
@@ -72,8 +73,8 @@ img {
 ========================================= */
 
 .top-bar {
-    background: var(--vino);
-    color: rgb(255, 250, 250);
+    background: var(--vino-dark);
+    color: #f8eaca;
     font-size: 13px;
 }
 
@@ -119,9 +120,10 @@ img {
     position: sticky;
     top: 0;
     z-index: 1000;
-    background: rgba(255, 255, 255, 0.96);
-    backdrop-filter: blur(12px);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+    background: rgba(255, 253, 248, 0.96);
+    backdrop-filter: blur(14px);
+    border-bottom: 1px solid rgba(143, 23, 53, 0.14);
+    box-shadow: 0 8px 24px rgba(48, 22, 24, 0.06);
 }
 
 .nav-container {
@@ -167,6 +169,25 @@ img {
     box-shadow: 0 6px 15px rgba(245, 196, 0, 0.25);
 }
 
+.logo-image,
+.footer-logo-image {
+    width: 58px;
+    height: 58px;
+    flex-shrink: 0;
+    overflow: hidden;
+    border-radius: 14px;
+    border: 2px solid rgba(245, 196, 0, 0.65);
+    background: var(--amarillo-light);
+    box-shadow: 0 8px 20px rgba(100, 16, 39, 0.16);
+}
+
+.logo-image img,
+.footer-logo-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .logo-text {
     display: flex;
     flex-direction: column;
@@ -193,7 +214,9 @@ img {
 
 .nav-link {
     font-size: 14px;
-    font-weight: 700;
+    font-weight: 800;
+    color: #3b302b;
+    letter-spacing: 0.01em;
     position: relative;
     padding: 8px 0;
 }
@@ -710,7 +733,7 @@ img {
 ========================================= */
 
 .hero {
-    min-height: 570px;
+    min-height: 620px;
 
     position: relative;
 
@@ -718,12 +741,8 @@ img {
     align-items: center;
 
     background:
-        linear-gradient(
-            90deg,
-            rgba(255,255,255,0.98) 0%,
-            rgba(255,255,255,0.88) 42%,
-            rgba(255,255,255,0.15) 100%
-        );
+        linear-gradient(90deg, rgba(255,253,248,0.98) 0%, rgba(255,253,248,0.91) 38%, rgba(255,253,248,0.28) 100%),
+        url("../img/Institucion/Actividades.jpg") center / cover;
 
     overflow: hidden;
 }
@@ -739,12 +758,7 @@ img {
     width: 62%;
     height: 100%;
 
-    background:
-        linear-gradient(
-            90deg,
-            var(--crema),
-            transparent 35%
-        );
+    background: linear-gradient(90deg, rgba(255,253,248,0.9), transparent 42%);
 
     z-index: 1;
 }
@@ -753,12 +767,8 @@ img {
     position: absolute;
     inset: 0;
 
-    background:
-        linear-gradient(
-            135deg,
-            rgba(245,196,0,0.08),
-            transparent 50%
-        );
+    background: linear-gradient(135deg, rgba(245,196,0,0.12), transparent 48%);
+    z-index: 1;
 }
 
 .hero-container {
@@ -775,27 +785,33 @@ img {
 
 .hero-content {
     max-width: 620px;
+    position: relative;
+    z-index: 2;
 }
 
 .section-tag {
     display: inline-block;
 
-    color: var(--vino);
+    color: var(--vino-dark);
 
     font-size: 13px;
     font-weight: 800;
 
     letter-spacing: 1.5px;
 
-    margin-bottom: 18px;
+    margin-bottom: 22px;
+    padding: 8px 14px;
+    border-left: 4px solid var(--amarillo);
+    background: rgba(245, 196, 0, 0.13);
 }
 
 .hero h1 {
-    font-family: "Poppins", sans-serif;
+    font-family: var(--font-display, "Cormorant Garamond", Georgia, serif);
 
     font-size: clamp(40px, 5vw, 68px);
 
-    line-height: 1.08;
+    line-height: 0.98;
+    letter-spacing: -0.025em;
 
     margin-bottom: 22px;
 }
@@ -807,7 +823,7 @@ img {
 .hero p {
     max-width: 530px;
 
-    color: var(--gris-texto);
+    color: #4d413a;
 
     font-size: 17px;
     line-height: 1.7;
@@ -962,7 +978,9 @@ img {
 ========================================= */
 
 .section {
-    padding: 100px 0;
+    padding: 112px 0;
+    position: relative;
+    overflow: hidden;
 }
 
 .section-container {
@@ -976,15 +994,17 @@ img {
 }
 
 .section-heading h2 {
-    font-family: "Poppins", sans-serif;
+    font-family: var(--font-display, "Cormorant Garamond", Georgia, serif);
 
     font-size: clamp(30px, 4vw, 42px);
 
-    margin: 10px 0;
+    margin: 12px 0 16px;
+    color: var(--vino-dark);
+    line-height: 1;
 }
 
 .section-heading p {
-    color: var(--gris-texto);
+    color: #5b5049;
 
     max-width: 600px;
 
@@ -1001,6 +1021,9 @@ img {
     letter-spacing: 1.5px;
 
     font-weight: 800;
+    background: rgba(245, 196, 0, 0.14);
+    padding: 7px 13px;
+    border-radius: 999px;
 }
 
 
@@ -1009,7 +1032,9 @@ img {
 ========================================= */
 
 .institution {
-    background: var(--crema);
+    background:
+        linear-gradient(rgba(255,253,248,0.94), rgba(255,253,248,0.94)),
+        url("../img/Institucion/Alumnado.jpg") center / cover;
 }
 
 .institution .section-container {
@@ -1385,7 +1410,9 @@ img {
 ========================================= */
 
 .staff {
-    background: white;
+    background:
+        linear-gradient(rgba(255, 253, 248, 0.95), rgba(255, 253, 248, 0.95)),
+        url("../img/Institucion/Actividades.jpg") center / cover;
 }
 
 .staff-preview {
@@ -1398,17 +1425,25 @@ img {
 }
 
 .staff-card {
-    background: #faf8f3;
+    background: rgba(255, 255, 255, 0.96);
 
     border-radius: 22px;
 
-    padding: 18px;
+    padding: 14px;
 
     display: flex;
 
     align-items: center;
 
     gap: 15px;
+    border: 1px solid rgba(143, 23, 53, 0.1);
+    box-shadow: 0 14px 30px rgba(48, 22, 24, 0.09);
+    transition: var(--transicion);
+}
+
+.staff-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 38px rgba(48, 22, 24, 0.15);
 }
 
 .staff-photo {
@@ -1419,7 +1454,20 @@ img {
 
     border-radius: 18px;
 
-    border: none;
+    border: 3px solid rgba(245, 196, 0, 0.7);
+    overflow: hidden;
+    background: linear-gradient(135deg, var(--vino-dark), var(--vino));
+}
+
+.staff-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.45s ease;
+}
+
+.staff-card:hover .staff-photo img {
+    transform: scale(1.06);
 }
 
 .staff-photo i {
@@ -1431,6 +1479,8 @@ img {
 
     font-size: 12px;
     font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
 }
 
 .staff-info h3 {
@@ -1441,11 +1491,8 @@ img {
 
 .staff-total {
     background:
-        linear-gradient(
-            135deg,
-            var(--amarillo-light),
-            #fff
-        );
+        linear-gradient(135deg, rgba(100, 16, 39, 0.96), rgba(143, 23, 53, 0.94)),
+        url("../img/Institucion/Alumnado.jpg") center / cover;
 
     border-radius: 22px;
 
@@ -1458,6 +1505,8 @@ img {
     align-items: center;
 
     gap: 5px 15px;
+    color: white;
+    box-shadow: 0 16px 34px rgba(100, 16, 39, 0.2);
 }
 
 .staff-total-icon {
@@ -1483,11 +1532,11 @@ img {
 
     font-size: 32px;
 
-    color: var(--vino);
+    color: var(--amarillo);
 }
 
 .staff-total span {
-    color: var(--gris-texto);
+    color: rgba(255, 255, 255, 0.8);
 
     font-size: 13px;
 }
@@ -1499,9 +1548,9 @@ img {
 
     margin-top: 8px;
 
-    background: var(--vino);
+    background: linear-gradient(135deg, var(--amarillo), #dda900);
 
-    color: white;
+    color: var(--vino-dark);
 
     padding: 10px 16px;
 
@@ -2002,6 +2051,110 @@ img {
     opacity: 1;
     transform: translateY(0);
 }
+
+/* =========================================
+   ACABADO INSTITUCIONAL
+========================================= */
+
+.top-bar-container,
+.nav-container,
+.hero-container,
+.stats-container,
+.section-container,
+.footer-container {
+    width: min(1320px, 90%);
+}
+
+.nav-container {
+    min-height: 82px;
+}
+
+.nav-link {
+    transition: color 0.25s ease, transform 0.25s ease;
+}
+
+.nav-link:hover {
+    color: var(--vino);
+    transform: translateY(-1px);
+}
+
+.btn,
+.btn-header,
+.service-card button,
+.service-trigger,
+.band-trigger,
+.staff-total a {
+    box-shadow: 0 10px 22px rgba(100, 16, 39, 0.16);
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, var(--vino-dark), var(--vino));
+}
+
+.btn-secondary,
+.btn-header {
+    background: linear-gradient(135deg, #f5c400, #dca900);
+}
+
+.stats-section {
+    margin-top: -34px;
+}
+
+.stat-card {
+    min-height: 118px;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.97);
+    border-top: 3px solid var(--amarillo);
+}
+
+.stat-card strong {
+    line-height: 1.1;
+}
+
+.career-card,
+.service-card,
+.staff-card,
+.staff-person-card,
+.quick-access {
+    border-radius: 18px;
+    box-shadow: 0 16px 34px rgba(48, 22, 24, 0.1);
+}
+
+.career-card:hover,
+.service-card:hover,
+.staff-card:hover,
+.staff-person-card:hover {
+    transform: translateY(-7px);
+}
+
+.career-card h3,
+.service-card h3,
+.staff-card h3,
+.staff-person-card h3 {
+    line-height: 1.08;
+    letter-spacing: -0.015em;
+}
+
+.gallery-slider,
+.photo-placeholder,
+.gallery-small {
+    box-shadow: 0 18px 38px rgba(48, 22, 24, 0.14);
+}
+
+.footer {
+    background: linear-gradient(135deg, #4d0d22, #641027 58%, #3d0b1c);
+    border-top: 4px solid var(--amarillo);
+}
+
+.footer-brand strong {
+    color: #fff8e8;
+}
+
+.footer-brand span,
+.footer-column a:hover,
+.footer-column span i {
+    color: var(--amarillo);
+}
 .historia-encabezado {
     background: var(--crema);
 }
@@ -2158,4 +2311,68 @@ img {
 
 .historia-encabezado .section-heading {
     text-align: left;
+}
+
+/* =========================================
+   ACABADO SOBRIO Y FOTOGRAFICO
+========================================= */
+
+.careers,
+.services,
+.gallery-section,
+.historia-encabezado {
+    background:
+        linear-gradient(rgba(255, 253, 248, 0.94), rgba(255, 253, 248, 0.94)),
+        url("../img/Institucion/Actividades.jpg") center / cover;
+}
+
+.section-heading h2,
+.institution-text h2,
+.historia-encabezado h1 {
+    color: #302621;
+    letter-spacing: -0.02em;
+}
+
+.section-heading p,
+.institution-text p,
+.career-card p,
+.service-card p {
+    color: #51463e;
+}
+
+.career-card,
+.service-card,
+.stat-card,
+.quick-access {
+    box-shadow: 0 16px 34px rgba(48, 22, 24, 0.1);
+    border: 1px solid rgba(143, 23, 53, 0.11);
+}
+
+.career-card,
+.service-card {
+    border-radius: 18px;
+}
+
+.timeline-item {
+    background:
+        linear-gradient(rgba(255, 253, 248, 0.92), rgba(255, 253, 248, 0.92)),
+        url("../img/Institucion/Actividades.jpg") center / cover;
+}
+
+.timeline-item p,
+.mini-card h3,
+.mini-card p,
+.person-item strong,
+.person-item span {
+    color: #443932;
+}
+
+.timeline-item span,
+.mini-card i {
+    color: var(--vino-dark);
+}
+
+.timeline-item span,
+.section-label {
+    letter-spacing: 0.08em;
 }
