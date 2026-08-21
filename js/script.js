@@ -142,7 +142,7 @@ if (statsSection) {
 /* ANIMACIONES AL HACER SCROLL */
 
 const animatedElements = document.querySelectorAll(
-    ".career-card, .service-card, .staff-card, .stat-card"
+    ".career-card, .service-card, .identity-card, .staff-card, .stat-card"
 );
 
 const animationObserver = new IntersectionObserver(
