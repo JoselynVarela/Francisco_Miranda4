@@ -10,7 +10,7 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&family=Nunito:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
     <!-- Iconos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
@@ -64,7 +64,7 @@
 
             <a href="index.html" class="logo">
                 <div class="logo-placeholder">
-                    FM
+                    <img src="img/Portada/Logo.jpg" alt="Escudo del Instituto Francisco Miranda">
                 </div>
 
                 <div class="logo-text">
@@ -148,6 +148,7 @@
 
         <section class="hero" id="inicio">
 
+            <div class="hero-background" aria-hidden="true"></div>
             <div class="hero-overlay"></div>
 
             <div class="hero-container">
@@ -292,7 +293,7 @@
                     </h2>
 
                     <p>
-                        El Instituto Humanal Técnico Francisco Miranda
+                        El Instituto Gubernamental Técnico Francisco Miranda
                         trabaja para brindar una educación integral,
                         formando estudiantes con conocimientos,
                         valores, disciplina y compromiso.
@@ -317,6 +318,10 @@
                     <div class="gallery-slider" aria-live="polite">
 
                         <div class="gallery-slide active">
+                            <img src="img/Portada/Foto de portada.jpg" alt="Autoridades del Instituto Francisco Miranda">
+                        </div>
+
+                        <div class="gallery-slide">
                             <img src="img/Institucion/Actividades.jpg" alt="Fachada del instituto">
                         </div>
 
@@ -331,6 +336,28 @@
                         <div class="gallery-slide">
                             <img src="img/Institucion/Acctos Civicos.jpg" alt="Desfile institucional 2025">
                         </div>
+
+                        <div class="gallery-slide">
+                            <img src="img/Institucion/Infraestructura/Fachada Principal.jpg" alt="Fachada principal del instituto">
+                        </div>
+
+                        <div class="gallery-slide">
+                            <img src="img/Institucion/Infraestructura/Casetas.jpg" alt="Casetas del instituto">
+                        </div>
+
+                        <div class="gallery-slide">
+                            <img src="img/Institucion/Infraestructura/Cancha Deportiva.jpg" alt="Cancha deportiva">
+                        </div>
+
+                        <div class="gallery-slide">
+                            <img src="img/Institucion/Infraestructura/Quioscos.jpg" alt="Quioscos del instituto">
+                        </div>
+
+                        <div class="gallery-slide">
+                            <img src="img/Institucion/Infraestructura/Talleres.jpg" alt="Talleres del instituto">
+                        </div>
+
+                        <div class="gallery-indicators" aria-label="Indicadores de galería"></div>
 
                         <div class="gallery-controls">
                             <button class="gallery-btn prev" type="button" aria-label="Anterior">
@@ -643,7 +670,7 @@
                     <article class="staff-card">
 
                         <div class="staff-photo image-placeholder">
-                            <i class="fa-solid fa-user"></i>
+                            <img src="img/Juan Carlos Herrera.jpg" alt="Juan Carlos Herrera, director">
                         </div>
 
                         <div class="staff-info">
@@ -657,7 +684,7 @@
                     <article class="staff-card">
 
                         <div class="staff-photo image-placeholder">
-                            <i class="fa-solid fa-user"></i>
+                            <img src="img/Juan Izaguirre.png" alt="Juan Izaguirre, subdirector">
                         </div>
 
                         <div class="staff-info">
@@ -699,25 +726,53 @@
              GALERÍA
         ================================= -->
 
-        <section id="galeria">
-    <div class="photo-grid">
-        <div class="photo-placeholder large">
-            <img src="img/Institucion/Infraestructura/Fachada Principal.jpg" alt="Fachada Principal" style="width: 100%; height: 100%; object-fit: cover;">
-        </div>
-        <div class="photo-placeholder">
-            <img src="img/Institucion/Infraestructura/Casetas.jpg" alt="Casetas" style="width: 100%; height: 100%; object-fit: cover;">
-        </div>
-        <div class="photo-placeholder">
-            <img src="img/Institucion/Infraestructura/Cancha Deportiva.jpg" alt="Cancha Deportiva" style="width: 100%; height: 100%; object-fit: cover;">
-        </div>
-        <div class="photo-placeholder">
-            <img src="img/Institucion/Infraestructura/Quioscos.jpg" alt="Quioscos" style="width: 100%; height: 100%; object-fit: cover;">
-        </div>
-        <div class="photo-placeholder">
-            <img src="img/Institucion/Infraestructura/Talleres.jpg" alt="Talleres" style="width: 100%; height: 100%; object-fit: cover;">
-        </div>
-    </div>
-</section>
+        <section class="gallery-section section" id="galeria">
+            <div class="section-container">
+                <div class="section-heading">
+                    <span class="section-label">
+                        <i class="fa-regular fa-images"></i>
+                        GALERÍA INSTITUCIONAL
+                    </span>
+                    <h2>Espacios y momentos que compartimos</h2>
+                    <p>Conoce nuestra comunidad, instalaciones y actividades.</p>
+                </div>
+                <div class="gallery-showcase">
+                    <div class="gallery-slider showcase-slider" aria-live="polite">
+                        <div class="gallery-slide active">
+                            <img src="img/Institucion/Infraestructura/Fachada Principal.jpg" alt="Fachada principal del instituto">
+                        </div>
+                        <div class="gallery-slide">
+                            <img src="img/Institucion/Infraestructura/Casetas.jpg" alt="Casetas del instituto">
+                        </div>
+                        <div class="gallery-slide">
+                            <img src="img/Institucion/Infraestructura/Cancha Deportiva.jpg" alt="Cancha deportiva">
+                        </div>
+                        <div class="gallery-slide">
+                            <img src="img/Institucion/Infraestructura/Quioscos.jpg" alt="Quioscos del instituto">
+                        </div>
+                        <div class="gallery-slide">
+                            <img src="img/Institucion/Infraestructura/Talleres.jpg" alt="Talleres del instituto">
+                        </div>
+                        <div class="gallery-slide">
+                            <img src="img/Institucion/Alumnado.jpg" alt="Comunidad estudiantil">
+                        </div>
+                        <div class="gallery-slide">
+                            <img src="img/Institucion/Desfile 2025.jpg" alt="Desfile institucional 2025">
+                        </div>
+                        <div class="gallery-controls">
+                            <button class="gallery-btn prev" type="button" aria-label="Imagen anterior">
+                                <i class="fa-solid fa-chevron-left"></i>
+                            </button>
+                            <button class="gallery-btn next" type="button" aria-label="Imagen siguiente">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </button>
+                        </div>
+                        <div class="gallery-indicators" aria-label="Indicadores de espacios y momentos"></div>
+                        <p class="gallery-caption" aria-live="polite">Fachada principal del instituto</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
         <!-- ================================
@@ -765,11 +820,11 @@
             <div class="footer-brand">
 
                 <div class="footer-logo">
-                    FM
+                    <img src="img/Portada/Logo.jpg" alt="Escudo del Instituto Francisco Miranda">
                 </div>
 
                 <div>
-                    <strong>Instituto Humanal Técnico</strong>
+                    <strong>Instituto Gubernamental Técnico</strong>
                     <span>Francisco Miranda</span>
                 </div>
 

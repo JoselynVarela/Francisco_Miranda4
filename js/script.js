@@ -155,39 +155,74 @@ animatedElements.forEach(element => {
 const hero = document.querySelector(".hero");
 
 if (hero) {
-    hero.style.backgroundImage = "linear-gradient(90deg, rgba(255,255,255,0.98) 0%, rgba(255,255,255,0.88) 42%, rgba(255,255,255,0.15) 100%), url('img/Portada/Foto de portada.jpg')";
-    hero.style.backgroundSize = "cover";
-    hero.style.backgroundPosition = "center";
+    hero.style.setProperty("--hero-image", "url('../img/Portada/Foto de portada.jpg')");
 }
 
-const gallerySlides = Array.from(document.querySelectorAll(".gallery-slide"));
-const nextBtn = document.querySelector(".gallery-btn.next");
-const prevBtn = document.querySelector(".gallery-btn.prev");
-let currentSlide = 0;
+document.querySelectorAll(".gallery-slider").forEach(slider => {
+    const slides = Array.from(slider.querySelectorAll(".gallery-slide"));
+    const nextBtn = slider.querySelector(".gallery-btn.next");
+    const prevBtn = slider.querySelector(".gallery-btn.prev");
+    const indicators = slider.querySelector(".gallery-indicators");
+    const caption = slider.querySelector(".gallery-caption");
+    let currentSlide = 0;
+    let autoplay;
 
-function showSlide(index) {
-    if (!gallerySlides.length) return;
+    if (!slides.length) return;
 
-    currentSlide = (index + gallerySlides.length) % gallerySlides.length;
+    const showSlide = index => {
+        currentSlide = (index + slides.length) % slides.length;
 
-    gallerySlides.forEach((slide, i) => {
-        slide.classList.toggle("active", i === currentSlide);
-    });
-}
+        slides.forEach((slide, slideIndex) => {
+            slide.classList.toggle("active", slideIndex === currentSlide);
+        });
 
-if (gallerySlides.length) {
+        if (indicators) {
+            indicators.querySelectorAll(".gallery-indicator").forEach((indicator, indicatorIndex) => {
+                indicator.classList.toggle("active", indicatorIndex === currentSlide);
+                indicator.setAttribute("aria-current", indicatorIndex === currentSlide ? "true" : "false");
+            });
+        }
+
+        if (caption) {
+            const image = slides[currentSlide].querySelector("img");
+            caption.textContent = image ? image.alt : "Galería institucional";
+        }
+    };
+
+    if (indicators) {
+        slides.forEach((slide, index) => {
+            const indicator = document.createElement("button");
+            indicator.type = "button";
+            indicator.className = "gallery-indicator";
+            indicator.setAttribute("aria-label", `Ver imagen ${index + 1}`);
+            indicator.addEventListener("click", () => showSlide(index));
+            indicators.appendChild(indicator);
+        });
+    }
+
     showSlide(0);
 
-    if (nextBtn) {
-        nextBtn.addEventListener("click", () => showSlide(currentSlide + 1));
-    }
+    nextBtn?.addEventListener("click", () => showSlide(currentSlide + 1));
+    prevBtn?.addEventListener("click", () => showSlide(currentSlide - 1));
 
-    if (prevBtn) {
-        prevBtn.addEventListener("click", () => showSlide(currentSlide - 1));
-    }
+    let touchStartX = 0;
+    slider.addEventListener("touchstart", event => {
+        touchStartX = event.changedTouches[0].clientX;
+    }, { passive: true });
 
-    setInterval(() => showSlide(currentSlide + 1), 4500);
-}
+    slider.addEventListener("touchend", event => {
+        const distance = event.changedTouches[0].clientX - touchStartX;
+        if (Math.abs(distance) > 45) showSlide(currentSlide + (distance < 0 ? 1 : -1));
+    }, { passive: true });
+
+    const startAutoplay = () => {
+        autoplay = setInterval(() => showSlide(currentSlide + 1), 4500);
+    };
+
+    slider.addEventListener("mouseenter", () => clearInterval(autoplay));
+    slider.addEventListener("mouseleave", startAutoplay);
+    startAutoplay();
+});
 
 /* =========================================
    MODAL BANDA LATINA
