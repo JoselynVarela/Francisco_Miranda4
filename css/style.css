@@ -435,7 +435,8 @@ img {
     box-shadow: var(--sombra);
 }
 
-.service-trigger {
+.service-trigger,
+.band-trigger {
     display: block;
     text-align: center;
     color: var(--blanco);
