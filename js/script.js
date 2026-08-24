@@ -262,3 +262,26 @@ if (bandModal && bandTrigger) {
         if (event.key === "Escape" && bandModal.classList.contains("active")) toggleModal();
     });
 }
+
+const sportsModal = document.getElementById("sportsModal");
+const sportsTrigger = document.querySelector(".service-sports .service-trigger");
+const sportsClose = document.querySelector(".sports-modal-close");
+
+if (sportsModal && sportsTrigger) {
+    const setSportsModal = isOpen => {
+        sportsModal.classList.toggle("active", isOpen);
+        sportsModal.setAttribute("aria-hidden", String(!isOpen));
+        sportsTrigger.setAttribute("aria-expanded", String(isOpen));
+        document.body.style.overflow = isOpen ? "hidden" : "";
+        if (isOpen) sportsClose?.focus();
+    };
+
+    sportsTrigger.addEventListener("click", () => setSportsModal(true));
+    sportsClose?.addEventListener("click", () => setSportsModal(false));
+    sportsModal.addEventListener("click", event => {
+        if (event.target === sportsModal) setSportsModal(false);
+    });
+    document.addEventListener("keydown", event => {
+        if (event.key === "Escape" && sportsModal.classList.contains("active")) setSportsModal(false);
+    });
+}
