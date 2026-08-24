@@ -3536,6 +3536,10 @@ body {
     color: #ffe28a;
 }
 
+.service-card .service-trigger {
+    color: #ffffff;
+}
+
 .historia-encabezado h1,
 .historia-encabezado h2,
 .historia-encabezado .section-heading h1,
