@@ -584,8 +584,8 @@
                             y desarrollo deportivo.
                         </p>
 
-                        <button class="service-trigger" type="button">
-                            Conocer mas
+                        <button class="service-trigger" type="button" aria-controls="sportsModal" aria-expanded="false">
+                            Conocer m&aacute;s
                         </button>
 
                     </article>
@@ -877,6 +877,88 @@
 
 
     </main>
+
+    <div class="sports-modal" id="sportsModal" aria-hidden="true">
+        <div class="sports-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="sportsModalTitle">
+            <button class="sports-modal-close" type="button" aria-label="Cerrar informaci&oacute;n de Deportes">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <div class="sports-modal-header">
+                <span class="sports-modal-badge"><i class="fa-solid fa-futbol"></i> VIDA DEPORTIVA</span>
+                <h2 id="sportsModalTitle">Deporte que forma y une</h2>
+                <p>El deporte en nuestra instituci&oacute;n es mucho m&aacute;s que competencia: es salud, disciplina, compa&ntilde;erismo y formaci&oacute;n integral.</p>
+            </div>
+
+            <div class="sports-team-cards">
+                <article class="sports-team-card">
+                    <img src="img/Deportes/Img.1.jpeg" alt="Equipo de f&uacute;tbol femenino del Instituto Francisco Miranda">
+                    <div>
+                        <span>F&Uacute;TBOL FEMENINO</span>
+                        <h3>Talento, uni&oacute;n y determinaci&oacute;n</h3>
+                        <p>Categor&iacute;as U15 y U17</p>
+                    </div>
+                </article>
+
+                <article class="sports-team-card">
+                    <img src="img/Deportes/Img.2.jpeg" alt="Equipo de f&uacute;tbol masculino del Instituto Francisco Miranda">
+                    <div>
+                        <span>F&Uacute;TBOL MASCULINO</span>
+                        <h3>Disciplina dentro y fuera de la cancha</h3>
+                        <p>Equipos representativos institucionales</p>
+                    </div>
+                </article>
+            </div>
+
+            <div class="sports-modal-sections">
+                <section class="sports-info-block">
+                    <h3><i class="fa-solid fa-chart-column"></i> Estad&iacute;sticas y participaci&oacute;n general</h3>
+                    <ul>
+                        <li><strong>Trayectoria:</strong> la actividad deportiva comenz&oacute; a tomar forma alrededor de 2010 gracias al entusiasmo en los recreos. Desde 2015 competimos constantemente fuera de nuestras instalaciones, con cerca de 11 a&ntilde;os de trayectoria competitiva.</li>
+                        <li><strong>Comunidad activa:</strong> cerca de 200 estudiantes participan en actividades generales y torneos internos; unos 60 integran los equipos representativos oficiales.</li>
+                        <li><strong>Calendario activo:</strong> temporada oficial de febrero a noviembre, con un promedio de 20 eventos formales y hasta 50 encuentros entre amistosos y torneos rel&aacute;mpago.</li>
+                        <li><strong>Categor&iacute;as:</strong> Ciclo B&aacute;sico (s&eacute;ptimo a noveno grado) y Bachillerato, en torneos Sub-15, Sub-17 y categor&iacute;as mayores.</li>
+                        <li><strong>Docentes y apoyo:</strong> impulsado por Manuel Pineda, Ada, Santiago y Wilmer, con el respaldo log&iacute;stico y de transporte del subdirector Juan Isaguirre.</li>
+                    </ul>
+                </section>
+
+                <section class="sports-info-block">
+                    <h3><i class="fa-solid fa-trophy"></i> Disciplinas y cuadros representativos</h3>
+                    <ul>
+                        <li><strong>F&uacute;tbol masculino y femenino:</strong> nuestra disciplina principal y con mayor presencia competitiva en ambas ramas.</li>
+                        <li><strong>Baloncesto y voleibol:</strong> fomentados mediante clases y encuentros amistosos interinstitucionales.</li>
+                        <li><strong>Atletismo:</strong> selecci&oacute;n de talentos orientada a convocatorias y torneos externos.</li>
+                        <li><strong>Ajedrez y tenis de mesa:</strong> integrados en las clases curriculares de Educaci&oacute;n F&iacute;sica seg&uacute;n el tiempo y los recursos disponibles.</li>
+                    </ul>
+                </section>
+
+                <section class="sports-info-block">
+                    <h3><i class="fa-solid fa-medal"></i> Logros, historia y proyecci&oacute;n profesional</h3>
+                    <ul>
+                        <li><strong>Torneo Secretar&iacute;a de Educaci&oacute;n (2018-2019):</strong> hist&oacute;rica participaci&oacute;n hasta semifinales; fuimos eliminados en penales por el equipo que luego se coron&oacute; campe&oacute;n.</li>
+                        <li><strong>Subcampeonato Interinstitucional (2025):</strong> trofeo y medallas de segundo lugar tras una re&ntilde;ida final (3-2).</li>
+                        <li><strong>Semana de la Juventud (2026):</strong> primer lugar en fase de grupos, con goleadas de hasta 9-0, y avance a cuartos de final frente al Instituto Salesiano San Miguel.</li>
+                        <li><strong>Cazatalentos y semillero:</strong> el nivel competitivo ha atra&iacute;do a ojeadores, incluso vinculados a la FIFA, y algunos egresados han escalado hasta el f&uacute;tbol profesional.</li>
+                    </ul>
+                </section>
+
+                <section class="sports-info-block sports-women-block">
+                    <h3><i class="fa-solid fa-person-running"></i> F&uacute;tbol femenino</h3>
+                    <ul>
+                        <li><strong>Filosof&iacute;a y origen:</strong> naci&oacute; en 2024 tras la pregunta de una alumna: &laquo;&iquest;por qu&eacute; solo los varones?&raquo;. Se consolid&oacute; bajo la premisa de que ser mujer no debe representar una limitaci&oacute;n para participar en el deporte.</li>
+                        <li><strong>Trayectoria y logros:</strong> cerca de dos a&ntilde;os y medio de evoluci&oacute;n continua en categor&iacute;as U15 y U17, con avance hasta cuartos de final en la competencia oficial de CODICADER.</li>
+                        <li><strong>Copa Amistad:</strong> orgullo institucional por crear y organizar la Copa Amistad de F&uacute;tbol Femenino, cuya tercera edici&oacute;n se prepara para octubre.</li>
+                    </ul>
+                </section>
+
+                <section class="sports-info-block sports-infrastructure-block">
+                    <h3><i class="fa-solid fa-building"></i> Infraestructura y retos futuros</h3>
+                    <p><strong>Instalaci&oacute;n actual:</strong> cancha institucional de usos m&uacute;ltiples, de caracter&iacute;sticas r&uacute;sticas, utilizada para entrenamientos, eventos c&iacute;vicos y reuniones.</p>
+                    <p><strong>Proyectos en gesti&oacute;n:</strong> en coordinaci&oacute;n con la municipalidad, avanzan los tr&aacute;mites de licitaci&oacute;n para el techado de la cancha y la construcci&oacute;n de grader&iacute;as, mejorando las condiciones de pr&aacute;ctica para toda la comunidad estudiantil.</p>
+                </section>
+            </div>
+        </div>
+    </div>
 
 
     <!-- ================================
