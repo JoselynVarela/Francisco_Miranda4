@@ -9,9 +9,9 @@ const docentes = [
 
     {
         nombre: "ANA LILIAM SOTO AGUILERA",
-        cargo: "Docente del area de ciencias naturales ",
-        resena: "Dato NO proporcionado",
-        proyectos: "Dato NO proporcionado",
+        cargo: "Docente de Ciencias Naturales - Jornada Matutina",
+        resena: "Licenciada en Ciencias Naturales egresada de la Universidad Pedagógica Nacional Francisco Morazán (UPNFM). Docente vocacional enfocada en el área de las ciencias de la tierra, la biología y la física básica, con una visión centrada en impactar de manera positiva el desarrollo académico y personal de los estudiantes. Su proyecto de vida profesional está orientado a la enseñanza y formación integral de jóvenes en el nivel de Educación Básica (7.º a 9.º grado).\n\nFormación Académica:\nLicenciatura en Ciencias Naturales\nUniversidad Pedagógica Nacional Francisco Morazán (UPNFM).",
+        proyectos: "Competencias y Habilidades Clave:\n\nEspecialización Pedagógica: Impartición de las asignaturas del área de Ciencias Naturales orientada a jóvenes de 7.º, 8.º y 9.º grado.\n\nMetodología Activa: Desarrollo de estrategias pedagógicas dinámicas que facilitan el aprendizaje significativo en la etapa de educación básica.\n\nGestión de Aula: Capacidad para crear entornos de aprendizaje motivadores, estructurados y de respeto en la jornada matutina.\n\nCompromiso Vocacional: Enfoque continuo en el acompañamiento y desarrollo académico del estudiante.\n\nProyecto de Vida Profesional: \"Dedicar mi labor académica al fortalecimiento educativo de los jóvenes de educación básica, despertando en ellos el pensamiento crítico, la curiosidad científica y el cuidado del entorno natural durante sus años formativos de 7.º a 9.º grado.\"",
         foto: "../img/sin-foto.svg"
     },
 
@@ -28,7 +28,7 @@ const docentes = [
         cargo: "DOCENTE Y ASISTENTE DE EL LABORATORIO DE CIENCIAS NATURALES (9 AÑOS DE SERVICIO)",
         resena: "PROFESIONAL DE LA EDUCACIÓN CON 9 AÑOS DE EXPERIENCIA EN LA ENSEÑANZA DE LAS CIENCIAS NATURALES. ES LICENCIADA EN CIENCIAS NATURALES CON ORIENTACIÓN EN QUÍMICA Y BIOLOGÍA, ADEMÁS DE CONTAR CON UNA ESPECIALIDAD EN TECNOLOGÍA Y ALIMENTOS. ORIGINARIA DE LA PAZ, SE HA DESTACADO POR SU COMPROMISO CON LA FORMACIÓN CIENTÍFICA DE LOS ESTUDIANTES, FOMENTANDO LA INVESTIGACIÓN, EL TRABAJO EXPERIMENTAL Y LA PARTICIPACIÓN EN PROYECTOS DE FERIA CIENTÍFICA, CONTRIBUYENDO AL FORTALECIMIENTO DEL APRENDIZAJE Y LA INNOVACIÓN EDUCATIVA EN EL INSTITUTO.",
         proyectos: "ASISTENCIA Y COORDINACIÓN DE LAS PRÁCTICAS EN EL LABORATORIO DE CIENCIAS NATURALES.\n\nORIENTACIÓN DE LOS ESTUDIANTES EN ACTIVIDADES EXPERIMENTALES Y DE INVESTIGACIÓN CIENTÍFICA.\n\nORGANIZACIÓN Y DESARROLLO DE PROYECTOS PARA LA FERIA CIENTÍFICA.\n\nPROMOCIÓN DEL APRENDIZAJE PRÁCTICO Y DEL USO ADECUADO DE LOS RECURSOS DEL LABORATORIO.",
-        foto: "../img/Ceteste Machuca.jpg"
+        foto: "../img/docentes/Ceteste Machuca.jpg"
     },
 
     {
@@ -44,7 +44,7 @@ const docentes = [
         cargo: "Docente de Estructuras Metalicas",
         resena: "Closvin Fabricio Yánez Santos es docente del Taller de Estructuras Metálicas, con formación en Mecánica Industrial, un Diplomado en Educación Superior y una Maestría en Formulación, Gestión y Evaluación de Proyectos. Cuenta con experiencia docente en el Instituto Gubernamental Técnico Francisco Miranda, el Instituto Técnico Luis Bográn, el Instituto Central Vicente Cáceres, la Asociación Compartir y la Universidad Pedagógica Nacional Francisco Morazán. Se distingue por ser un profesional responsable, comprometido, disciplinado, respetuoso y dedicado a la formación de jóvenes para contribuir al desarrollo del país.",
         proyectos: "Docente del año (2018).\nReconocimiento por perseverancia y horas ad honorem.\nTres diplomas por participación en congresos de Educación Técnica Industrial.\nCertificado como Instructor en INFOP.\nFormación de jóvenes líderes con competencias para el campo laboral.",
-        foto: "../img/Fabrio yanez.png"
+        foto: "../img/docentes/Fabrio yanez.png"
     },
 
     {
@@ -122,7 +122,7 @@ const docentes = [
     {
         nombre: "JUAN ANDRES IZAGUIRRE GONZALEZ",
         cargo: "Subdirector del instituto Gubernamental Tecnico Francisco Miranda desde 1 de septiembre del 2020",
-        resena: "",
+        resena: "Maestría en Educación Primaria.\n\nLicenciado en Pedagogía y Ciencias de la Educación.\n\nPasante de la Carrera de Derecho.",
         proyectos: "",
         foto: "../img/Juan Izaguirre.png"
     },
@@ -292,6 +292,32 @@ const docentes = [
         cargo: "Docente de Taller de Madera y Taller de Estructuras Metálicas",
         resena: "Se desempeña como docente en las áreas de Taller de Madera y Taller de Estructuras Metálicas, promoviendo el desarrollo de competencias técnicas y prácticas en los estudiantes mediante la enseñanza de procesos de fabricación, diseño, construcción y manejo seguro de herramientas y materiales propios del ámbito industrial. Asimismo, cuenta con experiencia como Coordinador de Talleres, Consejero Estudiantil y docente de diversas asignaturas.",
         proyectos: "Docente de Taller de Madera y Estructuras Metálicas. Estudiante de la carrera de Derecho.",
-        foto: "../img/Danilo Jose Banegas Figueroa.png"
+        foto: "../img/docentes/Danilo Jose Banegas Figueroa.png"
+    }
+
+    ,
+
+    {
+        nombre: "ROY",
+        cargo: "Consejero de la Jornada vespertina",
+        resena: "Formación continua como pasante universitario en Ingeniería en Sistemas, aportando competencias tecnológicas y metodologías de gestión a la administración y supervisión institucional en la jornada de la tarde.",
+        proyectos: "Implementación de programas de mentoría académica y optimización de procesos disciplinarios y de orientación estudiantil para la jornada vespertina.",
+        foto: "../img/docentes/Roy Rodrigez .jpg"
+    },
+
+    {
+        nombre: "CARLOS FERNANDO MEDINA",
+        cargo: "Todo lo que tenga que ver con el departamento de orientación: rendimiento académico, trabajo, beneficios sociales, beneficios para los chicos, etc.",
+        resena: "Maestro de educación primaria, graduado en 2009.\n\nLicenciado en Orientación Educativa desde 2016.\n\nMagíster en Transformación Digital de Gestores Públicos de la Universidad de España, Madrid.\n\nMaster en Formato de Negocios.\n\nHa trabajado como director y maestro de un centro educativo de educación básica.\n\nActualmente, su puesto de trabajo es como coordinador académico del Instituto Jesús Aguilar Paz.\n\nHa trabajado 9 o 10 años en la Dirección Distrital Número 12.",
+        proyectos: "",
+        foto: "../img/docentes/Carlos Fernando Medina.jpg"
+    },
+
+    {
+        nombre: "IRMA YOLANDA ERAZO LAGOS",
+        cargo: "Sub-coordinadora Colectivo Divina Providencia (internas) (2021)\nTerritorio 25, militante de Libre desde 2017\nMesas Electorales (2017 - 2021)\nPráctica profesional universitaria (2019)\nCentro de Estudios y solidaridad con América Latina (CESAL)\nPráctica profesional secundaria (2007)\nCDHI",
+        resena: "En su rol como Consejera de Estudiantes, lidera y coordina iniciativas estratégicas orientadas al bienestar estudiantil, enfocadas en:\n1. Fortalecimiento de la Disciplina y Convivencia Escolar: Implementación de estrategias formativas y de acompañamiento para promover el respeto, los valores y la sana convivencia dentro de la institución.\n2. Seguimiento al Rendimiento Académico: Monitoreo del desarrollo educativo de los estudiantes, brindando apoyo psicopedagógico y herramientas para mejorar sus competencias pedagógicas.\n3. Control y Fomento de la Asistencia y Puntualidad: Supervisión continua del cumplimiento de los horarios de clase y permanencia aula por aula, asegurando el máximo aprovechamiento del tiempo escolar.",
+        proyectos: "La Licenciada integra el equipo docente e institucional desde marzo de 2023, desempeñándose en el área de Consejería Estudiantil. Cuenta con una sólida formación universitaria en Pedagogía y Ciencias de la Educación, complementada con un compromiso constante con el desarrollo académico y personal de la comunidad estudiantil. Con el propósito de mantenerse a la vanguardia educativa y brindar un acompañamiento integral, participa activamente en jornadas de capacitación continua, tanto internas como externas.",
+        foto: "../img/docentes/Irma Erazo .png"
     }
 ];
