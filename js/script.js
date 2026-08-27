@@ -263,9 +263,8 @@ if (bandModal && bandTrigger) {
     });
 }
 
-/* =========================================
-   GALERÍA DE EVENTOS DE BANDA LATINA
-========================================= */
+
+/* GALERÍA DE EVENTOS DE BANDA LATINA*/
 
 function initBandEventsGallery() {
     const gallery = document.getElementById("band-events-gallery");
@@ -331,3 +330,27 @@ function initBandEventsGallery() {
 }
 
 initBandEventsGallery();
+=======
+const sportsModal = document.getElementById("sportsModal");
+const sportsTrigger = document.querySelector(".service-sports .service-trigger");
+const sportsClose = document.querySelector(".sports-modal-close");
+
+if (sportsModal && sportsTrigger) {
+    const setSportsModal = isOpen => {
+        sportsModal.classList.toggle("active", isOpen);
+        sportsModal.setAttribute("aria-hidden", String(!isOpen));
+        sportsTrigger.setAttribute("aria-expanded", String(isOpen));
+        document.body.style.overflow = isOpen ? "hidden" : "";
+        if (isOpen) sportsClose?.focus();
+    };
+
+    sportsTrigger.addEventListener("click", () => setSportsModal(true));
+    sportsClose?.addEventListener("click", () => setSportsModal(false));
+    sportsModal.addEventListener("click", event => {
+        if (event.target === sportsModal) setSportsModal(false);
+    });
+    document.addEventListener("keydown", event => {
+        if (event.key === "Escape" && sportsModal.classList.contains("active")) setSportsModal(false);
+    });
+}
+>>>>>>> 94c44c65fdd2a9033fbf2c8bdc8c4b367accdf2c
