@@ -19,7 +19,7 @@
 
     border-radius: 50%;
 
-    background: rgba(245,196,0,0.15);
+    background: rgba(var(--ocre-rgb),0.15);
 
     right: -150px;
     top: -180px;
@@ -41,16 +41,16 @@
 
 
 .staff-hero-content > span {
-    color: #f5c400;
+    color: var(--ocre);
     font-size: 12px;
     font-weight: 900;
     letter-spacing: 2px;
     text-transform: uppercase;
     display: inline-block;
-    background: rgba(245,196,0,0.15);
+    background: rgba(var(--ocre-rgb),0.15);
     padding: 8px 16px;
     border-radius: 50px;
-    border: 1px solid rgba(245,196,0,0.3);
+    border: 1px solid rgba(var(--ocre-rgb),0.3);
 }
 
 
@@ -302,7 +302,7 @@
 
     border: none;
 
-    background: #f5c400;
+    background: var(--ocre);
 
     color: #641027;
 
@@ -481,7 +481,7 @@
 
 .modal-section h3 i {
 
-    color: #f5c400;
+    color: var(--ocre);
 
     margin-right: 7px;
 

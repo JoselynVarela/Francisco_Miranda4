@@ -142,7 +142,7 @@ if (statsSection) {
 /* ANIMACIONES AL HACER SCROLL */
 
 const animatedElements = document.querySelectorAll(
-    ".career-card, .service-card, .staff-card, .stat-card"
+    ".career-card, .service-card, .identity-card, .staff-card, .stat-card"
 );
 
 const animationObserver = new IntersectionObserver(
@@ -262,3 +262,95 @@ if (bandModal && bandTrigger) {
         if (event.key === "Escape" && bandModal.classList.contains("active")) toggleModal();
     });
 }
+
+
+/* GALERÍA DE EVENTOS DE BANDA LATINA*/
+
+function initBandEventsGallery() {
+    const gallery = document.getElementById("band-events-gallery");
+    if (!gallery) return;
+
+    const tabs = Array.from(gallery.querySelectorAll(".band-gallery-tab"));
+    const eventSections = Array.from(gallery.querySelectorAll(".band-gallery-event"));
+    const galleryItems = Array.from(gallery.querySelectorAll(".band-gallery-item"));
+    const lightbox = gallery.querySelector("#band-lightbox");
+    const lightboxImage = gallery.querySelector("#band-lightbox-image");
+    const lightboxCaption = gallery.querySelector("#band-lightbox-caption");
+    const closeButton = gallery.querySelector(".band-lightbox-close");
+
+    gallery.querySelectorAll("[data-carousel]").forEach((carousel) => {
+        carousel.querySelectorAll(".band-carousel-slide").forEach((slide) => slide.classList.remove("hidden"));
+    });
+
+    const setFilter = (filter) => {
+        tabs.forEach((tab) => {
+            const isActive = tab.dataset.filter === filter;
+            tab.setAttribute("aria-selected", String(isActive));
+            tab.classList.toggle("bg-[#8f1735]", isActive);
+            tab.classList.toggle("text-white", isActive);
+            tab.classList.toggle("bg-white", !isActive);
+            tab.classList.toggle("text-[#641027]", !isActive);
+        });
+
+        eventSections.forEach((section) => {
+            section.hidden = filter !== "todos" && section.dataset.event !== filter;
+        });
+    };
+
+    const closeLightbox = () => {
+        lightbox.classList.add("hidden");
+        lightbox.classList.remove("flex");
+        lightbox.setAttribute("aria-hidden", "true");
+        document.body.classList.remove("overflow-hidden");
+    };
+
+    tabs.forEach((tab) => tab.addEventListener("click", () => setFilter(tab.dataset.filter)));
+
+    galleryItems.forEach((item) => item.addEventListener("click", () => {
+        const image = item.querySelector("img");
+        lightboxImage.src = item.dataset.image || image.src;
+        lightboxImage.alt = image.alt;
+        lightboxCaption.textContent = item.dataset.caption || image.alt;
+        lightbox.classList.remove("hidden");
+        lightbox.classList.add("flex");
+        lightbox.setAttribute("aria-hidden", "false");
+        document.body.classList.add("overflow-hidden");
+        closeButton.focus();
+    }));
+
+    closeButton.addEventListener("click", closeLightbox);
+    lightbox.addEventListener("click", (event) => {
+        if (event.target === lightbox) closeLightbox();
+    });
+    document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape" && !lightbox.classList.contains("hidden")) closeLightbox();
+    });
+
+    setFilter("todos");
+}
+
+initBandEventsGallery();
+=======
+const sportsModal = document.getElementById("sportsModal");
+const sportsTrigger = document.querySelector(".service-sports .service-trigger");
+const sportsClose = document.querySelector(".sports-modal-close");
+
+if (sportsModal && sportsTrigger) {
+    const setSportsModal = isOpen => {
+        sportsModal.classList.toggle("active", isOpen);
+        sportsModal.setAttribute("aria-hidden", String(!isOpen));
+        sportsTrigger.setAttribute("aria-expanded", String(isOpen));
+        document.body.style.overflow = isOpen ? "hidden" : "";
+        if (isOpen) sportsClose?.focus();
+    };
+
+    sportsTrigger.addEventListener("click", () => setSportsModal(true));
+    sportsClose?.addEventListener("click", () => setSportsModal(false));
+    sportsModal.addEventListener("click", event => {
+        if (event.target === sportsModal) setSportsModal(false);
+    });
+    document.addEventListener("keydown", event => {
+        if (event.key === "Escape" && sportsModal.classList.contains("active")) setSportsModal(false);
+    });
+}
+>>>>>>> 94c44c65fdd2a9033fbf2c8bdc8c4b367accdf2c

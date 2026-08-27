@@ -1,0 +1,1098 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banda Latina | Instituto Francisco Miranda</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Nunito:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../css/style.css">
+
+    <style>
+        :root {
+            --band-vino: #8f1735;
+            --band-vino-dark: #df7e98;
+            --band-amarillo: #f2d76b;
+            --band-azul: #1f5fae;
+            --band-verde: #438b45;
+            --band-crema: #fffdf8;
+            --band-gris: #f5f5f5;
+            --band-texto: #4f4f4f;
+            --band-sombra: 0 18px 40px rgba(73, 23, 45, 0.12);
+        }
+
+        body {
+            background: #fffefc;
+        }
+
+        .band-page-hero {
+            position: relative;
+            min-height: 520px;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(90deg, rgba(255,255,255,0.96) 0%, rgba(255,255,255,0.9) 38%, rgba(255,255,255,0.15) 100%), url('../img/Banda/Banda Latina.jpg') center/cover no-repeat;
+            overflow: hidden;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+        }
+
+        .band-page-hero::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(120deg, rgba(143, 23, 53, 0.14), transparent 60%);
+        }
+
+        .band-page-hero .section-container {
+            position: relative;
+            z-index: 1;
+            width: min(1300px, 90%);
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 32px;
+            align-items: center;
+        }
+
+        .band-page-kicker {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 8px 16px;
+            border-radius: 999px;
+            background: rgba(143, 23, 53, 0.08);
+            color: var(--band-vino-dark);
+            font-size: 12px;
+            font-weight: 800;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            margin-bottom: 18px;
+        }
+
+        .band-page-hero h1 {
+            font-family: 'Dancing Script', cursive;
+            font-size: clamp(2.3rem, 4vw, 4.2rem);
+            line-height: 1.08;
+            color: var(--band-vino-dark);
+            margin-bottom: 18px;
+        }
+
+        .band-page-hero p {
+            font-size: 1.08rem;
+            line-height: 1.8;
+            color: #3f3f3f;
+            max-width: 620px;
+        }
+
+        .band-page-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            margin-top: 28px;
+        }
+
+        .band-primary-btn,
+        .band-secondary-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 14px 24px;
+            border-radius: 999px;
+            font-weight: 800;
+            transition: 0.25s ease;
+        }
+
+        .band-primary-btn {
+            background: var(--band-vino);
+            color: white;
+            box-shadow: var(--band-sombra);
+        }
+
+        .band-secondary-btn {
+            background: white;
+            color: var(--band-vino-dark);
+            border: 1px solid rgba(143, 23, 53, 0.15);
+        }
+
+        .band-primary-btn:hover,
+        .band-secondary-btn:hover {
+            transform: translateY(-2px);
+        }
+
+        .band-hero-card {
+            background: rgba(255,255,255,0.85);
+            backdrop-filter: blur(10px);
+            border-radius: 28px;
+            box-shadow: var(--band-sombra);
+            border: 1px solid rgba(143, 23, 53, 0.08);
+            padding: 20px;
+        }
+
+        .band-hero-card img {
+            width: 100%;
+            height: 360px;
+            object-fit: cover;
+            border-radius: 22px;
+        }
+
+        .band-page-section {
+            width: min(1300px, 90%);
+            margin: 0 auto;
+            padding: 88px 0;
+        }
+
+        .band-page-header {
+            margin-bottom: 30px;
+        }
+
+        .section-label {
+            display: inline-flex;
+            align-items: center;
+            gap: 9px;
+            background: #faf4ae;
+            color: var(--band-vino-dark);
+            padding: 8px 14px;
+            border-radius: 999px;
+            font-size: 12px;
+            font-weight: 800;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+        }
+
+        .band-page-header h2 {
+            margin-top: 16px;
+            font-family: 'Poppins', sans-serif;
+            color: var(--band-vino-dark);
+            font-size: clamp(2rem, 3vw, 3rem);
+        }
+
+        .band-page-header p {
+            margin-top: 12px;
+            color: var(--band-texto);
+            line-height: 1.8;
+            max-width: 760px;
+        }
+
+        .band-summary-grid {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 20px;
+            margin-top: 28px;
+        }
+
+        .band-summary-card {
+            background: linear-gradient(180deg, #ffffff, #fffaf1);
+            border-radius: 24px;
+            border: 1px solid rgba(0,0,0,0.04);
+            box-shadow: var(--band-sombra);
+            padding: 24px 20px;
+            min-height: 220px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .band-summary-card .icon {
+            width: 52px;
+            height: 52px;
+            border-radius: 16px;
+            display: grid;
+            place-items: center;
+            background: rgba(236, 197, 39, 0.18);
+            color: var(--band-vino-dark);
+            font-size: 22px;
+            margin-bottom: 16px;
+        }
+
+        .band-summary-card h3 {
+            font-family: 'Poppins', sans-serif;
+            color: var(--band-vino-dark);
+            margin-bottom: 12px;
+            font-size: 1.2rem;
+        }
+
+        .band-summary-card p {
+            color: var(--band-texto);
+            line-height: 1.7;
+            font-size: 0.98rem;
+        }
+
+        .band-info-layout {
+            display: grid;
+            grid-template-columns: 1.1fr 0.9fr;
+            gap: 22px;
+        }
+
+        .band-info-card {
+            background: #fffdfb;
+            border: 1px solid rgba(0,0,0,0.04);
+            border-radius: 28px;
+            box-shadow: var(--band-sombra);
+            overflow: hidden;
+        }
+
+        .band-info-card img {
+            width: 100%;
+            height: 320px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .band-info-body {
+            padding: 24px;
+        }
+
+        .band-info-body h3 {
+            font-family: 'Poppins', sans-serif;
+            color: var(--band-vino-dark);
+            font-size: 1.9rem;
+            margin-bottom: 10px;
+        }
+
+        .band-info-body p {
+            color: var(--band-texto);
+            line-height: 1.8;
+        }
+
+        .band-facts {
+            display: grid;
+            gap: 18px;
+            align-content: start;
+        }
+
+        .fact-box {
+            background: linear-gradient(180deg, #ffffff, #fffaf3);
+            border-radius: 22px;
+            border: 1px solid rgba(143, 23, 53, 0.08);
+            box-shadow: var(--band-sombra);
+            padding: 24px 22px;
+        }
+
+        .fact-box small {
+            display: block;
+            color: var(--band-vino);
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            font-weight: 800;
+            margin-bottom: 10px;
+        }
+
+        .fact-box h4 {
+            font-family: 'Poppins', sans-serif;
+            color: var(--band-vino-dark);
+            margin-bottom: 10px;
+            font-size: 1.15rem;
+        }
+
+        .fact-box p {
+            color: var(--band-texto);
+            line-height: 1.7;
+        }
+
+        .band-carousel-wrap {
+            margin-top: 24px;
+            background: #fffdfb;
+            border: 1px solid rgba(0,0,0,0.04);
+            border-radius: 28px;
+            box-shadow: var(--band-sombra);
+            overflow: hidden;
+        }
+
+        .band-carousel {
+            position: relative;
+            width: 100%;
+            height: 500px;
+            overflow: hidden;
+            background: #f4efe9;
+        }
+
+        .band-slide {
+            position: absolute;
+            inset: 0;
+            opacity: 0;
+            transition: opacity 0.45s ease;
+        }
+
+        .band-slide.active {
+            opacity: 1;
+        }
+
+        .band-slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .carousel-controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 18px 22px 22px;
+            background: rgba(255,255,255,0.94);
+        }
+
+        .carousel-buttons {
+            display: flex;
+            gap: 12px;
+        }
+
+        .carousel-btn {
+            width: 44px;
+            height: 44px;
+            border: none;
+            border-radius: 50%;
+            background: rgba(143, 23, 53, 0.08);
+            color: var(--band-vino-dark);
+            font-size: 20px;
+            cursor: pointer;
+            transition: 0.25s ease;
+        }
+
+        .carousel-btn:hover {
+            background: var(--band-vino);
+            color: white;
+        }
+
+        .carousel-status {
+            font-size: 0.92rem;
+            color: var(--band-texto);
+            font-weight: 700;
+        }
+
+        .band-director-list {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 20px;
+            margin-top: 24px;
+        }
+
+        .director-card {
+            background: linear-gradient(180deg, #ffffff, #fffaf3);
+            border-radius: 24px;
+            padding: 22px;
+            border: 1px solid rgba(0,0,0,0.04);
+            box-shadow: var(--band-sombra);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            min-height: 220px;
+        }
+
+        .director-card h4 {
+            font-family: 'Poppins', sans-serif;
+            color: var(--band-vino-dark);
+            margin-bottom: 10px;
+            font-size: 1.3rem;
+            border-left: 4px solid var(--band-amarillo);
+            padding-left: 12px;
+        }
+
+        .director-card p {
+            color: var(--band-texto);
+            line-height: 1.75;
+            margin-top: 6px;
+        }
+
+        .band-achievements-list {
+            list-style: none;
+            padding: 0;
+            margin: 18px 0 0;
+            display: grid;
+            gap: 14px;
+        }
+
+        .band-achievements-list li {
+            position: relative;
+            background: linear-gradient(180deg, #fffdfb, #fffaf3);
+            border: 1px solid rgba(143, 23, 53, 0.08);
+            border-radius: 18px;
+            padding: 16px 18px 16px 52px;
+            color: var(--band-texto);
+            line-height: 1.7;
+            box-shadow: 0 10px 22px rgba(143, 23, 53, 0.06);
+        }
+
+        .band-achievements-list li::before {
+            content: "★";
+            position: absolute;
+            left: 20px;
+            top: 16px;
+            font-size: 1.1rem;
+            color: var(--band-vino);
+        }
+
+        .band-cta {
+            background: linear-gradient(135deg, var(--band-vino), var(--band-vino-dark));
+            color: white;
+            border-radius: 28px;
+            padding: 30px 26px;
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            align-items: center;
+            margin-top: 20px;
+            box-shadow: var(--band-sombra);
+        }
+
+        .band-cta h3 {
+            font-family: 'Poppins', sans-serif;
+            font-size: clamp(1.4rem, 2vw, 2rem);
+            margin-bottom: 8px;
+        }
+
+        .band-cta p {
+            color: rgba(255,255,255,0.85);
+            line-height: 1.7;
+        }
+
+        .band-cta a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 14px 22px;
+            border-radius: 999px;
+            background: #fff;
+            color: var(--band-vino-dark);
+            font-weight: 800;
+            white-space: nowrap;
+        }
+
+        .band-cta .band-facebook-link {
+            display: inline-flex;
+            padding: 0;
+            border-radius: 0;
+            background: transparent;
+            color: #ebd7d7;
+            text-decoration: underline;
+        }
+
+        .band-facebook-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 28px;
+            height: 28px;
+            margin-right: 8px;
+            border-radius: 50%;  
+            background: #1877f2;
+            color: #f5d6d6;
+            text-decoration: none;
+        }
+
+        .band-feature-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 20px;
+            margin-top: 22px;
+        }
+
+        .band-feature-card {
+            background: linear-gradient(180deg, #ffffff, #fffaf3);
+            border-radius: 24px;
+            padding: 22px;
+            border: 1px solid rgba(0,0,0,0.04);
+            box-shadow: var(--band-sombra);
+            min-height: 210px;
+        }
+
+        .band-feature-card h4 {
+            font-family: 'Poppins', sans-serif;
+            color: var(--band-vino-dark);
+            margin-bottom: 10px;
+            font-size: 1.3rem;
+            border-left: 4px solid var(--band-amarillo);
+            padding-left: 12px;
+        }
+
+        .band-feature-card p {
+            color: var(--band-texto);
+            line-height: 1.75;
+        }
+
+        .band-evolution-timeline {
+            list-style: none;
+            margin-top: 22px;
+            padding: 0;
+            position: relative;
+        }
+
+        .band-evolution-timeline::before {
+            content: "";
+            position: absolute;
+            left: 98px;
+            top: 8px;
+            bottom: 8px;
+            width: 2px;
+            background: linear-gradient(180deg, rgba(143, 23, 53, 0.22), rgba(245, 196, 0, 0.9), rgba(143, 23, 53, 0.22));
+        }
+
+        .band-evolution-timeline li {
+            position: relative;
+            display: grid;
+            grid-template-columns: 100px 1fr;
+            gap: 18px;
+            margin-bottom: 14px;
+            align-items: center;
+        }
+
+        .band-evolution-timeline li:last-child {
+            margin-bottom: 0;
+        }
+
+        .band-evolution-timeline .year {
+            position: relative;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, var(--band-vino), var(--band-vino-dark));
+            color: white;
+            border-radius: 999px;
+            font-weight: 800;
+            font-size: 0.78rem;
+            min-height: 40px;
+            padding: 6px 10px;
+            box-shadow: 0 12px 26px rgba(143, 23, 53, 0.16);
+            z-index: 1;
+        }
+
+        .band-evolution-timeline .year::after {
+            content: "";
+            position: absolute;
+            right: -18px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: var(--band-amarillo);
+            border: 3px solid white;
+            box-shadow: 0 0 0 3px rgba(245, 196, 0, 0.18);
+        }
+
+        .band-evolution-timeline .event {
+            background: #fffaf3;
+            border: 1px solid rgba(143, 23, 53, 0.08);
+            border-radius: 18px;
+            padding: 14px 18px;
+        }
+
+        .band-evolution-timeline strong {
+            color: var(--band-texto);
+            font-weight: 700;
+            line-height: 1.7;
+        }
+
+        @media (max-width: 980px) {
+            .band-page-hero .section-container,
+            .band-info-layout,
+            .band-summary-grid,
+            .band-director-list {
+                grid-template-columns: 1fr;
+            }
+
+            .band-page-hero {
+                min-height: 460px;
+            }
+
+            .band-carousel {
+                height: 360px;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .band-page-section {
+                padding: 68px 0;
+            }
+
+            .band-cta {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .band-page-hero h1 {
+                font-size: 2.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-bar">
+        <div class="top-bar-container">
+            <div class="top-info">
+                <span><i class="fa-solid fa-location-dot"></i> Zambrano, Francisco Morazán</span>
+                <span><i class="fa-solid fa-school"></i> Educación técnica para el futuro</span>
+            </div>
+            <div class="top-social">
+                <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="nav-container">
+            <a href="../index.html" class="logo">
+                <div class="logo-placeholder">FM</div>
+                <div class="logo-text">
+                    <strong>Instituto Gubernamental Técnico</strong>
+                    <span>Francisco Miranda</span>
+                </div>
+            </a>
+
+            <nav class="nav-menu">
+                <a href="../index.html#inicio" class="nav-link">Inicio</a>
+                <a href="../index.html#institucion" class="nav-link">Nosotros</a>
+                <a href="../index.html#carreras" class="nav-link">Oferta Académica</a>
+                <a href="../index.html#talleres" class="nav-link">Talleres</a>
+                <a href="../index.html#vida-estudiantil" class="nav-link">Vida Estudiantil</a>
+                <a href="../index.html#personal" class="nav-link">Personal</a>
+                <a href="../index.html#contacto" class="nav-link">Contacto</a>
+            </nav>
+
+            <a href="../index.html#institucion" class="btn-header">Conócenos <i class="fa-solid fa-arrow-right"></i></a>
+            <button class="menu-toggle" id="menuToggle" type="button" aria-label="Abrir menú"><i class="fa-solid fa-bars"></i></button>
+        </div>
+    </header>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="../index.html#inicio">Inicio</a>
+        <a href="../index.html#institucion">Nosotros</a>
+        <a href="../index.html#carreras">Oferta Académica</a>
+        <a href="../index.html#talleres">Talleres</a>
+        <a href="../index.html#vida-estudiantil">Vida Estudiantil</a>
+        <a href="../index.html#personal">Personal</a>
+        <a href="../index.html#contacto">Contacto</a>
+    </div>
+
+    <main>
+        <section class="band-page-hero">
+            <div class="section-container">
+                <div>
+                    <span class="band-page-kicker"><i class="fa-solid fa-music"></i> Banda Latina</span>
+                    <h1>Identidad, disciplina y orgullo mirandino.</h1>
+                    <p>
+                        La Banda Latina del Instituto Francisco Miranda representa la fuerza de la educación integral: disciplina,
+                        música, compañerismo y orgullo institucional. Cada paso, cada melodía y cada presentación reflejan la
+                        pasión de una comunidad que celebra su historia, sus valores y su proyección hacia el futuro.
+                    </p>
+                    <div class="band-page-actions">
+                        <a class="band-primary-btn" href="#banda-latina-info">Ver información <i class="fa-solid fa-arrow-down"></i></a>
+                        <a class="band-secondary-btn" href="../index.html">Volver al inicio</a>
+                    </div>
+                </div>
+
+                <div class="band-hero-card">
+                    <img src="../img/Banda/Banda Latina.jpg" alt="Banda Latina del Instituto Francisco Miranda">
+                </div>
+            </div>
+        </section>
+
+        <section id="banda-latina-info" class="band-page-section">
+            <div class="band-page-header">
+                <span class="section-label"><i class="fa-solid fa-circle-info"></i> Conoce la banda</span>
+                <h2>Espacio de historia, tradición y evolución</h2>
+                <p>
+                    A lo largo de los años, la Banda Latina ha sido una de las expresiones más visibles del talento,
+                    la disciplina y el sentido cívico del instituto. Su desarrollo ha acompañado la historia del centro
+                    educativo y ha consolidado su presencia en los eventos más importantes de la comunidad.
+                </p>
+            </div>
+
+            <div class="band-summary-grid">
+                <article class="band-summary-card">
+                    <div class="icon"><i class="fa-solid fa-chart-line"></i></div>
+                    <div>
+                        <h3>Evolución de la banda</h3>
+                        <p>Desde sus inicios hasta su consolidación, la banda ha fortalecido su identidad musical y su impacto escolar.</p>
+                    </div>
+                </article>
+
+                <article class="band-summary-card">
+                    <div class="icon"><i class="fa-regular fa-calendar-days"></i></div>
+                    <div>
+                        <h3>15 de septiembre</h3>
+                        <p>Participación clave en celebraciones patrias, desfiles y actos cívicos que reflejan honor y orgullo nacional.</p>
+                    </div>
+                </article>
+
+                <article class="band-summary-card">
+                    <div class="icon"><i class="fa-solid fa-trophy"></i></div>
+                    <div>
+                        <h3>Logros y triunfos</h3>
+                        <p>Reconocimientos, presentaciones destacadas y escenarios que han destacado la calidad de su trayectoria.</p>
+                    </div>
+                </article>
+
+                <article class="band-summary-card">
+                    <div class="icon"><i class="fa-solid fa-user-tie"></i></div>
+                    <div>
+                        <h3>Directores responsables</h3>
+                        <p>Guías y líderes que han orientado la música, la disciplina y la formación del grupo.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="band-page-section" style="padding-top: 0;">
+            <div class="band-info-layout">
+                <article class="band-info-card">
+                    <img src="../img/Banda/Banda.jpg" alt="Integrantes de la banda latina del instituto">
+                    <div class="band-info-body">
+                        <h3>Evolución de la banda</h3>
+                        <p>
+                            La Banda Latina del Instituto Francisco Miranda ha evolucionado con el paso del tiempo, transformándose en una
+                            agrupación reconocida por su disciplina, calidad musical y sentido de pertenencia. Su historia refleja una ruta de
+                            crecimiento constante, consolidación y participación en grandes escenarios institucionales y comunitarios.
+                        </p>
+                        <ul class="band-evolution-timeline">
+                            <li>
+                                <span class="year">2013</span>
+                                <div class="event"><strong>Inicio del proyecto musical.</strong></div>
+                            </li>
+                            <li>
+                                <span class="year">2015</span>
+                                <div class="event"><strong>Fundación oficial con aproximadamente 40 integrantes.</strong></div>
+                            </li>
+                            <li>
+                                <span class="year">2016</span>
+                                <div class="event"><strong>Primera presentación fuera de la institución.</strong></div>
+                            </li>
+                            <li>
+                                <span class="year">2017</span>
+                                <div class="event"><strong>Transformación en Banda Melorrítmica.</strong></div>
+                            </li>
+                            <li>
+                                <span class="year">2022</span>
+                                <div class="event"><strong>Transformación en Banda Marcial.</strong></div>
+                            </li>
+                            <li>
+                                <span class="year">2022</span>
+                                <div class="event"><strong>Primer campeonato en la Guerra de Bandas de VTV.</strong></div>
+                            </li>
+                            <li>
+                                <span class="year">2023</span>
+                                <div class="event"><strong>Campeonato de la Competencia Intercolegial de la Secretaría de Educación.</strong></div>
+                            </li>
+                            <li>
+                                <span class="year">2023</span>
+                                <div class="event"><strong>Participación en Championship Bethel, La Ceiba.</strong></div>
+                            </li>
+                            <li>
+                                <span class="year">2023</span>
+                                <div class="event"><strong>Adopción del nombre Banda Latina Francisco Miranda.</strong></div>
+                            </li>
+                            <li>
+                                <span class="year">2024</span>
+                                <div class="event"><strong>Primer lugar en la competencia Terencio Sierra.</strong></div>
+                            </li>
+                            <li>
+                                <span class="year">2024</span>
+                                <div class="event"><strong>Primer lugar en competencia realizada en Talanga.</strong></div>
+                            </li>
+                            <li>
+                                <span class="year">2025</span>
+                                <div class="event"><strong>Décimo aniversario de la agrupación.</strong></div>
+                            </li>
+                            <li>
+                                <span class="year">2025</span>
+                                <div class="event"><strong>Primera edición de CompeMiranda.</strong></div>
+                            </li>
+                            <li>
+                                <span class="year">2025</span>
+                                <div class="event"><strong>Bicampeonato en la Guerra de Bandas de VTV.</strong></div>
+                            </li>
+                            <li>
+                                <span class="year">Actual</span>
+                                <div class="event"><strong>Preparación continua y participación en actividades y celebraciones patrias.</strong></div>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+
+                <div class="band-facts">
+                    <div class="fact-box">
+                        <small>15 de septiembre</small>
+                        <h4>Actos patrios</h4>
+                        <p>
+                            La banda participa en ceremonias cívicas, desfiles y actos oficiales, representando a la comunidad con solemnidad,
+                            orden y fervor nacional.
+                        </p>
+                    </div>
+
+                    <div class="fact-box">
+                        <small>Logros</small>
+                        <h4>Triunfos y reconocimientos</h4>
+                        <p>
+                            Su trayectoria ha sido marcada por presentaciones memorables, destacadas participaciones en eventos institucionales y
+                            el reconocimiento de la comunidad educativa.
+                        </p>
+                    </div>
+
+                    <div class="fact-box">
+                        <small>Proyección</small>
+                        <h4>Proyectos y futuro</h4>
+                        <p>
+                            La banda continúa trabajando en la formación de nuevas generaciones, incorporando innovación, disciplina y una visión
+                            de crecimiento artístico y comunitario.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="band-page-section" style="padding-top: 0;">
+            <div class="band-page-header">
+                <span class="section-label"><i class="fa-solid fa-images"></i> Galería</span>
+                <h2>Momentos destacados de la banda</h2>
+            </div>
+
+            <!-- Componente: cambia únicamente los valores de src por tus URLs de imágenes. -->
+            <div id="band-events-gallery" class="mt-6" data-active-filter="todos">
+                <div class="flex flex-wrap gap-3 border-b border-slate-200 pb-5" role="tablist" aria-label="Filtrar galería por evento">
+                    <button type="button" class="band-gallery-tab rounded-full bg-[#8f1735] px-5 py-2.5 text-sm font-bold text-white shadow-md transition hover:-translate-y-0.5" data-filter="todos" role="tab" aria-selected="true">Todos</button>
+                    <button type="button" class="band-gallery-tab rounded-full bg-white px-5 py-2.5 text-sm font-bold text-[#641027] shadow-sm ring-1 ring-[#8f1735]/15 transition hover:-translate-y-0.5" data-filter="desfile-2015" role="tab" aria-selected="false">Desfile 2015</button>
+                    <button type="button" class="band-gallery-tab rounded-full bg-white px-5 py-2.5 text-sm font-bold text-[#641027] shadow-sm ring-1 ring-[#8f1735]/15 transition hover:-translate-y-0.5" data-filter="aniversario-2025" role="tab" aria-selected="false">Aniversario 2025</button>
+                    <button type="button" class="band-gallery-tab rounded-full bg-white px-5 py-2.5 text-sm font-bold text-[#641027] shadow-sm ring-1 ring-[#8f1735]/15 transition hover:-translate-y-0.5" data-filter="presentaciones" role="tab" aria-selected="false">Presentaciones</button>
+                    <button type="button" class="band-gallery-tab rounded-full bg-white px-5 py-2.5 text-sm font-bold text-[#641027] shadow-sm ring-1 ring-[#8f1735]/15 transition hover:-translate-y-0.5" data-filter="ensayo" role="tab" aria-selected="false">Ensayo</button>
+                </div>
+
+                <div class="mt-8 space-y-10">
+                    <section class="band-gallery-event" data-event="desfile-2015" aria-labelledby="band-event-desfile-title">
+                        <h3 id="band-event-desfile-title" class="mb-4 font-['Poppins'] text-2xl font-bold text-[#641027]">Desfile 2015</h3>
+                        <div class="band-event-carousel relative overflow-hidden rounded-xl bg-[#f4efe9] p-3 shadow-lg" data-carousel>
+                            <!-- Sustituye estas rutas por las URLs de tus fotos del Desfile 2015. -->
+                            <div class="band-carousel-slides grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+                            <button type="button" class="band-gallery-item band-carousel-slide group hidden w-full overflow-hidden rounded-xl border-4 border-white bg-white text-left shadow-md ring-1 ring-[#8f1735]/20 transition hover:-translate-y-1 hover:shadow-xl" data-image="../img/Banda/Banda Latina.jpg" data-caption="Banda Latina durante el Desfile 2015">
+                                <img src="https://drive.google.com/file/d/17y1Nx8LrMUiwQe8_y1lpJ2pPYevVBr6t/view?usp=drive_link" alt="Banda Latina durante el Desfile 2015" class="h-72 w-full object-cover transition duration-300 group-hover:scale-105">
+                            </button>
+                            <button type="button" class="band-gallery-item band-carousel-slide group hidden w-full overflow-hidden rounded-xl border-4 border-white bg-white text-left shadow-md ring-1 ring-[#8f1735]/20 transition hover:-translate-y-1 hover:shadow-xl" data-image="../img/Banda/Banda.jpg" data-caption="Integrantes de la banda en el Desfile 2015">
+                                <img src="https://drive.google.com/file/d/1mwlNMiHQkOpod0VRbERiwkGzS8CZVY0F/view?usp=drive_link" alt="Integrantes de la banda en el Desfile 2015" class="h-64 w-full object-cover transition duration-300 group-hover:scale-105">
+                            </button>
+                            </div>
+                            <div class="band-carousel-controls hidden flex items-center justify-between bg-white px-4 py-3">
+                                <button type="button" class="band-carousel-prev rounded-full bg-[#8f1735]/10 px-4 py-2 font-bold text-[#641027] transition hover:bg-[#8f1735] hover:text-white" aria-label="Imagen anterior">Anterior</button>
+                                <span class="band-carousel-status text-sm font-bold text-[#641027]" aria-live="polite"></span>
+                                <button type="button" class="band-carousel-next rounded-full bg-[#8f1735]/10 px-4 py-2 font-bold text-[#641027] transition hover:bg-[#8f1735] hover:text-white" aria-label="Imagen siguiente">Siguiente</button>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="band-gallery-event" data-event="aniversario-2025" aria-labelledby="band-event-anniversary-title">
+                        <h3 id="band-event-anniversary-title" class="mb-4 font-['Poppins'] text-2xl font-bold text-[#641027]">Aniversario 2025</h3>
+                        <div class="band-event-carousel relative overflow-hidden rounded-xl bg-[#f4efe9] p-3 shadow-lg" data-carousel>
+                            <!-- Sustituye estas rutas por las URLs de tus fotos del Aniversario 2025. -->
+                            <div class="band-carousel-slides grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+                            <button type="button" class="band-gallery-item band-carousel-slide group hidden w-full overflow-hidden rounded-xl border-4 border-white bg-white text-left shadow-md ring-1 ring-[#8f1735]/20 transition hover:-translate-y-1 hover:shadow-xl" data-image="FB_IMG_1785470887026.jpg" data-caption="Presentación de la Banda Latina en el Aniversario 2025">
+                                <img src="FB_IMG_1785470887026.jpg" alt="Presentación de la Banda Latina en el Aniversario 2025" class="h-64 w-full object-cover transition duration-300 group-hover:scale-105">
+                            </button>
+                            <button type="button" class="band-gallery-item band-carousel-slide group hidden w-full overflow-hidden rounded-xl border-4 border-white bg-white text-left shadow-md ring-1 ring-[#8f1735]/20 transition hover:-translate-y-1 hover:shadow-xl" data-image="FB_IMG_1785470871143.jpg" data-caption="Banda Latina en el Aniversario 2025">
+                                <img src="FB_IMG_1785470871143.jpg" alt="Banda Latina en el Aniversario 2025" class="h-64 w-full object-cover transition duration-300 group-hover:scale-105">
+                            </button>
+                            <button type="button" class="band-gallery-item band-carousel-slide group hidden w-full overflow-hidden rounded-xl border-4 border-white bg-white text-left shadow-md ring-1 ring-[#8f1735]/20 transition hover:-translate-y-1 hover:shadow-xl" data-image="FB_IMG_1785470850162.jpg" data-caption="Banda Latina en el Aniversario 2025">
+                                <img src="FB_IMG_1785470850162.jpg" alt="Banda Latina en el Aniversario 2025" class="h-64 w-full object-cover transition duration-300 group-hover:scale-105">
+                            </button>
+                            <button type="button" class="band-gallery-item band-carousel-slide group hidden w-full overflow-hidden rounded-xl border-4 border-white bg-white text-left shadow-md ring-1 ring-[#8f1735]/20 transition hover:-translate-y-1 hover:shadow-xl" data-image="FB_IMG_1785470856278.jpg" data-caption="Banda Latina en el Aniversario 2025">
+                                <img src="FB_IMG_1785470856278.jpg" alt="Banda Latina en el Aniversario 2025" class="h-64 w-full object-cover transition duration-300 group-hover:scale-105">
+                            </button>
+                            </div>
+                            <div class="band-carousel-controls hidden flex items-center justify-between bg-white px-4 py-3">
+                                <button type="button" class="band-carousel-prev rounded-full bg-[#8f1735]/10 px-4 py-2 font-bold text-[#641027] transition hover:bg-[#8f1735] hover:text-white" aria-label="Imagen anterior">Anterior</button>
+                                <span class="band-carousel-status text-sm font-bold text-[#641027]" aria-live="polite"></span>
+                                <button type="button" class="band-carousel-next rounded-full bg-[#8f1735]/10 px-4 py-2 font-bold text-[#641027] transition hover:bg-[#8f1735] hover:text-white" aria-label="Imagen siguiente">Siguiente</button>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="band-gallery-event" data-event="presentaciones" aria-labelledby="band-event-presentaciones-title">
+                        <h3 id="band-event-presentaciones-title" class="mb-4 font-['Poppins'] text-2xl font-bold text-[#641027]">Presentaciones</h3>
+                        <div class="band-event-carousel relative overflow-hidden rounded-xl bg-[#f4efe9] p-3 shadow-lg" data-carousel>
+                            <!-- Reemplaza estas imágenes provisionales cuando envíes las fotos de Presentaciones. -->
+                            <div class="band-carousel-slides grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+                                <button type="button" class="band-gallery-item band-carousel-slide group hidden w-full overflow-hidden rounded-xl border-4 border-white bg-white text-left shadow-md ring-1 ring-[#8f1735]/20 transition hover:-translate-y-1 hover:shadow-xl" data-image="../img/Banda/Banda Latina.jpg" data-caption="Presentación de la Banda Latina">
+                                    <img src="../img/Banda/Banda Latina.jpg" alt="Presentación de la Banda Latina" class="h-72 w-full object-cover transition duration-300 group-hover:scale-105">
+                                </button>
+                            </div>
+                            <div class="band-carousel-controls hidden flex items-center justify-between bg-white px-4 py-3">
+                                <button type="button" class="band-carousel-prev rounded-full bg-[#8f1735]/10 px-4 py-2 font-bold text-[#641027] transition hover:bg-[#8f1735] hover:text-white" aria-label="Imagen anterior">Anterior</button>
+                                <span class="band-carousel-status text-sm font-bold text-[#641027]" aria-live="polite"></span>
+                                <button type="button" class="band-carousel-next rounded-full bg-[#8f1735]/10 px-4 py-2 font-bold text-[#641027] transition hover:bg-[#8f1735] hover:text-white" aria-label="Imagen siguiente">Siguiente</button>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="band-gallery-event" data-event="ensayo" aria-labelledby="band-event-ensayo-title">
+                        <h3 id="band-event-ensayo-title" class="mb-4 font-['Poppins'] text-2xl font-bold text-[#641027]">Ensayos</h3>
+                        <div class="band-event-carousel relative overflow-hidden rounded-xl bg-[#f4efe9] p-3 shadow-lg" data-carousel>
+                            <div class="band-carousel-slides grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+                                <button type="button" class="band-gallery-item band-carousel-slide group hidden w-full overflow-hidden rounded-xl border-4 border-white bg-white text-left shadow-md ring-1 ring-[#8f1735]/20 transition hover:-translate-y-1 hover:shadow-xl" data-image="../img/Banda/FB_IMG_1785471350424.jpg" data-caption="Ensayo de la Banda Latina">
+                                    <img src="../img/Banda/FB_IMG_1785471350424.jpg" alt="Ensayo de la Banda Latina" class="h-72 w-full object-cover transition duration-300 group-hover:scale-105">
+                                </button>
+                                <button type="button" class="band-gallery-item band-carousel-slide group hidden w-full overflow-hidden rounded-xl border-4 border-white bg-white text-left shadow-md ring-1 ring-[#8f1735]/20 transition hover:-translate-y-1 hover:shadow-xl" data-image="../img/Banda/FB_IMG_1785472203432.jpg" data-caption="Ensayo de la Banda Latina">
+                                    <img src="../img/Banda/FB_IMG_1785472203432.jpg" alt="Ensayo de la Banda Latina" class="h-72 w-full object-cover transition duration-300 group-hover:scale-105">
+                                </button>
+                                <button type="button" class="band-gallery-item band-carousel-slide group hidden w-full overflow-hidden rounded-xl border-4 border-white bg-white text-left shadow-md ring-1 ring-[#8f1735]/20 transition hover:-translate-y-1 hover:shadow-xl" data-image="../img/Banda/FB_IMG_1785472224481.jpg" data-caption="Ensayo de la Banda Latina">
+                                    <img src="../img/Banda/FB_IMG_1785472224481.jpg" alt="Ensayo de la Banda Latina" class="h-72 w-full object-cover transition duration-300 group-hover:scale-105">
+                                </button>
+                                <button type="button" class="band-gallery-item band-carousel-slide group hidden w-full overflow-hidden rounded-xl border-4 border-white bg-white text-left shadow-md ring-1 ring-[#8f1735]/20 transition hover:-translate-y-1 hover:shadow-xl" data-image="../img/Banda/FB_IMG_1785473023487.jpg" data-caption="Ensayo de la Banda Latina">
+                                    <img src="../img/Banda/FB_IMG_1785473023487.jpg" alt="Ensayo de la Banda Latina" class="h-72 w-full object-cover transition duration-300 group-hover:scale-105">
+                                </button>
+                            </div>
+                            <div class="band-carousel-controls hidden flex items-center justify-between bg-white px-4 py-3">
+                                <button type="button" class="band-carousel-prev rounded-full bg-[#8f1735]/10 px-4 py-2 font-bold text-[#641027] transition hover:bg-[#8f1735] hover:text-white" aria-label="Imagen anterior">Anterior</button>
+                                <span class="band-carousel-status text-sm font-bold text-[#641027]" aria-live="polite"></span>
+                                <button type="button" class="band-carousel-next rounded-full bg-[#8f1735]/10 px-4 py-2 font-bold text-[#641027] transition hover:bg-[#8f1735] hover:text-white" aria-label="Imagen siguiente">Siguiente</button>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <div id="band-lightbox" class="fixed inset-0 z-[1100] hidden items-center justify-center bg-black/85 p-4" role="dialog" aria-modal="true" aria-labelledby="band-lightbox-caption" aria-hidden="true">
+                    <button type="button" class="band-lightbox-close absolute right-5 top-5 text-4xl leading-none text-white transition hover:text-[#f5c400]" aria-label="Cerrar imagen ampliada">&times;</button>
+                    <figure class="max-h-full max-w-5xl">
+                        <img id="band-lightbox-image" src="" alt="" class="max-h-[80vh] w-auto rounded-lg object-contain shadow-2xl">
+                        <figcaption id="band-lightbox-caption" class="mt-3 text-center text-sm text-white"></figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section class="band-page-section" style="padding-top: 0;">
+            <div class="band-page-header">
+                <span class="section-label"><i class="fa-solid fa-award"></i> Revelancia</span>
+                <h2>Principales logros y triunfos</h2>
+                <p>
+                    La banda se ha caracterizado por representar al instituto en los eventos más importantes del calendario institucional y
+                    comunitario, reforzando la imagen docente y la identidad mirandina.
+                </p>
+            </div>
+
+            <ul class="band-achievements-list">
+                <li>Campeones de la primera edición de la Guerra de Bandas de VTV en 2022.</li>
+                <li>Campeones de la Competencia Intercolegial de la Secretaría de Educación en 2023.</li>
+                <li>Participación en el Championship Bethel de La Ceiba.</li>
+                <li>Primer lugar en la competencia “Terencio Sierra” en Nacaome, Valle, en 2024.</li>
+                <li>Primer lugar en una competencia realizada en Talanga en 2024.</li>
+                <li>Participación en diferentes competencias nacionales.</li>
+                <li>Bicampeones de la Guerra de Bandas de VTV en 2025.</li>
+                <li>Organización de la primera CompeMiranda en 2025.</li>
+                <li>Participación en eventos y competencias que han permitido representar al Instituto Técnico Francisco Miranda en diferentes ciudades de Honduras.</li>
+            </ul>
+        </section>
+
+        <section class="band-page-section" style="padding-top: 0;">
+            <div class="band-page-header">
+                <span class="section-label"><i class="fa-solid fa-chalkboard-user"></i> Dirección</span>
+                <h2>Directores responsables</h2>
+            </div>
+
+            <div class="band-director-list">
+                <article class="director-card">
+                    <h4>Lic. Manuel Pineda</h4>
+                    <p>
+                        Director y una de las figuras fundamentales en el origen y desarrollo de la Banda Latina Francisco Miranda. Su trabajo ha
+                        estado relacionado con la formación musical, organización y crecimiento de la agrupación.
+                    </p>
+                </article>
+
+                <article class="director-card">
+                    <h4>Lic. Gabriela Beltrán</h4>
+                    <p>
+                        Integrante del equipo de dirección de la banda y parte importante del proceso de formación y preparación de los estudiantes.
+                    </p>
+                </article>
+
+                <article class="director-card">
+                    <h4>Rodrigo Flores</h4>
+                    <p>
+                        Relacionado con el equipo de dirección de la agrupación y con el proceso de preparación y desarrollo musical.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="band-page-section" style="padding-top: 0;">
+            <div class="band-page-header">
+                <span class="section-label"><i class="fa-solid fa-rocket"></i> Proyecto</span>
+                <h2>Proyectos y proyección</h2>
+                <p>
+                    El futuro de la Banda Latina se enfoca en fortalecer su desarrollo artístico, ampliar su participación en eventos institucionales
+                    y continuar formando estudiantes con valores, técnica musical y sentido de pertenencia.
+                </p>
+            </div>
+
+            <div class="band-feature-grid">
+                <article class="band-feature-card">
+                    <h4>Espacio de formación</h4>
+                    <p>
+                        La Banda Latina Francisco Miranda no solamente representa un proyecto musical, sino también un espacio de formación para los estudiantes.
+                        A través de la banda se desarrollan valores y habilidades como disciplina, responsabilidad, liderazgo, trabajo en equipo,
+                        perseverancia, respeto, compañerismo, expresión artística e identidad institucional.
+                    </p>
+                </article>
+
+                <article class="band-feature-card">
+                    <h4>Metas y crecimiento</h4>
+                    <p>
+                        La agrupación continúa trabajando para alcanzar nuevas metas, participar en más competencias, realizar presentaciones dentro y fuera del
+                        departamento y ampliar sus oportunidades de crecimiento. Uno de los proyectos mencionados dentro de su trayectoria es la posibilidad de
+                        realizar presentaciones y viajes fuera del país, lo que representaría una nueva etapa en la proyección de la Banda Latina Francisco Miranda.
+                    </p>
+                </article>
+            </div>
+
+            <div class="band-cta">
+                <div>
+                    <h3>Más que música: una identidad institucional</h3>
+                    <p>
+                        ¿Quieres conocer más sobre la Banda Latina Francisco Miranda? Ingresa a su perfil oficial en Facebook:
+                        <a class="band-facebook-link" href="https://www.facebook.com/share/1FY1S843AH/" target="_blank" rel="noopener noreferrer">
+                            <i class="band-facebook-icon fa-brands fa-facebook-f" aria-hidden="true"></i>Visitar perfil oficial
+                        </a>
+                    </p>
+                </div>
+                <a href="../index.html#talleres">Volver a la portada</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" id="contacto">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <div class="footer-logo">FM</div>
+                <div>
+                    <strong>Instituto Humanal Técnico</strong>
+                    <span>Francisco Miranda</span>
+                </div>
+            </div>
+
+            <div class="footer-column">
+                <h3>Navegación</h3>
+                <a href="../index.html#inicio">Inicio</a>
+                <a href="../index.html#institucion">Nosotros</a>
+                <a href="../index.html#carreras">Oferta Académica</a>
+                <a href="../index.html#personal">Personal</a>
+            </div>
+
+            <div class="footer-column">
+                <h3>Comunidad</h3>
+                <a href="talleres.html">Talleres</a>
+                <a href="Banda%20Latina.html">Banda Latina</a>
+                <a href="deportes.html">Deportes</a>
+                <a href="../index.html#galeria">Galería</a>
+            </div>
+
+            <div class="footer-column">
+                <h3>Contacto</h3>
+                <span><i class="fa-solid fa-location-dot"></i> Zambrano, Francisco Morazán</span>
+                <span><i class="fa-solid fa-envelope"></i> info@franciscomiranda.edu.hn</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
