@@ -1,4 +1,4 @@
-/* MENÃš MÃ“VIL */
+/* MENÚ MÓVIL */
 
 const decodeMojibake = value => {
     const replacements = {
@@ -175,12 +175,6 @@ animatedElements.forEach(element => {
 
 });
 
-const hero = document.querySelector(".hero");
-
-if (hero) {
-    hero.style.setProperty("--hero-image", "url('../img/Portada/Foto de portada.jpg')");
-}
-
 document.querySelectorAll(".gallery-slider").forEach(slider => {
     const slides = Array.from(slider.querySelectorAll(".gallery-slide"));
     const nextBtn = slider.querySelector(".gallery-btn.next");
@@ -330,7 +324,7 @@ function initBandEventsGallery() {
 }
 
 initBandEventsGallery();
-=======
+
 const sportsModal = document.getElementById("sportsModal");
 const sportsTrigger = document.querySelector(".service-sports .service-trigger");
 const sportsClose = document.querySelector(".sports-modal-close");
@@ -353,4 +347,3 @@ if (sportsModal && sportsTrigger) {
         if (event.key === "Escape" && sportsModal.classList.contains("active")) setSportsModal(false);
     });
 }
->>>>>>> 94c44c65fdd2a9033fbf2c8bdc8c4b367accdf2c

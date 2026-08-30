@@ -81,8 +81,8 @@ const docentes = [
 
     {
         nombre: "FREDIS ARMANDO DOMINGUEZ MEDINA",
-        cargo: "Docente en Matematica y cargo administrativo.",
-        resena: "Actualmente cuenta con 19 años dentro de la institución.",
+        cargo: "Docente en Matemática y cargo administrativo.",
+        resena: "Licenciado en Matemática por la Universidad Pedagógica Nacional Francisco Morazán (UPNFM) y Licenciado en Economía por la Universidad Nacional Autónoma de Honduras (UNAH). Actualmente cuenta con 19 años dentro de la institución.\n\n\"Un maestro paciente, responsable y dedicado es aquel que guía con empatía, cumple con rigor su labor y entrega su vocación entera al crecimiento integral de sus estudiantes.\"",
         proyectos: "",
         foto: "../img/Fredy Dominguez.jpg"
     },
@@ -123,7 +123,7 @@ const docentes = [
         nombre: "JUAN ANDRES IZAGUIRRE GONZALEZ",
         cargo: "Subdirector del instituto Gubernamental Tecnico Francisco Miranda desde 1 de septiembre del 2020",
         resena: "Maestría en Educación Primaria.\n\nLicenciado en Pedagogía y Ciencias de la Educación.\n\nPasante de la Carrera de Derecho.",
-        proyectos: "",
+        proyectos: "Dirección de dos centros educativos, uno de educación básica y otro de modalidad nocturna para adultos.\n\nImpartió clases consecutivamente a 120 alumnos durante un año sin recibir remuneración, demostrando dedicación y compromiso con la educación.\n\nRecibió un reconocimiento de la televisión nacional por su destacada labor educativa.",
         foto: "../img/Juan Izaguirre.png"
     },
 
@@ -137,10 +137,10 @@ const docentes = [
 
     {
         nombre: "JUNIOR JOSUE LOPEZ MONTES",
-        cargo: "Continuidad de estudios superiores y formación profesional constante",
-        resena: "",
-        proyectos: "Continuidad de estudios superiores y formación profesional constante",
-        foto: "../img/sin-foto.svg"
+        cargo: "Consejero y docente frente a alumnos (desde 2024)",
+        resena: "Licenciado en Profesorado en Ciencias Naturales, con estudios realizados en la UPNFM y la UNAH. Cuenta con formación y experiencia en diversas áreas de las ciencias y las matemáticas, destacándose en Física, Química, Biología, Cálculo, Estadística, Investigación, Álgebra, Geometría y Electricidad.\n\nAdemás, posee formación complementaria en educación superior, derechos humanos, gestión de recursos humanos y estudios estadísticos. También es pasante de la carrera de Ingeniería Eléctrica y electricista certificado.",
+        proyectos: "Ferias científicas y culturales, donde ha obtenido primer lugar, destacándose por su participación y orientación en proyectos académicos y científicos.\n\nLogros profesionales destacados:\nPrimer lugar en Ferias Científicas.\nPrimer lugar en Ferias Culturales.\nDiplomado en Educación Superior.\nPasante de Ingeniería Eléctrica.\nElectricista certificado.\nFormación en Gestión de Recursos Humanos.\nFormación en Derechos Humanos.\nCursos de Estudios Estadísticos.\nOtros cursos y reconocimientos relacionados con su formación profesional.",
+        foto: "../img/docentes/junior.jpeg"
     },
 
     {
@@ -243,7 +243,7 @@ const docentes = [
         nombre: "SUYAPA JANETH PINEDA LOPEZ",
         cargo: "Docente de Legislación Mercantil, Aduanas, Contaduría de Costos e Informática Contable",
         resena: "Actualmente cuenta con tres años de servicio dentro de la institución, desempeñando su labor docente con compromiso, responsabilidad y dedicación, contribuyendo al fortalecimiento de la formación académica y profesional de los estudiantes.",
-        proyectos: "Información no proporcionada.",
+        proyectos: "Formación técnica y profesional en áreas jurídica, administrativa, contable y tecnológica.",
         foto: "../img/Suyapa Janeth Pineda Lopez.png"
     },
 
@@ -307,9 +307,9 @@ const docentes = [
 
     {
         nombre: "CARLOS FERNANDO MEDINA",
-        cargo: "Todo lo que tenga que ver con el departamento de orientación: rendimiento académico, trabajo, beneficios sociales, beneficios para los chicos, etc.",
+        cargo: "Licenciado en Orientación Educativa / Docente / Jefe de Orientación",
         resena: "Maestro de educación primaria, graduado en 2009.\n\nLicenciado en Orientación Educativa desde 2016.\n\nMagíster en Transformación Digital de Gestores Públicos de la Universidad de España, Madrid.\n\nMaster en Formato de Negocios.\n\nHa trabajado como director y maestro de un centro educativo de educación básica.\n\nActualmente, su puesto de trabajo es como coordinador académico del Instituto Jesús Aguilar Paz.\n\nHa trabajado 9 o 10 años en la Dirección Distrital Número 12.",
-        proyectos: "",
+        proyectos: "Todo lo que tenga que ver con el departamento de orientación: rendimiento académico, trabajo, beneficios sociales, beneficios para los chicos, etc.",
         foto: "../img/docentes/Carlos Fernando Medina.jpg"
     },
 
