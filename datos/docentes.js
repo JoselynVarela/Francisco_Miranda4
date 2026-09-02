@@ -100,7 +100,7 @@ const docentes = [
         cargo: "Docente de Educación Media, encargada de las asignaturas de Taller de Estructuras Metálicas y Dibujo Técnico.",
         resena: "La profesora Heydi Vanesa Gonzales García se desempeña actualmente como Maestra de Educación Media en la institución. Inició su labor docente en el año 2009, acumulando una amplia trayectoria en la formación académica y técnica de los estudiantes.\n\nEs Licenciada en Educación Técnica Industrial con orientación en Metal Mecánica, título obtenido en la Universidad Pedagógica Nacional Francisco Morazán (UPNFM). Su preparación profesional le ha permitido fortalecer la enseñanza técnica dentro del instituto.\n\nActualmente imparte las asignaturas de Taller de Estructuras Metálicas y Dibujo Técnico a estudiantes de séptimo, octavo y noveno grado, promoviendo el desarrollo de habilidades prácticas, técnicas y de representación gráfica.\n\nSu labor docente se caracteriza por la responsabilidad, la disciplina y el compromiso con la formación integral de los estudiantes, contribuyendo al fortalecimiento de la educación técnica e industrial en la institución.",
         proyectos: "",
-        foto: "../img/sin-foto.svg"
+        foto: "../img/docentes/Heydy Gonzalez.jpeg"
     },
 
     {
@@ -298,7 +298,7 @@ const docentes = [
     ,
 
     {
-        nombre: "ROY",
+        nombre: "ROY ALEJANDRO RODRIGUEZ PAVÓN",
         cargo: "Consejero de la Jornada vespertina",
         resena: "Formación continua como pasante universitario en Ingeniería en Sistemas, aportando competencias tecnológicas y metodologías de gestión a la administración y supervisión institucional en la jornada de la tarde.",
         proyectos: "Implementación de programas de mentoría académica y optimización de procesos disciplinarios y de orientación estudiantil para la jornada vespertina.",

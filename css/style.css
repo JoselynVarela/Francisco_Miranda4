@@ -53,7 +53,7 @@
     position: relative;
     overflow: hidden;
     background:
-        linear-gradient(135deg, rgba(var(--ocre-rojo-rgb), 0.92), rgba(24, 18, 12, 0.93)),
+        linear-gradient(120deg, rgba(var(--ocre-rojo-rgb), 0.9), rgba(var(--ocre-rgb), 0.55) 45%, rgba(24, 18, 12, 0.93)),
         url("../img/Institucion/Actividades.jpg") center / cover;
 }
 
@@ -724,8 +724,8 @@ img {
 .service-trigger,
 .band-trigger {
     border: none;
-    background: linear-gradient(135deg, var(--amarillo), var(--ocre-dark));
-    color: #0a0a0a;
+    background: white;
+    color: var(--vino);
     width: calc(100% - 50px);
     margin: 0 25px 25px;
     padding: 11px 16px;
@@ -1617,7 +1617,7 @@ img {
 
 .institution .section-container {
     display: grid;
-    grid-template-columns: 1.15fr 1.45fr 0.85fr;
+    grid-template-columns: 1.15fr 1.45fr;
     gap: 50px;
     align-items: center;
 }
@@ -1702,65 +1702,6 @@ img {
             var(--hueso-dark)
         );
 }
-
-.quick-access {
-    padding: 32px;
-    border-radius: 28px;
-    background:
-        linear-gradient(135deg, rgba(var(--ocre-rgb),0.12), rgba(var(--ocre-rgb),0.08)),
-        linear-gradient(to right, #fff9e6, #fffef0);
-    border: 1px solid rgba(var(--ocre-rgb),0.2);
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    box-shadow:
-        0 18px 36px rgba(var(--ocre-rgb),0.12),
-        inset 0 1px 1px rgba(255,255,255,0.4);
-}
-
-.quick-access > .section-label {
-    margin-bottom: 8px;
-}
-
-.quick-access > a:not(.quick-button) {
-    background: linear-gradient(135deg, white, rgba(255,255,255,0.96));
-    padding: 14px 16px;
-    border-radius: 14px;
-    font-size: 14px;
-    font-weight: 700;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    transition: all 0.3s cubic-bezier(0.22, 1, 0.36, 1);
-    border: 1px solid rgba(143,23,53,0.08);
-    box-shadow: 0 8px 16px rgba(143,23,53,0.06);
-}
-
-.quick-access > a:hover {
-    transform: translateX(4px);
-}
-
-.quick-access > a i {
-    color: var(--vino);
-}
-
-.quick-button {
-    margin-top: 8px;
-
-    align-self: flex-start;
-
-    padding: 11px 18px;
-
-    border-radius: 25px;
-
-    background: var(--vino);
-
-    color: white;
-
-    font-size: 12px;
-    font-weight: 800;
-}
-
 
 /* CARRERAS */
 
@@ -2436,10 +2377,6 @@ img {
         grid-template-columns: 1fr 1fr;
     }
 
-    .quick-access {
-        grid-column: span 2;
-    }
-
     .stats-container {
         grid-template-columns:
             repeat(3, 1fr);
@@ -2517,10 +2454,6 @@ img {
 
     .institution .section-container {
         grid-template-columns: 1fr;
-    }
-
-    .quick-access {
-        grid-column: auto;
     }
 
     .institution-gallery {
@@ -2929,8 +2862,7 @@ h3,
 .career-card,
 .service-card,
 .staff-card,
-.staff-person-card,
-.quick-access {
+.staff-person-card {
     border-radius: 18px;
     box-shadow: 0 16px 34px rgba(48, 22, 24, 0.1);
 }
@@ -3568,20 +3500,21 @@ h3,
 
 .institution {
     background:
-        linear-gradient(100deg, rgba(var(--ocre-rojo-rgb), 0.93), rgba(67, 12, 23, 0.91)),
+        linear-gradient(100deg, rgba(var(--ocre-rgb), 0.85), rgba(var(--ocre-rojo-rgb), 0.88) 42%, rgba(67, 12, 23, 0.91)),
         url("../img/Institucion/Actividades(1).jpg") center / cover;
 }
 
 .institution-text h2 {
-    color: var(--hueso);
+    color: #1c0d05;
+    text-shadow: 0 1px 14px rgba(253, 246, 236, 0.4);
 }
 
 .institution-text h2 span {
-    color: var(--ocre);
+    color: var(--vino);
 }
 
 .institution-text p {
-    color: #e6d9c5;
+    color: #241206;
 }
 
 .section-label {
@@ -3593,22 +3526,6 @@ h3,
     background: linear-gradient(135deg, rgba(24, 18, 12, 0.85), rgba(58, 37, 8, 0.75));
     color: #d8c6ab;
     border-color: rgba(var(--ocre-rgb), 0.3);
-}
-
-.quick-access {
-    background: linear-gradient(135deg, rgba(24, 18, 12, 0.85), rgba(58, 37, 8, 0.75));
-    border-color: rgba(var(--ocre-rgb), 0.3);
-}
-
-.quick-access > a:not(.quick-button) {
-    background: linear-gradient(135deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
-    border-color: rgba(var(--ocre-rgb), 0.18);
-    color: #e6d9c5;
-    box-shadow: none;
-}
-
-.quick-access > a i {
-    color: var(--ocre);
 }
 
 .section-heading {
@@ -3639,13 +3556,8 @@ h3,
     box-shadow: 0 13px 30px rgba(51, 18, 30, 0.18);
 }
 
-.quick-access {
-    border: 1px solid rgba(var(--ocre-rgb), 0.3);
-    box-shadow: 0 15px 35px rgba(100, 16, 39, 0.08);
-}
-
 .careers {
-    background: linear-gradient(135deg, var(--ocre-rojo), var(--vino-dark));
+    background: linear-gradient(135deg, var(--ocre), var(--ocre-rojo) 48%, var(--vino-dark));
 }
 
 .career-card {
@@ -3665,7 +3577,7 @@ h3,
 
 .services {
     background:
-        linear-gradient(135deg, rgba(24, 18, 12, 0.93), rgba(var(--ocre-rojo-rgb), 0.55)),
+        linear-gradient(135deg, rgba(24, 18, 12, 0.9), rgba(var(--ocre-rojo-rgb), 0.5) 55%, rgba(var(--ocre-rgb), 0.45)),
         url("../img/Portada/Alumnado maestra de A mor.png") center / cover;
 }
 
@@ -3677,7 +3589,7 @@ h3,
 
 .staff {
     background:
-        linear-gradient(135deg, rgba(var(--ocre-rojo-rgb), 0.9), rgba(24, 18, 12, 0.92)),
+        linear-gradient(135deg, rgba(var(--ocre-rgb), 0.8), rgba(var(--ocre-rojo-rgb), 0.85) 46%, rgba(24, 18, 12, 0.92)),
         url("../img/Institucion/Actividades.jpg") center / cover;
 }
 
@@ -4309,7 +4221,7 @@ body {
 }
 
 .top-bar {
-    background: linear-gradient(100deg, var(--vino-dark), var(--ocre-rojo-dark));
+    background: linear-gradient(100deg, var(--vino-dark), var(--ocre-rojo-dark) 60%, var(--ocre-dark));
     color: var(--hueso);
     border-bottom: 1px solid rgba(var(--ocre-rojo-rgb), 0.4);
 }
@@ -4375,7 +4287,6 @@ body {
 }
 
 .btn-primary,
-.quick-button,
 .service-card button,
 .service-trigger,
 .band-trigger,
@@ -4383,9 +4294,14 @@ body {
     background: var(--ocre-dark);
 }
 
+.band-trigger {
+    background: linear-gradient(135deg, var(--vino), var(--vino-dark));
+    color: var(--hueso);
+}
+
 .staff-directory,
 .gallery-section {
-    background: linear-gradient(160deg, var(--negro), var(--vino-dark));
+    background: linear-gradient(160deg, var(--negro), var(--vino-dark) 55%, var(--ocre-rojo-dark));
 }
 
 .band-highlight-card,
@@ -4417,7 +4333,7 @@ body {
 
 .footer {
     background:
-        linear-gradient(135deg, rgba(24, 18, 12, 0.94), rgba(67, 12, 23, 0.88) 55%, rgba(122, 50, 22, 0.82)),
+        linear-gradient(135deg, rgba(24, 18, 12, 0.94), rgba(67, 12, 23, 0.85) 45%, rgba(var(--ocre-rojo-rgb), 0.8) 75%, rgba(var(--ocre-rgb), 0.65)),
         url("img/Institucion/Acctos Civicos.jpg") center / cover;
     border-top: 4px solid var(--ocre);
 }
@@ -4567,6 +4483,10 @@ body {
     color: #3a2508;
 }
 
+.historia-encabezado + .careers .timeline-item::before {
+    background: transparent;
+}
+
 .historia-encabezado ~ .institution {
     background: linear-gradient(180deg, #fdf6ec, #f3e1bf);
 }
@@ -4576,16 +4496,36 @@ body {
 }
 
 .historia-encabezado ~ .institution .mini-card {
-    background: #fffaf0;
+    background-color: #fffaf0;
+    background-size: cover;
+    background-position: center;
     border: 1px solid rgba(var(--ocre-rgb), 0.3);
 }
 
+.historia-encabezado ~ .institution .mini-card:nth-child(1) {
+    background-image: url("../img/Institucion/Infraestructura/Fachada Principal.jpg");
+}
+
+.historia-encabezado ~ .institution .mini-card:nth-child(2) {
+    background-image: url("../img/Institucion/Alumnado.jpg");
+}
+
+.historia-encabezado ~ .institution .mini-card:nth-child(3) {
+    background-image: url("../img/Institucion/Actividades.jpg");
+}
+
+.historia-encabezado ~ .institution .mini-card::before {
+    background: linear-gradient(180deg, rgba(253, 246, 236, 0.32), rgba(243, 225, 191, 0.4));
+}
+
 .historia-encabezado ~ .institution .mini-card h3 {
-    color: #3a2508;
+    color: #2b1a05;
+    text-shadow: 0 1px 10px rgba(253, 246, 236, 0.9), 0 1px 2px rgba(253, 246, 236, 0.9);
 }
 
 .historia-encabezado ~ .institution .mini-card p {
-    color: #7a3216;
+    color: #5c2a10;
+    text-shadow: 0 1px 10px rgba(253, 246, 236, 0.9), 0 1px 2px rgba(253, 246, 236, 0.9);
 }
 
 .historia-encabezado ~ .gallery-section {
