@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -9,7 +10,7 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&family=Nunito:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
     <!-- Iconos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
@@ -30,12 +31,12 @@
             <div class="top-info">
                 <span>
                     <i class="fa-solid fa-location-dot"></i>
-                    Zambrano, Francisco Morazán
+                    Zambrano, Francisco Morazan
                 </span>
 
                 <span>
                     <i class="fa-solid fa-school"></i>
-                    Educación técnica para el futuro
+                        Educación técnica para el futuro
                 </span>
             </div>
 
@@ -53,9 +54,9 @@
     </div>
 
 
-    <!-- ================================
-         NAVEGACIÓN
-    ================================= -->
+        <!-- ================================
+            NAVEGACIÓN
+        ================================= -->
 
     <header class="header">
 
@@ -63,11 +64,11 @@
 
             <a href="index.html" class="logo">
                 <div class="logo-placeholder">
-                    FM
+                    <img src="img/Portada/Logo.jpg" alt="Escudo del Instituto Francisco Miranda">
                 </div>
 
                 <div class="logo-text">
-                    <strong>Instituto Gubernamental Técnico</strong>
+                    <strong>Instituto Gubernamental Tecnico</strong>
                     <span>Francisco Miranda</span>
                 </div>
             </a>
@@ -84,10 +85,10 @@
                 </a>
 
                 <a href="#carreras" class="nav-link">
-                    Oferta Académica
+                    Oferta Academica
                 </a>
 
-                <a href="#talleres" class="nav-link">
+                <a href="pages/talleres.html" class="nav-link">
                     Talleres
                 </a>
 
@@ -107,7 +108,7 @@
 
 
             <a href="#institucion" class="btn-header">
-                Conócenos
+                Conocer más
                 <i class="fa-solid fa-arrow-right"></i>
             </a>
 
@@ -121,16 +122,16 @@
     </header>
 
 
-    <!-- ================================
-         MENÚ MÓVIL
-    ================================= -->
+        <!-- ================================
+            MENÚ MÓVIL
+        ================================= -->
 
     <div class="mobile-menu" id="mobileMenu">
 
         <a href="#inicio">Inicio</a>
         <a href="#institucion">Nosotros</a>
-        <a href="#carreras">Oferta Académica</a>
-        <a href="#talleres">Talleres</a>
+        <a href="#carreras">Oferta Academica</a>
+        <a href="pages/talleres.html">Talleres</a>
         <a href="#vida-estudiantil">Vida Estudiantil</a>
         <a href="#personal">Personal</a>
         <a href="#contacto">Contacto</a>
@@ -147,6 +148,7 @@
 
         <section class="hero" id="inicio">
 
+            <div class="hero-background" aria-hidden="true"></div>
             <div class="hero-overlay"></div>
 
             <div class="hero-container">
@@ -170,12 +172,12 @@
                     <div class="hero-buttons">
 
                         <a href="#institucion" class="btn btn-primary">
-                            Conócenos
+                            Conocer mas
                             <i class="fa-solid fa-arrow-right"></i>
                         </a>
 
                         <a href="#carreras" class="btn btn-secondary">
-                            Oferta Académica
+                            Oferta Academica
                             <i class="fa-solid fa-graduation-cap"></i>
                         </a>
 
@@ -218,7 +220,7 @@
 
                     <div>
                         <strong class="counter" data-target="3">0</strong>
-                        <span>Carreras técnicas</span>
+                        <span>Carreras tecnicas</span>
                     </div>
 
                 </div>
@@ -248,9 +250,9 @@
                         <strong>Banda Latina</strong>
                         <span>Francisco Miranda</span>
                     </div>
-
+                    <!-- ENLACE AL DOCUMENTO PDF -->
+                    <a href="documento/Banda_Latina.pdf" target="_blank" class="stat-card-link">Ver documento</a>
                 </div>
-
 
                 <div class="stat-card">
 
@@ -286,12 +288,12 @@
                     </span>
 
                     <h2>
-                        Somos más que una institución,
+                        Somos mas que una institucion,
                         <span>somos familia Mirandina.</span>
                     </h2>
 
                     <p>
-                        El Instituto Humanal Técnico Francisco Miranda
+                        El Instituto Gubernamental Técnico Francisco Miranda
                         trabaja para brindar una educación integral,
                         formando estudiantes con conocimientos,
                         valores, disciplina y compromiso.
@@ -303,7 +305,7 @@
                         jóvenes.
                     </p>
 
-                    <a href="#" class="btn btn-primary">
+                    <a href="pages/historia.html" class="btn btn-primary">
                         Conocer nuestra historia
                         <i class="fa-solid fa-arrow-right"></i>
                     </a>
@@ -316,6 +318,10 @@
                     <div class="gallery-slider" aria-live="polite">
 
                         <div class="gallery-slide active">
+                            <img src="img/Portada/Foto de portada.jpg" alt="Autoridades del Instituto Francisco Miranda">
+                        </div>
+
+                        <div class="gallery-slide">
                             <img src="img/Institucion/Actividades.jpg" alt="Fachada del instituto">
                         </div>
 
@@ -330,6 +336,28 @@
                         <div class="gallery-slide">
                             <img src="img/Institucion/Acctos Civicos.jpg" alt="Desfile institucional 2025">
                         </div>
+
+                        <div class="gallery-slide">
+                            <img src="img/Institucion/Infraestructura/Fachada Principal.jpg" alt="Fachada principal del instituto">
+                        </div>
+
+                        <div class="gallery-slide">
+                            <img src="img/Institucion/Infraestructura/Casetas.jpg" alt="Casetas del instituto">
+                        </div>
+
+                        <div class="gallery-slide">
+                            <img src="img/Institucion/Infraestructura/Cancha Deportiva.jpg" alt="Cancha deportiva">
+                        </div>
+
+                        <div class="gallery-slide">
+                            <img src="img/Institucion/Infraestructura/Quioscos.jpg" alt="Quioscos del instituto">
+                        </div>
+
+                        <div class="gallery-slide">
+                            <img src="img/Institucion/Infraestructura/Talleres.jpg" alt="Talleres del instituto">
+                        </div>
+
+                        <div class="gallery-indicators" aria-label="Indicadores de galería"></div>
 
                         <div class="gallery-controls">
                             <button class="gallery-btn prev" type="button" aria-label="Anterior">
@@ -349,154 +377,100 @@
                 </div>
 
 
-                <div class="quick-access">
-
-                    <span class="section-label">
-                        ACCESOS RÁPIDOS
-                    </span>
-
-                    <a href="#">
-                        <i class="fa-regular fa-calendar"></i>
-                        Calendario académico
-                    </a>
-
-                    <a href="#">
-                        <i class="fa-regular fa-newspaper"></i>
-                        Noticias y eventos
-                    </a>
-
-                    <a href="#galeria">
-                        <i class="fa-regular fa-images"></i>
-                        Galería de imágenes
-                    </a>
-
-                    <a href="#">
-                        <i class="fa-solid fa-file-lines"></i>
-                        Documentos institucionales
-                    </a>
-
-                    <a href="#contacto" class="quick-button">
-                        Ver información
-                        <i class="fa-solid fa-arrow-right"></i>
-                    </a>
-
-                </div>
-
             </div>
 
         </section>
 
 
-        <!-- ================================
-             CARRERAS
-        ================================= -->
+      <!-- ================================ CARRERAS ================================= -->
+<section class="careers section" id="carreras">
+    <div class="section-container">
 
-        <section class="careers section" id="carreras">
+        <div class="section-heading">
+            <span class="section-label">
+                <i class="fa-solid fa-graduation-cap"></i>
+                OFERTA ACADÉMICA
+            </span>
 
-            <div class="section-container">
+            <h2>Nuestras carreras técnicas</h2>
 
-                <div class="section-heading">
+            <p>
+                Formación profesional para preparar a nuestros estudiantes
+                para los desafíos del futuro.
+            </p>
+        </div>
 
-                    <span class="section-label">
-                        <i class="fa-solid fa-graduation-cap"></i>
-                        OFERTA ACADÉMICA
-                    </span>
+        <div class="career-grid">
 
-                    <h2>
-                        Nuestras carreras técnicas
-                    </h2>
-
-                    <p>
-                        Formación profesional para preparar a nuestros
-                        estudiantes para los desafíos del futuro.
-                    </p>
-
+            <!-- 1. INFORMÁTICA -->
+            <article class="career-card career-it">
+                <div class="career-icon">
+                    <i class="fa-solid fa-computer"></i>
                 </div>
 
+                <span>BTP en</span>
 
-                <div class="career-grid">
+                <h3>Informática</h3>
 
+                <p>
+                    Tecnología, innovación y desarrollo al servicio del futuro.
+                </p>
 
-                    <!-- INFORMÁTICA -->
-
-                    <article class="career-card career-it">
-
-                        <div class="career-icon">
-                            <i class="fa-solid fa-laptop-code"></i>
-                        </div>
-
-                        <span>BTP en</span>
-
-                        <h3>Informática</h3>
-
-                        <p>
-                            Tecnología, innovación y desarrollo
-                            al servicio del futuro.
-                        </p>
-
-                        <a href="#" aria-label="Conocer más de informática">
-                            Conocer más
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </a>
-
-                    </article>
+                <a href="pages/informatica.html"
+                   aria-label="Conocer más de Informática">
+                    Conocer más
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </article>
 
 
-                    <!-- CONTADURÍA -->
-
-                    <article class="career-card career-accounting">
-
-                        <div class="career-icon">
-                            <i class="fa-solid fa-calculator"></i>
-                        </div>
-
-                        <span>BTP en</span>
-
-                        <h3>Contaduría y Finanzas</h3>
-
-                        <p>
-                            Formación para administrar recursos
-                            con responsabilidad y eficiencia.
-                        </p>
-
-                        <a href="#" aria-label="Conocer más de contaduría">
-                            Conocer más
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </a>
-
-                    </article>
-
-
-                    <!-- AGROINDUSTRIA -->
-
-                    <article class="career-card career-agro">
-
-                        <div class="career-icon">
-                            <i class="fa-solid fa-seedling"></i>
-                        </div>
-
-                        <span>BTP en</span>
-
-                        <h3>Agroindustria</h3>
-
-                        <p>
-                            Innovación y calidad en procesos
-                            agroindustriales.
-                        </p>
-
-                        <a href="#" aria-label="Conocer más de agroindustria">
-                            Conocer más
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </a>
-
-                    </article>
-
+            <!-- 2. CONTADURÍA Y FINANZAS -->
+            <article class="career-card career-accounting">
+                <div class="career-icon">
+                    <i class="fa-solid fa-calculator"></i>
                 </div>
 
-            </div>
+                <span>BTP en</span>
 
-        </section>
+                <h3>Contaduría y Finanzas</h3>
 
+                <p>
+                    Formación para administrar recursos con responsabilidad
+                    y eficiencia.
+                </p>
+
+                <a href="#"
+                   aria-label="Conocer más de Contaduría y Finanzas">
+                    Conocer más
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </article>
+
+
+            <!-- 3. AGROINDUSTRIA -->
+            <article class="career-card career-agro">
+                <div class="career-icon">
+                    <i class="fa-solid fa-seedling"></i>
+                </div>
+
+                <span>BTP en</span>
+
+                <h3>Agroindustria</h3>
+
+                <p>
+                    Innovación y calidad en procesos agroindustriales.
+                </p>
+
+                <a href="pages/agroindustria.html"
+                   aria-label="Conocer más de Agroindustria">
+                    Conocer más
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </article>
+
+        </div>
+    </div>
+</section>
 
         <!-- ================================
              QUÉ OFRECE
@@ -536,10 +510,22 @@
                             trabajo en equipo y pasión.
                         </p>
 
-                        <button class="band-trigger" type="button">
-                            Conocer más
-                        </button>
 
+                       <a class="band-trigger" href="pages/Banda%20Latina.html#banda-latina-info" style="color: #ffffff !important; display: inline-block; text-align: center; text-decoration: none;">
+    Conocer más
+</a>
+
+                        
+
+<<<<<<< HEAD
+                        <a class="band-trigger" href="pages/Banda%20Latina.html#banda-latina-info">
+                            Conocer más
+                        </a>
+
+                    
+
+=======
+>>>>>>> 3bb8930dcbcc9523d21848bc2a0e715b63c110ff
                     </article>
 
 
@@ -552,12 +538,12 @@
                         <h3>Deportes</h3>
 
                         <p>
-                            Actividad física, compañerismo
+                            Actividad fisica, compñerismo
                             y desarrollo deportivo.
                         </p>
 
-                        <button class="service-trigger" type="button">
-                            Conocer más
+                        <button class="service-trigger" type="button" aria-controls="sportsModal" aria-expanded="false">
+                            Conocer m&aacute;s
                         </button>
 
                     </article>
@@ -584,29 +570,82 @@
                     </article>
 
 
-                    <article class="service-card">
-
-                        <div class="service-icon values">
-                            <i class="fa-solid fa-heart"></i>
-                        </div>
-
-                        <h3>Valores</h3>
-
-                        <p>
-                            Formación integral basada en
-                            principios y ética.
-                        </p>
-
-                        <a href="#institucion">
-                            Conocer más
-                        </a>
-
-                    </article>
+                    <!-- Tarjeta 'Valores' eliminada por solicitud de diseño -->
 
                 </div>
 
             </div>
 
+        </section>
+
+
+        <!-- ================================
+             NUESTRA IDENTIDAD
+        ================================= -->
+
+        <section class="identity-section section" id="vida-estudiantil">
+            <div class="identity-pattern" aria-hidden="true"></div>
+
+            <div class="section-container">
+                <div class="section-heading identity-heading">
+                    <span class="section-label">
+                        <i class="fa-solid fa-compass"></i>
+                        VALORES Y ÉTICA
+                    </span>
+                    <h2>NUESTRA IDENTIDAD</h2>
+                    <p class="identity-subtitle">Valores y Ética</p>
+                    <p>
+                        Los pilares que forman nuestro carácter, fortalecen la convivencia y guían cada paso en nuestra comunidad estudiantil.
+                    </p>
+                </div>
+
+                <div class="identity-grid">
+                    <article class="identity-card identity-respect">
+                        <div class="identity-card-top">
+                            <img class="identity-image" src="img/Valores/respeto.jpeg" alt="Representaci&oacute;n del valor Respeto">
+                            <span class="identity-number">01</span>
+                        </div>
+                        <h3>Respeto</h3>
+                        <p>Base de toda convivencia dentro de la institución. Implica valorar la dignidad, las opiniones y las diferencias de cada compañero, docente y miembro del personal, manteniendo la armonía en aulas y talleres.</p>
+                    </article>
+
+                    <article class="identity-card identity-love">
+                        <div class="identity-card-top">
+                            <img class="identity-image" src="img/Valores/Amor.jpeg" alt="Representaci&oacute;n del valor Amor">
+                            <span class="identity-number">02</span>
+                        </div>
+                        <h3>Amor</h3>
+                        <p>Reflejado en la vocación por aprender, la solidaridad y el compromiso genuino de ayudar a quien lo necesita. Es ponerle corazón a cada proyecto técnico y a la convivencia diaria.</p>
+                    </article>
+
+                    <article class="identity-card identity-responsibility">
+                        <div class="identity-card-top">
+                            <img class="identity-image" src="img/Valores/responsabilidad.jpeg" alt="Representaci&oacute;n del valor Responsabilidad">
+                            <span class="identity-number">03</span>
+                        </div>
+                        <h3>Responsabilidad</h3>
+                        <p>Asumir con seriedad los deberes académicos, el cuidado del equipo tecnológico y de los talleres, demostrando madurez y compromiso ante los retos de nuestra formación técnica.</p>
+                    </article>
+
+                    <article class="identity-card identity-integrity">
+                        <div class="identity-card-top">
+                            <img class="identity-image" src="img/Valores/Honestidad.jpeg" alt="Representaci&oacute;n del valor Honestidad e Integridad">
+                            <span class="identity-number">04</span>
+                        </div>
+                        <h3>Honestidad e Integridad</h3>
+                        <p>Actuar siempre con la verdad y la transparencia en las evaluaciones y en el trato cotidiano. Ser íntegros significa hacer lo correcto por convicción propia en todo momento.</p>
+                    </article>
+
+                    <article class="identity-card identity-solidarity">
+                        <div class="identity-card-top">
+                            <img class="identity-image" src="img/Valores/Solidaridad.jpeg" alt="Representaci&oacute;n del valor Solidaridad">
+                            <span class="identity-number">05</span>
+                        </div>
+                        <h3>Solidaridad</h3>
+                        <p>Trabajar en equipo, apoyarnos mutuamente en los momentos difíciles y recordar que el éxito personal también se construye tendiéndole la mano al compañero que va al lado.</p>
+                    </article>
+                </div>
+            </div>
         </section>
 
 
@@ -643,7 +682,7 @@
                     <article class="staff-card">
 
                         <div class="staff-photo image-placeholder">
-                            <i class="fa-solid fa-user"></i>
+                            <img src="img/Juan Carlos Herrera.jpg" alt="Juan Carlos Herrera, director">
                         </div>
 
                         <div class="staff-info">
@@ -657,7 +696,7 @@
                     <article class="staff-card">
 
                         <div class="staff-photo image-placeholder">
-                            <i class="fa-solid fa-user"></i>
+                            <img src="img/Juan Izaguirre.png" alt="Juan Izaguirre, subdirector">
                         </div>
 
                         <div class="staff-info">
@@ -699,25 +738,53 @@
              GALERÍA
         ================================= -->
 
-        <section id="galeria">
-    <div class="photo-grid">
-        <div class="photo-placeholder large">
-            <img src="img/Institucion/Infraestructura/Fachada Principal.jpg" alt="Fachada Principal" style="width: 100%; height: 100%; object-fit: cover;">
-        </div>
-        <div class="photo-placeholder">
-            <img src="img/Institucion/Infraestructura/Casetas.jpg" alt="Casetas" style="width: 100%; height: 100%; object-fit: cover;">
-        </div>
-        <div class="photo-placeholder">
-            <img src="img/Institucion/Infraestructura/Cancha Deportiva.jpg" alt="Cancha Deportiva" style="width: 100%; height: 100%; object-fit: cover;">
-        </div>
-        <div class="photo-placeholder">
-            <img src="img/Institucion/Infraestructura/Quioscos.jpg" alt="Quioscos" style="width: 100%; height: 100%; object-fit: cover;">
-        </div>
-        <div class="photo-placeholder">
-            <img src="img/Institucion/Infraestructura/Talleres.jpg" alt="Talleres" style="width: 100%; height: 100%; object-fit: cover;">
-        </div>
-    </div>
-</section>
+        <section class="gallery-section section" id="galeria">
+            <div class="section-container">
+                <div class="section-heading">
+                    <span class="section-label">
+                        <i class="fa-regular fa-images"></i>
+                        GALERÍA INSTITUCIONAL
+                    </span>
+                    <h2>Espacios y momentos que compartimos</h2>
+                    <p>Conoce nuestra comunidad, instalaciones y actividades.</p>
+                </div>
+                <div class="gallery-showcase">
+                    <div class="gallery-slider showcase-slider" aria-live="polite">
+                        <div class="gallery-slide active">
+                            <img src="img/Institucion/Infraestructura/Fachada Principal.jpg" alt="Fachada principal del instituto">
+                        </div>
+                        <div class="gallery-slide">
+                            <img src="img/Institucion/Infraestructura/Casetas.jpg" alt="Casetas del instituto">
+                        </div>
+                        <div class="gallery-slide">
+                            <img src="img/Institucion/Infraestructura/Cancha Deportiva.jpg" alt="Cancha deportiva">
+                        </div>
+                        <div class="gallery-slide">
+                            <img src="img/Institucion/Infraestructura/Quioscos.jpg" alt="Quioscos del instituto">
+                        </div>
+                        <div class="gallery-slide">
+                            <img src="img/Institucion/Infraestructura/Talleres.jpg" alt="Talleres del instituto">
+                        </div>
+                        <div class="gallery-slide">
+                            <img src="img/Institucion/Alumnado.jpg" alt="Comunidad estudiantil">
+                        </div>
+                        <div class="gallery-slide">
+                            <img src="img/Institucion/Desfile 2025.jpg" alt="Desfile institucional 2025">
+                        </div>
+                        <div class="gallery-controls">
+                            <button class="gallery-btn prev" type="button" aria-label="Imagen anterior">
+                                <i class="fa-solid fa-chevron-left"></i>
+                            </button>
+                            <button class="gallery-btn next" type="button" aria-label="Imagen siguiente">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </button>
+                        </div>
+                        <div class="gallery-indicators" aria-label="Indicadores de espacios y momentos"></div>
+                        <p class="gallery-caption" aria-live="polite">Fachada principal del instituto</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
         <!-- ================================
@@ -753,6 +820,88 @@
 
     </main>
 
+    <div class="sports-modal" id="sportsModal" aria-hidden="true">
+        <div class="sports-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="sportsModalTitle">
+            <button class="sports-modal-close" type="button" aria-label="Cerrar informaci&oacute;n de Deportes">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <div class="sports-modal-header">
+                <span class="sports-modal-badge"><i class="fa-solid fa-futbol"></i> VIDA DEPORTIVA</span>
+                <h2 id="sportsModalTitle">Deporte que forma y une</h2>
+                <p>El deporte en nuestra instituci&oacute;n es mucho m&aacute;s que competencia: es salud, disciplina, compa&ntilde;erismo y formaci&oacute;n integral.</p>
+            </div>
+
+            <div class="sports-team-cards">
+                <article class="sports-team-card">
+                    <img src="img/Deportes/Img.1.jpeg" alt="Equipo de f&uacute;tbol femenino del Instituto Francisco Miranda">
+                    <div>
+                        <span>F&Uacute;TBOL FEMENINO</span>
+                        <h3>Talento, uni&oacute;n y determinaci&oacute;n</h3>
+                        <p>Categor&iacute;as U15 y U17</p>
+                    </div>
+                </article>
+
+                <article class="sports-team-card">
+                    <img src="img/Deportes/Img.2.jpeg" alt="Equipo de f&uacute;tbol masculino del Instituto Francisco Miranda">
+                    <div>
+                        <span>F&Uacute;TBOL MASCULINO</span>
+                        <h3>Disciplina dentro y fuera de la cancha</h3>
+                        <p>Equipos representativos institucionales</p>
+                    </div>
+                </article>
+            </div>
+
+            <div class="sports-modal-sections">
+                <section class="sports-info-block">
+                    <h3><i class="fa-solid fa-chart-column"></i> Estad&iacute;sticas y participaci&oacute;n general</h3>
+                    <ul>
+                        <li><strong>Trayectoria:</strong> la actividad deportiva comenz&oacute; a tomar forma alrededor de 2010 gracias al entusiasmo en los recreos. Desde 2015 competimos constantemente fuera de nuestras instalaciones, con cerca de 11 a&ntilde;os de trayectoria competitiva.</li>
+                        <li><strong>Comunidad activa:</strong> cerca de 200 estudiantes participan en actividades generales y torneos internos; unos 60 integran los equipos representativos oficiales.</li>
+                        <li><strong>Calendario activo:</strong> temporada oficial de febrero a noviembre, con un promedio de 20 eventos formales y hasta 50 encuentros entre amistosos y torneos rel&aacute;mpago.</li>
+                        <li><strong>Categor&iacute;as:</strong> Ciclo B&aacute;sico (s&eacute;ptimo a noveno grado) y Bachillerato, en torneos Sub-15, Sub-17 y categor&iacute;as mayores.</li>
+                        <li><strong>Docentes y apoyo:</strong> impulsado por Manuel Pineda, Ada, Santiago y Wilmer, con el respaldo log&iacute;stico y de transporte del subdirector Juan Isaguirre.</li>
+                    </ul>
+                </section>
+
+                <section class="sports-info-block">
+                    <h3><i class="fa-solid fa-trophy"></i> Disciplinas y cuadros representativos</h3>
+                    <ul>
+                        <li><strong>F&uacute;tbol masculino y femenino:</strong> nuestra disciplina principal y con mayor presencia competitiva en ambas ramas.</li>
+                        <li><strong>Baloncesto y voleibol:</strong> fomentados mediante clases y encuentros amistosos interinstitucionales.</li>
+                        <li><strong>Atletismo:</strong> selecci&oacute;n de talentos orientada a convocatorias y torneos externos.</li>
+                        <li><strong>Ajedrez y tenis de mesa:</strong> integrados en las clases curriculares de Educaci&oacute;n F&iacute;sica seg&uacute;n el tiempo y los recursos disponibles.</li>
+                    </ul>
+                </section>
+
+                <section class="sports-info-block">
+                    <h3><i class="fa-solid fa-medal"></i> Logros, historia y proyecci&oacute;n profesional</h3>
+                    <ul>
+                        <li><strong>Torneo Secretar&iacute;a de Educaci&oacute;n (2018-2019):</strong> hist&oacute;rica participaci&oacute;n hasta semifinales; fuimos eliminados en penales por el equipo que luego se coron&oacute; campe&oacute;n.</li>
+                        <li><strong>Subcampeonato Interinstitucional (2025):</strong> trofeo y medallas de segundo lugar tras una re&ntilde;ida final (3-2).</li>
+                        <li><strong>Semana de la Juventud (2026):</strong> primer lugar en fase de grupos, con goleadas de hasta 9-0, y avance a cuartos de final frente al Instituto Salesiano San Miguel.</li>
+                        <li><strong>Cazatalentos y semillero:</strong> el nivel competitivo ha atra&iacute;do a ojeadores, incluso vinculados a la FIFA, y algunos egresados han escalado hasta el f&uacute;tbol profesional.</li>
+                    </ul>
+                </section>
+
+                <section class="sports-info-block sports-women-block">
+                    <h3><i class="fa-solid fa-person-running"></i> F&uacute;tbol femenino</h3>
+                    <ul>
+                        <li><strong>Filosof&iacute;a y origen:</strong> naci&oacute; en 2024 tras la pregunta de una alumna: &laquo;&iquest;por qu&eacute; solo los varones?&raquo;. Se consolid&oacute; bajo la premisa de que ser mujer no debe representar una limitaci&oacute;n para participar en el deporte.</li>
+                        <li><strong>Trayectoria y logros:</strong> cerca de dos a&ntilde;os y medio de evoluci&oacute;n continua en categor&iacute;as U15 y U17, con avance hasta cuartos de final en la competencia oficial de CODICADER.</li>
+                        <li><strong>Copa Amistad:</strong> orgullo institucional por crear y organizar la Copa Amistad de F&uacute;tbol Femenino, cuya tercera edici&oacute;n se prepara para octubre.</li>
+                    </ul>
+                </section>
+
+                <section class="sports-info-block sports-infrastructure-block">
+                    <h3><i class="fa-solid fa-building"></i> Infraestructura y retos futuros</h3>
+                    <p><strong>Instalaci&oacute;n actual:</strong> cancha institucional de usos m&uacute;ltiples, de caracter&iacute;sticas r&uacute;sticas, utilizada para entrenamientos, eventos c&iacute;vicos y reuniones.</p>
+                    <p><strong>Proyectos en gesti&oacute;n:</strong> en coordinaci&oacute;n con la municipalidad, avanzan los tr&aacute;mites de licitaci&oacute;n para el techado de la cancha y la construcci&oacute;n de grader&iacute;as, mejorando las condiciones de pr&aacute;ctica para toda la comunidad estudiantil.</p>
+                </section>
+            </div>
+        </div>
+    </div>
+
 
     <!-- ================================
          FOOTER
@@ -765,11 +914,11 @@
             <div class="footer-brand">
 
                 <div class="footer-logo">
-                    FM
+                    <img src="img/Portada/Logo.jpg" alt="Escudo del Instituto Francisco Miranda">
                 </div>
 
                 <div>
-                    <strong>Instituto Humanal Técnico</strong>
+                    <strong>Instituto Gubernamental Técnico</strong>
                     <span>Francisco Miranda</span>
                 </div>
 
@@ -793,7 +942,7 @@
                 <h3>Comunidad</h3>
 
                 <a href="pages/talleres.html">Talleres</a>
-                <a href="pages/banda.html">Banda Latina</a>
+                <a href="pages/Banda%20Latina.html#banda-latina-info">Banda Latina</a>
                 <a href="pages/deportes.html">Deportes</a>
                 <a href="#galeria">Galería</a>
 
