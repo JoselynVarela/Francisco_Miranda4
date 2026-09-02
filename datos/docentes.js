@@ -298,7 +298,7 @@ const docentes = [
     ,
 
     {
-        nombre: "ROY",
+        nombre: "ROY ALEJANDRO RODRIGUEZ PAVÓN",
         cargo: "Consejero de la Jornada vespertina",
         resena: "Formación continua como pasante universitario en Ingeniería en Sistemas, aportando competencias tecnológicas y metodologías de gestión a la administración y supervisión institucional en la jornada de la tarde.",
         proyectos: "Implementación de programas de mentoría académica y optimización de procesos disciplinarios y de orientación estudiantil para la jornada vespertina.",
