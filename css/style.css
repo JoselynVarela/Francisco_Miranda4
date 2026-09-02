@@ -724,8 +724,8 @@ img {
 .service-trigger,
 .band-trigger {
     border: none;
-    background: linear-gradient(135deg, var(--amarillo), var(--ocre-dark));
-    color: #0a0a0a;
+    background: white;
+    color: var(--vino);
     width: calc(100% - 50px);
     margin: 0 25px 25px;
     padding: 11px 16px;
