@@ -17,6 +17,20 @@
 
 <body>
 
+    <!-- BARRA SUPERIOR -->
+    <div class="top-bar">
+        <div class="top-bar-container">
+            <div class="top-info">
+                <span><i class="fa-solid fa-location-dot"></i> Zambrano, Francisco Morazán</span>
+                <span><i class="fa-solid fa-school"></i> Educación técnica para el futuro</span>
+            </div>
+            <div class="top-social">
+                <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+
     <!-- ENCABEZADO -->
     <header class="header">
 
@@ -35,31 +49,59 @@
 
             <nav class="nav-menu">
 
-                <a href="../index.html">
+                <a href="../index.html#inicio" class="nav-link">
                     Inicio
                 </a>
 
-                <a href="../index.html#institucion">
+                <a href="../index.html#institucion" class="nav-link">
                     Nosotros
                 </a>
 
-                <a href="../index.html#carreras">
+                <a href="../index.html#carreras" class="nav-link">
                     Oferta Académica
                 </a>
 
-                <a href="../index.html#talleres">
+                <a href="../index.html#talleres" class="nav-link">
                     Talleres
                 </a>
 
-                <a href="personal.html" class="active">
+                <a href="../index.html#vida-estudiantil" class="nav-link">
+                    Vida Estudiantil
+                </a>
+
+                <a href="personal.html" class="nav-link active">
                     Personal
+                </a>
+
+                <a href="../index.html#contacto" class="nav-link">
+                    Contacto
                 </a>
 
             </nav>
 
+            <a href="../index.html#institucion" class="btn-header">
+                Conócenos
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+            <button class="menu-toggle" id="menuToggle" type="button" aria-label="Abrir menú">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
         </div>
 
     </header>
+
+    <!-- MENÚ MÓVIL -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="../index.html#inicio">Inicio</a>
+        <a href="../index.html#institucion">Nosotros</a>
+        <a href="../index.html#carreras">Oferta Académica</a>
+        <a href="../index.html#talleres">Talleres</a>
+        <a href="../index.html#vida-estudiantil">Vida Estudiantil</a>
+        <a href="personal.html">Personal</a>
+        <a href="../index.html#contacto">Contacto</a>
+    </div>
 
 
     <!-- HERO -->
@@ -265,6 +307,23 @@
     <!-- SOLO ESTE JS -->
 
    
+   <script>
+       const menuToggle = document.getElementById("menuToggle");
+       const mobileMenu = document.getElementById("mobileMenu");
+
+       if (menuToggle && mobileMenu) {
+           menuToggle.addEventListener("click", () => {
+               mobileMenu.classList.toggle("active");
+               const icon = menuToggle.querySelector("i");
+               icon.classList.toggle("fa-bars");
+               icon.classList.toggle("fa-xmark");
+           });
+
+           document.querySelectorAll(".mobile-menu a").forEach(link => {
+               link.addEventListener("click", () => mobileMenu.classList.remove("active"));
+           });
+       }
+   </script>
    <script src="../datos/docentes.js"></script>
    <script src="../js/personal.js"></script>
 </body>

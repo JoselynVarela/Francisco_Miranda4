@@ -6,14 +6,29 @@
     <title>Talleres | Instituto Francisco Miranda</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&family=Nunito:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body class="workshops-page">
+
+    <!-- BARRA SUPERIOR -->
+    <div class="top-bar">
+        <div class="top-bar-container">
+            <div class="top-info">
+                <span><i class="fa-solid fa-location-dot"></i> Zambrano, Francisco Morazán</span>
+                <span><i class="fa-solid fa-school"></i> Educación técnica para el futuro</span>
+            </div>
+            <div class="top-social">
+                <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+
     <header class="header">
         <div class="nav-container">
-            <a href="../index.html" class="logo" aria-label="Volver al inicio">
+            <a href="../index.html" class="logo">
                 <div class="logo-placeholder">
                     <img src="../img/Portada/Logo.jpg" alt="Escudo del Instituto Francisco Miranda">
                 </div>
@@ -22,12 +37,37 @@
                     <span>Francisco Miranda</span>
                 </div>
             </a>
-            <a href="../index.html#talleres" class="workshops-back">
-                <i class="fa-solid fa-arrow-left"></i>
-                Volver al inicio
+
+            <nav class="nav-menu">
+                <a href="../index.html#inicio" class="nav-link">Inicio</a>
+                <a href="../index.html#institucion" class="nav-link">Nosotros</a>
+                <a href="../index.html#carreras" class="nav-link">Oferta Académica</a>
+                <a href="talleres.html" class="nav-link active">Talleres</a>
+                <a href="../index.html#vida-estudiantil" class="nav-link">Vida Estudiantil</a>
+                <a href="../index.html#personal" class="nav-link">Personal</a>
+                <a href="../index.html#contacto" class="nav-link">Contacto</a>
+            </nav>
+
+            <a href="../index.html#institucion" class="btn-header">
+                Conócenos
+                <i class="fa-solid fa-arrow-right"></i>
             </a>
+
+            <button class="menu-toggle" id="menuToggle" type="button" aria-label="Abrir menú">
+                <i class="fa-solid fa-bars"></i>
+            </button>
         </div>
     </header>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="../index.html#inicio">Inicio</a>
+        <a href="../index.html#institucion">Nosotros</a>
+        <a href="../index.html#carreras">Oferta Académica</a>
+        <a href="talleres.html">Talleres</a>
+        <a href="../index.html#vida-estudiantil">Vida Estudiantil</a>
+        <a href="../index.html#personal">Personal</a>
+        <a href="../index.html#contacto">Contacto</a>
+    </div>
 
     <main>
         <section class="workshops-hero">
@@ -204,6 +244,7 @@
     <footer class="footer workshops-footer">
         <div class="footer-bottom"><p>© 2026 Instituto Gubernamental Técnico Francisco Miranda.</p></div>
     </footer>
+    <script src="../js/script.js"></script>
     <script src="../js/talleres.js"></script>
 </body>
 </html>

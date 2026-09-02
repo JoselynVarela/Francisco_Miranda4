@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&family=Playfair+Display:wght@600;700&family=Nunito:wght@400;600;700;800&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
@@ -21,28 +21,63 @@
 
 <body>
 
-    <!-- ENCABEZADO -->
-    <header class="info-header">
-
-        <div class="header-content">
-
-            <div class="logo-area">
-                <img src="img/Portada/Logo.jpg" alt="Logo Instituto Francisco Miranda">
-
-                <div>
-                    <h1>Instituto Gubernamental Técnico Francisco Miranda</h1>
-                    <span>Zambrano, Francisco Morazán</span>
-                </div>
+    <!-- BARRA SUPERIOR -->
+    <div class="top-bar">
+        <div class="top-bar-container">
+            <div class="top-info">
+                <span><i class="fa-solid fa-location-dot"></i> Zambrano, Francisco Morazán</span>
+                <span><i class="fa-solid fa-school"></i> Educación técnica para el futuro</span>
             </div>
+            <div class="top-social">
+                <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
 
-            <a href="index.html" class="btn-inicio">
-                <i class="fa-solid fa-house"></i>
-                Regresar al inicio
+    <!-- ENCABEZADO -->
+    <header class="header">
+        <div class="nav-container">
+            <a href="../index.html" class="logo">
+                <div class="logo-placeholder">
+                    <img src="../img/Portada/Logo.jpg" alt="Escudo del Instituto Francisco Miranda">
+                </div>
+                <div class="logo-text">
+                    <strong>Instituto Gubernamental Técnico</strong>
+                    <span>Francisco Miranda</span>
+                </div>
             </a>
 
-        </div>
+            <nav class="nav-menu">
+                <a href="../index.html#inicio" class="nav-link">Inicio</a>
+                <a href="../index.html#institucion" class="nav-link">Nosotros</a>
+                <a href="../index.html#carreras" class="nav-link active">Oferta Académica</a>
+                <a href="../index.html#talleres" class="nav-link">Talleres</a>
+                <a href="../index.html#vida-estudiantil" class="nav-link">Vida Estudiantil</a>
+                <a href="../index.html#personal" class="nav-link">Personal</a>
+                <a href="../index.html#contacto" class="nav-link">Contacto</a>
+            </nav>
 
+            <a href="../index.html#institucion" class="btn-header">
+                Conócenos
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+            <button class="menu-toggle" id="menuToggle" type="button" aria-label="Abrir menú">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
     </header>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="../index.html#inicio">Inicio</a>
+        <a href="../index.html#institucion">Nosotros</a>
+        <a href="../index.html#carreras">Oferta Académica</a>
+        <a href="../index.html#talleres">Talleres</a>
+        <a href="../index.html#vida-estudiantil">Vida Estudiantil</a>
+        <a href="../index.html#personal">Personal</a>
+        <a href="../index.html#contacto">Contacto</a>
+    </div>
 
 
     <!-- PORTADA -->
@@ -367,6 +402,23 @@
 
 
     <!-- JAVASCRIPT -->
+    <script>
+        const menuToggle = document.getElementById("menuToggle");
+        const mobileMenu = document.getElementById("mobileMenu");
+
+        if (menuToggle && mobileMenu) {
+            menuToggle.addEventListener("click", () => {
+                mobileMenu.classList.toggle("active");
+                const icon = menuToggle.querySelector("i");
+                icon.classList.toggle("fa-bars");
+                icon.classList.toggle("fa-xmark");
+            });
+
+            document.querySelectorAll(".mobile-menu a").forEach(link => {
+                link.addEventListener("click", () => mobileMenu.classList.remove("active"));
+            });
+        }
+    </script>
     <script src="../js/informatica.js"></script>
 
 </body>
