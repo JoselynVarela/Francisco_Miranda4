@@ -1,4 +1,4 @@
-/* MENÃš MÃ“VIL */
+/* MENÚ MÓVIL */
 
 const decodeMojibake = value => {
     const replacements = {
@@ -174,12 +174,6 @@ animatedElements.forEach(element => {
     animationObserver.observe(element);
 
 });
-
-const hero = document.querySelector(".hero");
-
-if (hero) {
-    hero.style.setProperty("--hero-image", "url('../img/Portada/Foto de portada.jpg')");
-}
 
 document.querySelectorAll(".gallery-slider").forEach(slider => {
     const slides = Array.from(slider.querySelectorAll(".gallery-slide"));
