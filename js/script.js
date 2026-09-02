@@ -298,6 +298,7 @@ function initBandEventsGallery() {
     };
 
     const closeLightbox = () => {
+        lightboxImage.style.transform = "none";
         lightbox.classList.add("hidden");
         lightbox.classList.remove("flex");
         lightbox.setAttribute("aria-hidden", "true");
@@ -310,6 +311,8 @@ function initBandEventsGallery() {
         const image = item.querySelector("img");
         lightboxImage.src = item.dataset.image || image.src;
         lightboxImage.alt = image.alt;
+        lightboxImage.style.transform = "rotate(90deg)";
+        lightboxImage.style.imageOrientation = "none";
         lightboxCaption.textContent = item.dataset.caption || image.alt;
         lightbox.classList.remove("hidden");
         lightbox.classList.add("flex");
