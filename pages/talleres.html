@@ -1,19 +1,17 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Talleres técnicos | Instituto Francisco Miranda</title>
+    <title>Talleres | Instituto Francisco Miranda</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&family=Nunito:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/talleres.css">
 </head>
+<body class="workshops-page">
 
-<body>
     <div class="top-bar">
         <div class="top-bar-container">
             <div class="top-info">
@@ -40,7 +38,7 @@
                 </div>
             </a>
 
-            <nav class="nav-menu" aria-label="Navegación principal">
+            <nav class="nav-menu">
                 <a href="../index.html#inicio" class="nav-link">Inicio</a>
                 <a href="../index.html#institucion" class="nav-link">Nosotros</a>
                 <a href="../index.html#carreras" class="nav-link">Oferta Académica</a>
@@ -73,114 +71,196 @@
 
     <main>
         <section class="workshops-hero">
-            <div class="workshops-hero-content">
-                <a class="back-link" href="../index.html">
-                    <i class="fa-solid fa-arrow-left"></i>
-                    Volver a vida mirandina
-                </a>
-                <span class="section-label">
-                    <i class="fa-solid fa-screwdriver-wrench"></i>
-                    FORMACIÓN PRÁCTICA
-                </span>
-                <h1>Aprender haciendo,<br><span>crear para el futuro.</span></h1>
-                <p>Conoce los talleres que convierten la curiosidad de nuestros estudiantes en habilidades, proyectos y nuevas oportunidades.</p>
-            </div>
-            <div class="workshops-hero-mark" aria-hidden="true">
-                <i class="fa-solid fa-compass-drafting"></i>
-                <span>05</span>
+            <div class="workshops-hero-inner">
+                <span class="section-label"><i class="fa-solid fa-screwdriver-wrench"></i> FORMACIÓN PRÁCTICA</span>
+                <h1>Talleres que convierten ideas en habilidades</h1>
+                <p>Conoce los espacios de aprendizaje donde nuestros estudiantes exploran, crean y desarrollan competencias para la vida y el trabajo.</p>
             </div>
         </section>
 
-        <section class="workshops-section">
-            <div class="workshops-heading">
-                <div>
-                    <span class="eyebrow">NUESTRAS ÁREAS</span>
-                    <h2>Cinco caminos para desarrollar el talento</h2>
+        <section class="workshops-carousel-section" aria-label="Galería de talleres">
+            <div class="workshops-carousel" id="workshopsCarousel">
+                <div class="workshops-slide active">
+                    <img src="../img/Talleres/cosmetologia.jpeg" alt="Estudiantes en el taller de belleza y cosmetología">
+                    <div class="workshops-slide-caption">
+                        <span>BELLEZA Y COSMETOLOGÍA</span>
+                        <p>“Tu talento crece cuando te atreves a expresarlo.”</p>
+                    </div>
                 </div>
-                <p>Cada espacio combina conocimientos técnicos, creatividad, disciplina y trabajo en equipo.</p>
-            </div>
-
-            <div class="workshop-list">
-                <article class="workshop-item">
-                    <figure class="workshop-image">
-                        <img src="../img/Talleres/cosmetologia.jpeg" alt="Estudiantes trabajando en el taller de belleza y cosmetología">
-                        <span class="workshop-number">01</span>
-                    </figure>
-                    <div class="workshop-copy">
-                        <span class="workshop-type">TALLER 01</span>
-                        <h3>Belleza y cosmetología</h3>
-                        <p>Un espacio para descubrir técnicas de cuidado personal, estética y presentación, desarrollando precisión, creatividad y espíritu emprendedor.</p>
-                        <div class="workshop-detail"><i class="fa-solid fa-sparkles"></i><span>Imagen e información del taller</span></div>
+                <div class="workshops-slide">
+                    <img src="../img/Talleres/carpinteria.jpg" alt="Herramientas y madera del taller de carpintería">
+                    <div class="workshops-slide-caption">
+                        <span>CARPINTERÍA Y EBANISTERÍA</span>
+                        <p>“Con paciencia y precisión, una idea se convierte en algo real.”</p>
                     </div>
-                </article>
-
-                <article class="workshop-item workshop-item-reverse">
-                    <figure class="workshop-image">
-                        <img src="../img/Talleres/WhatsApp Image 2026-08-10 at 9.49.16 PM.jpeg" alt="Estudiantes trabajando en el taller de carpintería">
-                        <span class="workshop-number">02</span>
-                    </figure>
-                    <div class="workshop-copy">
-                        <span class="workshop-type">TALLER 02</span>
-                        <h3>Carpintería</h3>
-                        <p>Los estudiantes conocen la madera, las herramientas y los procesos de construcción para transformar sus ideas en piezas útiles y duraderas.</p>
-                        <div class="workshop-detail"><i class="fa-solid fa-ruler-combined"></i><span>Imagen e información del taller</span></div>
+                </div>
+                <div class="workshops-slide">
+                    <img src="../img/Talleres/metales (3).jpeg" alt="Estudiantes trabajando en el taller de estructuras metálicas">
+                    <div class="workshops-slide-caption">
+                        <span>ELECTRICIDAD</span>
+                        <p>“La curiosidad enciende el camino hacia nuevas soluciones.”</p>
                     </div>
-                </article>
-
-                <article class="workshop-item">
-                    <figure class="workshop-image">
-                        <img src="../img/Talleres/WhatsApp Image 2026-08-10 at 9.49.17 PM.jpeg" alt="Práctica de estudiantes en el taller de electricidad">
-                        <span class="workshop-number">03</span>
-                    </figure>
-                    <div class="workshop-copy">
-                        <span class="workshop-type">TALLER 03</span>
-                        <h3>Electricidad</h3>
-                        <p>Formación en instalaciones, circuitos y mantenimiento eléctrico, con énfasis en la seguridad, el razonamiento técnico y la solución de problemas.</p>
-                        <div class="workshop-detail"><i class="fa-solid fa-bolt"></i><span>Imagen e información del taller</span></div>
+                </div>
+                <div class="workshops-slide">
+                    <img src="../img/Talleres/hogar.jpeg" alt="Estudiantes aprendiendo en el taller de hogar">
+                    <div class="workshops-slide-caption">
+                        <span>TALLER DE HOGAR</span>
+                        <p>“Lo que aprendes puede hacer más valioso cada lugar que habitas.”</p>
                     </div>
-                </article>
-
-                <article class="workshop-item workshop-item-reverse">
-                    <figure class="workshop-image">
-                        <img src="../img/Talleres/WhatsApp Image 2026-08-10 at 9.49.44 PM.jpeg" alt="Estudiantes en el taller de estructuras metálicas">
-                        <span class="workshop-number">04</span>
-                    </figure>
-                    <div class="workshop-copy">
-                        <span class="workshop-type">TALLER 04</span>
-                        <h3>Estructuras metálicas</h3>
-                        <p>Un entorno para aprender medición, corte, unión y fabricación de estructuras, fortaleciendo la exactitud y la responsabilidad en cada proyecto.</p>
-                        <div class="workshop-detail"><i class="fa-solid fa-wrench"></i><span>Imagen e información del taller</span></div>
+                </div>
+                <div class="workshops-slide">
+                    <img src="../img/Talleres/WhatsApp Image 2026-08-10 at 9.49.16 PM.jpeg" alt="Mesa elaborada en el taller de carpintería">
+                    <div class="workshops-slide-caption">
+                        <span>PROYECTOS QUE INSPIRAN</span>
+                        <p>“Cada detalle trabajado con dedicación convierte un sueño en realidad.”</p>
                     </div>
-                </article>
+                </div>
 
-                <article class="workshop-item">
-                    <figure class="workshop-image">
-                        <img src="../img/Talleres/hogar.jpeg" alt="Estudiantes en el taller de hogar">
-                        <span class="workshop-number">05</span>
-                    </figure>
-                    <div class="workshop-copy">
-                        <span class="workshop-type">TALLER 05</span>
-                        <h3>Hogar</h3>
-                        <p>Aprendizajes para la vida y el emprendimiento en áreas como cocina, nutrición, manualidades, corte, confección y organización del hogar.</p>
-                        <div class="workshop-detail"><i class="fa-solid fa-house"></i><span>Imagen e información del taller</span></div>
-                    </div>
-                </article>
+                <button class="workshops-carousel-button workshops-carousel-prev" type="button" aria-label="Imagen anterior">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </button>
+                <button class="workshops-carousel-button workshops-carousel-next" type="button" aria-label="Imagen siguiente">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+                <div class="workshops-carousel-dots" role="tablist" aria-label="Seleccionar imagen"></div>
             </div>
         </section>
 
-        <section class="workshops-cta">
-            <span>COMUNIDAD MIRANDINA</span>
-            <h2>El talento también se construye con las manos.</h2>
-            <a href="../index.html#contacto" class="btn btn-primary">Conoce más <i class="fa-solid fa-arrow-right"></i></a>
+        <section class="workshops-content" aria-labelledby="workshops-title">
+            <div class="workshops-intro">
+                <div>
+                    <span class="workshops-kicker">NUESTRAS ÁREAS</span>
+                    <h2 id="workshops-title">Cinco caminos para aprender haciendo</h2>
+                </div>
+                <p>Cada taller combina práctica, creatividad y acompañamiento docente. Este espacio puede crecer con nuevos proyectos, horarios e imágenes.</p>
+            </div>
+
+            <div class="workshops-list">
+                <article class="workshop-detail workshop-beauty">
+                    <div class="workshop-image"><img src="../img/Talleres/cosmetologia (2).jpeg" alt="Estudiantes en el taller de belleza y cosmetología"></div>
+                    <div class="workshop-copy">
+                        <span class="workshop-number">01 / 05</span>
+                        <h3>Belleza y cosmetología</h3>
+                        <h4>Transformando pasiones en profesión</h4>
+                        <p>El Taller de Belleza y Cosmetología nació como un desafío docente que, a través de la dedicación y el aprendizaje continuo, se ha convertido en un pilar de desarrollo técnico y profesional. Desde sus inicios con recursos limitados, el proyecto ha crecido de manera constante mediante la autoformación en el Instituto Nacional de Formación Profesional (INFOP) y la autogestión de sus propios equipos e insumos.</p>
+                        <h4>Nuestra oferta académica</h4>
+                        <ul class="workshop-offer">
+                            <li><strong>Cuidado y estilismo capilar:</strong> técnicas avanzadas de secado, planchado, peinados y tratamientos intensivos.</li>
+                            <li><strong>Estética corporal y facial:</strong> manicure, pedicure y cuidado especializado de la piel.</li>
+                            <li><strong>Maquillaje profesional:</strong> aplicación de tendencias para diversos eventos y técnicas de imagen.</li>
+                            <li><strong>Barbería masculina:</strong> formación en corte y estilismo masculino impartida con apoyo de especialistas del rubro.</li>
+                        </ul>
+                        <h4>Impacto y proyección técnica</h4>
+                        <p>Más allá del aula, nuestro programa impulsa la autonomía económica. Nuestras estudiantes adquieren habilidades operativas que les permiten generar ingresos independientes desde sus primeras etapas de aprendizaje, logrando que muchas de ellas continúen su formación profesional e incluso se desempeñen como instructoras en el área.</p>
+                        <p>Actualmente, el taller continúa fortaleciendo su equipamiento con herramientas modernas y trabaja hacia la meta de consolidar un espacio propio, dedicado exclusivamente a la innovación técnica y la formación integral de futuras cosmetólogas.</p>
+                        <blockquote class="workshop-motto">“Tu talento crece cuando te atreves a expresarlo.”</blockquote>
+                        <div class="workshop-tags"><span>Creatividad</span><span>Estilismo</span><span>Cuidado personal</span></div>
+                    </div>
+                </article>
+
+                <article class="workshop-detail workshop-carpentry">
+                    <div class="workshop-image"><img src="../img/Talleres/carpinteria.jpg" alt="Herramientas y madera del taller de carpintería"></div>
+                    <div class="workshop-copy">
+                        <span class="workshop-number">02 / 05</span>
+                        <h3>Carpintería y ebanistería</h3>
+                        <h4>Formación para la vida</h4>
+                        <p>El Taller de Carpintería y Ebanistería nació durante la transformación del colegio en una institución técnica. A lo largo de los años, ha evolucionado desde el trabajo puramente manual hasta convertirse en un espacio equipado con maquinaria especializada gracias al compromiso de alumnos, docentes y padres de familia.</p>
+                        <h4>Nuestra propuesta educativa</h4>
+                        <ul class="workshop-offer">
+                            <li><strong>Técnicas de ebanistería:</strong> uso de herramientas manuales y maquinaria, como canteadoras, cepillos y lijadoras, para la elaboración de muebles de alta calidad.</li>
+                            <li><strong>Cultura de seguridad:</strong> uso estricto de gabachas y equipos de protección bajo la supervisión constante de personal capacitado.</li>
+                            <li><strong>Desarrollo emprendedor y laboral:</strong> capacitación práctica que permite a los egresados insertarse en la industria o crear su propia empresa.</li>
+                        </ul>
+                        <h4>Impacto y visión a futuro</h4>
+                        <p>Bajo la premisa de enseñar habilidades duraderas para la vida, nuestro taller promueve la superación personal y profesional. Proyectamos impulsar una carrera técnica formal en la institución para que los estudiantes egresen plenamente certificados en áreas como madera, electricidad y estructuras metálicas.</p>
+                        <blockquote class="workshop-motto">“Con paciencia y precisión, una idea se convierte en algo real.”</blockquote>
+                        <div class="workshop-tags"><span>Ebanistería</span><span>Seguridad</span><span>Emprendimiento</span></div>
+                    </div>
+                </article>
+
+                <article class="workshop-detail workshop-electricity">
+                    <div class="workshop-image"><img src="../img/Talleres/electricidad (2).jpeg" alt="Estudiantes realizando un proyecto de electricidad"></div>
+                    <div class="workshop-copy">
+                        <span class="workshop-number">03 / 05</span>
+                        <h3>Electricidad</h3>
+                        <h4>Innovación, seguridad y formación práctica</h4>
+                        <p>El Taller de Electricidad nació para resolver las necesidades técnicas de nuestra institución y ofrecer a los estudiantes una capacitación práctica indispensable para la vida cotidiana y el entorno laboral. Lo que comenzó como un proyecto modesto con recursos básicos ha evolucionado hasta convertirse en un espacio equipado y enfocado en la tecnología.</p>
+                        <h4>Nuestra propuesta educativa</h4>
+                        <ul class="workshop-offer">
+                            <li><strong>Fundamentos tecnológicos y electrónica:</strong> aprendizaje sobre herramientas, diagramas, instrumentos de medición y proyectos de automatización utilizando micro:bit.</li>
+                            <li><strong>Cultura de seguridad eléctrica:</strong> protocolos estrictos para la identificación de tensiones, uso de equipo de protección y prevención de riesgos eléctricos.</li>
+                            <li><strong>Proyectos prácticos y comunitarios:</strong> elaboración de lámparas de PVC, calentadores de agua y mantenimiento directo de la red eléctrica institucional.</li>
+                        </ul>
+                        <h4>Impacto y visión a futuro</h4>
+                        <p>Formamos técnicos responsables y adaptables a las transformaciones tecnológicas. Nuestra meta es continuar integrando la electricidad con la programación y el control automático, preparando a los estudiantes para desempeñarse en mantenimiento, instalaciones industriales o proyectos de emprendimiento.</p>
+                        <blockquote class="workshop-motto">“La curiosidad enciende el camino hacia nuevas soluciones.”</blockquote>
+                        <div class="workshop-tags"><span>Electrónica</span><span>Seguridad</span><span>Automatización</span></div>
+                    </div>
+                </article>
+
+                <article class="workshop-detail workshop-metal">
+                    <div class="workshop-image"><img src="../img/Talleres/metales.jpeg" alt="Estudiante trabajando en el taller de estructuras metálicas"></div>
+                    <div class="workshop-copy">
+                        <span class="workshop-number">04 / 05</span>
+                        <h3>Estructuras metálicas</h3>
+                        <h4>Construyendo futuro y comunidad</h4>
+                        <p>El Taller de Estructuras Metálicas nació junto con la transformación de nuestro centro educativo en un instituto técnico. A lo largo de los años, el taller ha evolucionado desde sus cimientos gracias al esfuerzo conjunto, el fortalecimiento de su infraestructura y la consolidación de un equipo docente con alta preparación universitaria.</p>
+                        <h4>Nuestra propuesta educativa</h4>
+                        <ul class="workshop-offer">
+                            <li><strong>Técnicas de metalmecánica:</strong> aprendizaje práctico en la elaboración de estructuras, portones, puertas y balcones con estándares de calidad profesional.</li>
+                            <li><strong>Innovación tecnológica:</strong> proyección hacia la enseñanza de procesos avanzados de soldadura, como TIG y MIG, para responder a las exigencias industriales.</li>
+                            <li><strong>Compromiso social:</strong> proyectos reales con impacto directo en escuelas y viviendas de la comunidad, garantizando experiencia práctica para los alumnos.</li>
+                        </ul>
+                        <h4>Impacto y visión a futuro</h4>
+                        <p>Promovemos un ambiente de trabajo colaborativo e integrado entre todos los talleres de la institución. Nuestra visión hacia el futuro se centra en la constante modernización del equipamiento técnico y en el establecimiento de una carrera técnica especializada en estructuras metálicas que prepare a los estudiantes para los retos del sector profesional.</p>
+                        <blockquote class="workshop-motto">“La disciplina convierte la fuerza en grandes resultados.”</blockquote>
+                        <div class="workshop-tags"><span>Metalmecánica</span><span>Innovación</span><span>Comunidad</span></div>
+                    </div>
+                </article>
+
+                <article class="workshop-detail workshop-home">
+                    <div class="workshop-image"><img src="../img/Talleres/hogar.jpeg" alt="Estudiantes aprendiendo en el taller de hogar"></div>
+                    <div class="workshop-copy">
+                        <span class="workshop-number">05 / 05</span>
+                        <h3>Hogar</h3>
+                        <h4>Formación práctica, creativa y emprendedora</h4>
+                        <p>El Taller de Hogar es un pilar fundamental en la educación técnica de nuestra institución. Diseñado para trascender la teoría, este espacio capacita a los estudiantes en habilidades manuales, de organización y de emprendimiento esenciales para su desarrollo personal, vocacional y profesional.</p>
+                        <h4>Nuestra oferta académica y especialidades</h4>
+                        <ul class="workshop-offer">
+                            <li><strong>Corte y confección:</strong> diseño, patronaje, reparación de prendas y elaboración de proyectos textiles prácticos, como uniformes escolares.</li>
+                            <li><strong>Nutrición y gastronomía:</strong> manipulación de alimentos, uso de utensilios de cocina y técnicas culinarias para el uso cotidiano y la comercialización.</li>
+                            <li><strong>Belleza y cosmetología:</strong> cuidado personal, estética y técnicas modernas orientadas a la prestación de servicios independientes.</li>
+                        </ul>
+                        <h4>Impacto y visión de futuro</h4>
+                        <p>Buscamos impulsar la autonomía y el talento de nuestros estudiantes, transformando sus conocimientos en oportunidades de negocio y sustento económico para la comunidad. Nuestra visión se enfoca en continuar modernizando nuestro equipamiento, ampliando los talleres y fortaleciendo la educación técnica para las futuras generaciones.</p>
+                        <blockquote class="workshop-motto">“Lo que aprendes puede hacer más valioso cada lugar que habitas.”</blockquote>
+                        <div class="workshop-tags"><span>Confección</span><span>Gastronomía</span><span>Emprendimiento</span></div>
+                    </div>
+                </article>
+            </div>
         </section>
     </main>
 
-    <footer class="footer">
-        <div class="footer-bottom">
-            <p>© 2026 Instituto Gubernamental Técnico Francisco Miranda. Todos los derechos reservados.</p>
-        </div>
+    <footer class="footer workshops-footer">
+        <div class="footer-bottom"><p>© 2026 Instituto Gubernamental Técnico Francisco Miranda.</p></div>
     </footer>
+    <script>
+        const menuToggle = document.getElementById("menuToggle");
+        const mobileMenu = document.getElementById("mobileMenu");
 
-    <script src="../js/script.js"></script>
+        if (menuToggle && mobileMenu) {
+            menuToggle.addEventListener("click", () => {
+                mobileMenu.classList.toggle("active");
+                const icon = menuToggle.querySelector("i");
+                icon.classList.toggle("fa-bars");
+                icon.classList.toggle("fa-xmark");
+            });
+
+            document.querySelectorAll(".mobile-menu a").forEach(link => {
+                link.addEventListener("click", () => mobileMenu.classList.remove("active"));
+            });
+        }
+    </script>
+    <script src="../js/talleres.js"></script>
 </body>
 </html>
