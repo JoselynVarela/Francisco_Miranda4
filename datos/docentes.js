@@ -4,7 +4,7 @@ const docentes = [
         cargo: "Docente investigadora y encargada del equipo de Fútbol Femenino",
         resena: "Ada Lizeth Ordóñez Martínez es docente investigadora, originaria de Tegucigalpa. Posee una Maestría en Lenguas y Cultura por la Universidad Nacional Autónoma de Honduras (UNAH). Cuenta con más de 20 años dentro del Instituto Técnico Francisco Miranda, destacándose en la enseñanza de lenguas y en la formación integral de sus estudiantes. Además, tiene a su cargo el equipo de fútbol femenino, promoviendo el liderazgo, la disciplina y el trabajo en equipo. Se caracteriza por ser una persona responsable, amable, respetuosa, comprometida, disciplinada, dedicada y profesional, cualidades que reflejan su vocación por la educación y la formación integral de sus estudiantes.",
         proyectos: "Especialista en Enseñanzas de Lenguas, Premios de Excelencia en clases de maestria. Más de 20 años de experiencia docente en el Instituto Francisco Miranda.",
-        foto: "../img/sin-foto.svg"
+        foto: "../img/avatar2.jpeg"
     },
 
     {
@@ -12,7 +12,7 @@ const docentes = [
         cargo: "Docente de Ciencias Naturales - Jornada Matutina",
         resena: "Licenciada en Ciencias Naturales egresada de la Universidad Pedagógica Nacional Francisco Morazán (UPNFM). Docente vocacional enfocada en el área de las ciencias de la tierra, la biología y la física básica, con una visión centrada en impactar de manera positiva el desarrollo académico y personal de los estudiantes. Su proyecto de vida profesional está orientado a la enseñanza y formación integral de jóvenes en el nivel de Educación Básica (7.º a 9.º grado).\n\nFormación Académica:\nLicenciatura en Ciencias Naturales\nUniversidad Pedagógica Nacional Francisco Morazán (UPNFM).",
         proyectos: "Competencias y Habilidades Clave:\n\nEspecialización Pedagógica: Impartición de las asignaturas del área de Ciencias Naturales orientada a jóvenes de 7.º, 8.º y 9.º grado.\n\nMetodología Activa: Desarrollo de estrategias pedagógicas dinámicas que facilitan el aprendizaje significativo en la etapa de educación básica.\n\nGestión de Aula: Capacidad para crear entornos de aprendizaje motivadores, estructurados y de respeto en la jornada matutina.\n\nCompromiso Vocacional: Enfoque continuo en el acompañamiento y desarrollo académico del estudiante.\n\nProyecto de Vida Profesional: \"Dedicar mi labor académica al fortalecimiento educativo de los jóvenes de educación básica, despertando en ellos el pensamiento crítico, la curiosidad científica y el cuidado del entorno natural durante sus años formativos de 7.º a 9.º grado.\"",
-        foto: "../img/sin-foto.svg"
+        foto: "../img/avatar2.jpeg"
     },
 
     {
@@ -112,11 +112,11 @@ const docentes = [
     },
 
     {
-        nombre: "JOSE MANUEL PINEDA GAMEZ",
-        cargo: "Director Artístico de la Banda Latina Francisco Miranda.",
-        resena: "La presente reseña destaca la trayectoria de José Manuel Pineda Gámez, un dedicado profesional de la educación musical y las artes que ha dejado una huella significativa en su institución desde su ingreso en 2013. Nacido un 19 de diciembre, su sólida formación académica como Maestro de Educación Primaria en Educación Musical por la Escuela Nacional de Música y Licenciado en Artes con orientación en Música de la Universidad Pedagógica Nacional Francisco Morazán (UPNFM) le ha permitido desempeñarse con excelencia tanto en la docencia de clases artísticas como en su actual rol como director de los grupos artísticos.\nMás allá de su labor en las aulas, su mayor hito profesional radica en la fundación y desarrollo de diversos proyectos artísticos desde cero. Con un liderazgo firme y una gestión basada en el esfuerzo propio y el trabajo colectivo, ha logrado consolidar estas agrupaciones a pesar de la ausencia inicial de apoyo financiero gubernamental o institucional, convirtiendo su visión en un referente de perseverancia y éxito cultural.",
-        proyectos: "Logros Destacados\nCreación y consolidación de grupos artísticos desde cero: Su mayor hito profesional ha sido fundar, desarrollar y mantener diversas agrupaciones artísticas dentro de la institución sin contar con ningún tipo de apoyo económico externo, institucional o gubernamental.\n\nGestión y liderazgo autogestionario: Ante la ausencia de presupuestos o patrocinios, ha sabido dirigir los proyectos culturales mediante la perseverancia, la planificación estratégica y el impulso del trabajo en equipo.\n\nImpacto y legado cultural: Ha logrado estructurar elencos sólidos y constantes que enriquecen de forma permanente la vida artística de la institución, convirtiendo su esfuerzo individual y colectivo en un referente de resiliencia y éxito cultural.",
-        foto: "../img/manuel pineda.jpg"
+        nombre: "JUAN CARLOS HERRERA ESPINOZA",
+        cargo: "Director de la Institución",
+        resena: "Nació el 12 de enero de 1977. Inició labores en la institución en 2007. Posee los títulos de Maestro en Educación Primaria y Licenciado en Ciencias con Orientación en Matemática, obtenidos en la Universidad Pedagógica Nacional. Actualmente se encuentra finalizando su tesis para obtener la Maestría en Matemática Educativa. Considera que uno de sus mayores logros es la transformación del Instituto Francisco Miranda, fruto de su dedicación, constancia y compromiso con la educación desde muy joven.",
+        proyectos: "Transformación y fortalecimiento institucional del Instituto Francisco Miranda",
+        foto: "../img/Juan Carlos Herrera.jpg"
     },
 
     {
@@ -128,11 +128,11 @@ const docentes = [
     },
 
     {
-        nombre: "JUAN CARLOS HERRERA ESPINOZA",
-        cargo: "Director de la Institución",
-        resena: "Nació el 12 de enero de 1977. Inició labores en la institución en 2007. Posee los títulos de Maestro en Educación Primaria y Licenciado en Ciencias con Orientación en Matemática, obtenidos en la Universidad Pedagógica Nacional. Actualmente se encuentra finalizando su tesis para obtener la Maestría en Matemática Educativa. Considera que uno de sus mayores logros es la transformación del Instituto Francisco Miranda, fruto de su dedicación, constancia y compromiso con la educación desde muy joven.",
-        proyectos: "Transformación y fortalecimiento institucional del Instituto Francisco Miranda",
-        foto: "../img/Juan Carlos Herrera.jpg"
+        nombre: "JOSE MANUEL PINEDA GAMEZ",
+        cargo: "Director Artístico de la Banda Latina Francisco Miranda.",
+        resena: "La presente reseña destaca la trayectoria de José Manuel Pineda Gámez, un dedicado profesional de la educación musical y las artes que ha dejado una huella significativa en su institución desde su ingreso en 2013. Nacido un 19 de diciembre, su sólida formación académica como Maestro de Educación Primaria en Educación Musical por la Escuela Nacional de Música y Licenciado en Artes con orientación en Música de la Universidad Pedagógica Nacional Francisco Morazán (UPNFM) le ha permitido desempeñarse con excelencia tanto en la docencia de clases artísticas como en su actual rol como director de los grupos artísticos.\nMás allá de su labor en las aulas, su mayor hito profesional radica en la fundación y desarrollo de diversos proyectos artísticos desde cero. Con un liderazgo firme y una gestión basada en el esfuerzo propio y el trabajo colectivo, ha logrado consolidar estas agrupaciones a pesar de la ausencia inicial de apoyo financiero gubernamental o institucional, convirtiendo su visión en un referente de perseverancia y éxito cultural.",
+        proyectos: "Logros Destacados\nCreación y consolidación de grupos artísticos desde cero: Su mayor hito profesional ha sido fundar, desarrollar y mantener diversas agrupaciones artísticas dentro de la institución sin contar con ningún tipo de apoyo económico externo, institucional o gubernamental.\n\nGestión y liderazgo autogestionario: Ante la ausencia de presupuestos o patrocinios, ha sabido dirigir los proyectos culturales mediante la perseverancia, la planificación estratégica y el impulso del trabajo en equipo.\n\nImpacto y legado cultural: Ha logrado estructurar elencos sólidos y constantes que enriquecen de forma permanente la vida artística de la institución, convirtiendo su esfuerzo individual y colectivo en un referente de resiliencia y éxito cultural.",
+        foto: "../img/manuel pineda.jpg"
     },
 
     {
