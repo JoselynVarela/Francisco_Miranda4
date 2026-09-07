@@ -19,7 +19,7 @@ const docentes = [
         nombre: "ANA GABRIELA SIMONS ZELAYA",
         cargo: "Docente de Matemáticas, con una trayectoria de 12 años de experiencia docente en Tegucigalpa, Francisco Miranda. Clases impartidas: Matemáticas, Física y Dibujo Técnico.",
         resena: "Ana Gabriela Simons Zelaya, nacida el 31 de julio de 1990 en Tegucigalpa, Francisco Morazán, es una destacada educadora de 35 años y Licenciada en Matemáticas por la UPNFM. Actualmente se desempeña como docente en el Instituto Técnico Francisco Miranda, donde aporta sus 12 años de sólida experiencia (2014-2026) impartiendo asignaturas clave como Matemáticas, F+isica, Dibujo Técnico. A lo largo de su carrera, Ana Gabriela se ha distinguido no solo por su labor en el aula, sino también por su compromiso con el talento acádemico júvenil, impulsando activamente a sus alumnos como tutora en las Olimpiadas de Matemáticas y aportando su criterio y experiencia como jurado en las ediciones a nivel nacional.",
-        proyectos: "",
+        proyectos: "Ha participado activamente como tutora y preparadora de estudiantes en Olimpiadas de Matemáticas, brindándoles acompañamiento y orientación para fortalecer sus conocimientos y habilidades de razonamiento lógico. Asimismo, ha tenido la oportunidad de desempeñarse como jurado en Olimpiadas Matemáticas a nivel nacional, contribuyendo a la evaluación y promoción del talento académico de los estudiantes participantes.",
         foto: "../img/Ana Simons.png"
     },
 
@@ -81,14 +81,9 @@ const docentes = [
 
     {
         nombre: "FREDIS ARMANDO DOMINGUEZ MEDINA",
-<<<<<<< Updated upstream
         cargo: "Docente en Matemática y cargo administrativo.",
         resena: "Licenciado en Matemática por la Universidad Pedagógica Nacional Francisco Morazán (UPNFM) y Licenciado en Economía por la Universidad Nacional Autónoma de Honduras (UNAH). Actualmente cuenta con 19 años dentro de la institución.\n\n\"Un maestro paciente, responsable y dedicado es aquel que guía con empatía, cumple con rigor su labor y entrega su vocación entera al crecimiento integral de sus estudiantes.\"",
-=======
-        cargo: "Docente en Matematica y cargo administrativo.",
-        resena: "Es Licenciado en Matemática, título obtenido en la Universidad Pedagógica Nacional Francisco Morazán (UPNFM), y también cuenta con una Licenciatura en Economía, obtenida en la Universidad Nacional Autónoma de Honduras (UNAH). Se caracteriza por ser un maestro paciente, responsable y dedicado, que guía con empatía, cumple con rigor su labor y entrega su vocación al crecimiento integral de sus estudiantes. Actualmente cuenta con 19 años dentro de la institución.",
->>>>>>> Stashed changes
-        proyectos: "",
+        proyectos: "A lo largo de sus 19 años dentro de la institución, ha contribuido tanto al fortalecimiento del área académica como al desarrollo administrativo del centro educativo. Su trayectoria se destaca por combinar su labor como docente de Matemáticas con responsabilidades administrativas, aportando su experiencia, compromiso y dedicación al buen funcionamiento de la institución y a la formación integral de numerosas generaciones de estudiantes.",
         foto: "../img/Fredy Dominguez.jpg"
     },
 
@@ -96,7 +91,7 @@ const docentes = [
         nombre: "GABRIELA ARELY BELTRAN RODIRGUEZ",
         cargo: "Docente de Educación Artística en el centro educativo",
         resena: "Nombre: Gabriela Arely Beltrán Rodríguez.\nFecha de nacimiento: 5 de diciembre de 1992.\nCargo actual: Docente de Educación Artística en el centro educativo (ingresó el 1 de abril de 2024).\nExperiencia: Cuenta con 14 años de trayectoria docente (iniciando su labor profesional a los 18 años). Posee 13 años de experiencia en el sector privado y 3 años en el sector público.",
-        proyectos: "",
+        proyectos: "A lo largo de su carrera docente, ha desarrollado una importante experiencia en los sectores educativo privado y público, fortaleciendo sus capacidades pedagógicas y su compromiso con la formación de los estudiantes. Desde su incorporación al centro educativo en 2024, ha contribuido al desarrollo del área de Educación Artística, promoviendo espacios de creatividad, expresión y participación estudiantil mediante actividades que favorecen el desarrollo artístico y la formación integral de los alumnos.",
         foto: "../img/Gabriela Rodriguez.jpg"
     },
 
@@ -104,7 +99,7 @@ const docentes = [
         nombre: "HEYDY VANESSA GONZALEZ GARCIA",
         cargo: "Docente de Educación Media, encargada de las asignaturas de Taller de Estructuras Metálicas y Dibujo Técnico.",
         resena: "La profesora Heydi Vanesa Gonzales García se desempeña actualmente como Maestra de Educación Media en la institución. Inició su labor docente en el año 2009, acumulando una amplia trayectoria en la formación académica y técnica de los estudiantes.\n\nEs Licenciada en Educación Técnica Industrial con orientación en Metal Mecánica, título obtenido en la Universidad Pedagógica Nacional Francisco Morazán (UPNFM). Su preparación profesional le ha permitido fortalecer la enseñanza técnica dentro del instituto.\n\nActualmente imparte las asignaturas de Taller de Estructuras Metálicas y Dibujo Técnico a estudiantes de séptimo, octavo y noveno grado, promoviendo el desarrollo de habilidades prácticas, técnicas y de representación gráfica.\n\nSu labor docente se caracteriza por la responsabilidad, la disciplina y el compromiso con la formación integral de los estudiantes, contribuyendo al fortalecimiento de la educación técnica e industrial en la institución.",
-        proyectos: "",
+        proyectos: "Su trayectoria profesional se destaca por su preparación en el área de la Educación Técnica para el Hogar, así como por su especialización en Corte y Confección, Salud y Nutrición. Desde su incorporación al centro educativo en 2023, ha contribuido a la formación práctica de los estudiantes mediante la enseñanza de técnicas y conocimientos relacionados con el diseño, la elaboración y la confección de prendas, promoviendo además el desarrollo de habilidades técnicas que pueden ser útiles tanto en su formación académica como en su futuro profesional.",
         foto: "../img/docentes/Heydy Gonzalez.jpeg"
     },
 
@@ -313,15 +308,9 @@ const docentes = [
 
     {
         nombre: "CARLOS FERNANDO MEDINA",
-<<<<<<< Updated upstream
         cargo: "Licenciado en Orientación Educativa / Docente / Jefe de Orientación",
         resena: "Maestro de educación primaria, graduado en 2009.\n\nLicenciado en Orientación Educativa desde 2016.\n\nMagíster en Transformación Digital de Gestores Públicos de la Universidad de España, Madrid.\n\nMaster en Formato de Negocios.\n\nHa trabajado como director y maestro de un centro educativo de educación básica.\n\nActualmente, su puesto de trabajo es como coordinador académico del Instituto Jesús Aguilar Paz.\n\nHa trabajado 9 o 10 años en la Dirección Distrital Número 12.",
         proyectos: "Todo lo que tenga que ver con el departamento de orientación: rendimiento académico, trabajo, beneficios sociales, beneficios para los chicos, etc.",
-=======
-        cargo: "Licenciado en Orientación Educativa / Docente / Jefe de Orientación.",
-        resena: "Maestro de educación primaria, graduado en 2009.\n\nLicenciado en Orientación Educativa desde 2016.\n\nMagíster en Transformación Digital de Gestores Públicos de la Universidad de España, Madrid.\n\nMaster en Formato de Negocios.\n\nHa trabajado como director y maestro de un centro educativo de educación básica.\n\nActualmente, su puesto de trabajo es como coordinador académico del Instituto Jesús Aguilar Paz.\n\nHa trabajado 9 o 10 años en la Dirección Distrital Número 12.",
-        proyectos: "Todo lo relacionado con el departamento de orientación: rendimiento académico, trabajo, beneficios sociales y beneficios para los estudiantes.",
->>>>>>> Stashed changes
         foto: "../img/docentes/Carlos Fernando Medina.jpg"
     },
 
