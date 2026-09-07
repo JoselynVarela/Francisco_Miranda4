@@ -198,14 +198,14 @@ function abrirPerfil(personaId) {
         persona.proyectos ||
         "Información pendiente de completar.";
 
-
-    const modalWhatsapp = document.getElementById("modalWhatsapp");
+    const modalTelefono = document.getElementById("modalTelefono");
 
     if (persona.whatsapp) {
-        modalWhatsapp.href = `https://wa.me/${persona.whatsapp}`;
-        modalWhatsapp.hidden = false;
+        modalTelefono.href = `tel:+${persona.whatsapp}`;
+        modalTelefono.textContent = `Tel. ${persona.whatsapp.slice(-8, -4)}-${persona.whatsapp.slice(-4)}`;
+        modalTelefono.hidden = false;
     } else {
-        modalWhatsapp.hidden = true;
+        modalTelefono.hidden = true;
     }
 
 
