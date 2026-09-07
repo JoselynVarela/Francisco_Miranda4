@@ -81,8 +81,13 @@ const docentes = [
 
     {
         nombre: "FREDIS ARMANDO DOMINGUEZ MEDINA",
+<<<<<<< Updated upstream
         cargo: "Docente en Matemática y cargo administrativo.",
         resena: "Licenciado en Matemática por la Universidad Pedagógica Nacional Francisco Morazán (UPNFM) y Licenciado en Economía por la Universidad Nacional Autónoma de Honduras (UNAH). Actualmente cuenta con 19 años dentro de la institución.\n\n\"Un maestro paciente, responsable y dedicado es aquel que guía con empatía, cumple con rigor su labor y entrega su vocación entera al crecimiento integral de sus estudiantes.\"",
+=======
+        cargo: "Docente en Matematica y cargo administrativo.",
+        resena: "Es Licenciado en Matemática, título obtenido en la Universidad Pedagógica Nacional Francisco Morazán (UPNFM), y también cuenta con una Licenciatura en Economía, obtenida en la Universidad Nacional Autónoma de Honduras (UNAH). Se caracteriza por ser un maestro paciente, responsable y dedicado, que guía con empatía, cumple con rigor su labor y entrega su vocación al crecimiento integral de sus estudiantes. Actualmente cuenta con 19 años dentro de la institución.",
+>>>>>>> Stashed changes
         proyectos: "",
         foto: "../img/Fredy Dominguez.jpg"
     },
@@ -308,9 +313,15 @@ const docentes = [
 
     {
         nombre: "CARLOS FERNANDO MEDINA",
+<<<<<<< Updated upstream
         cargo: "Licenciado en Orientación Educativa / Docente / Jefe de Orientación",
         resena: "Maestro de educación primaria, graduado en 2009.\n\nLicenciado en Orientación Educativa desde 2016.\n\nMagíster en Transformación Digital de Gestores Públicos de la Universidad de España, Madrid.\n\nMaster en Formato de Negocios.\n\nHa trabajado como director y maestro de un centro educativo de educación básica.\n\nActualmente, su puesto de trabajo es como coordinador académico del Instituto Jesús Aguilar Paz.\n\nHa trabajado 9 o 10 años en la Dirección Distrital Número 12.",
         proyectos: "Todo lo que tenga que ver con el departamento de orientación: rendimiento académico, trabajo, beneficios sociales, beneficios para los chicos, etc.",
+=======
+        cargo: "Licenciado en Orientación Educativa / Docente / Jefe de Orientación.",
+        resena: "Maestro de educación primaria, graduado en 2009.\n\nLicenciado en Orientación Educativa desde 2016.\n\nMagíster en Transformación Digital de Gestores Públicos de la Universidad de España, Madrid.\n\nMaster en Formato de Negocios.\n\nHa trabajado como director y maestro de un centro educativo de educación básica.\n\nActualmente, su puesto de trabajo es como coordinador académico del Instituto Jesús Aguilar Paz.\n\nHa trabajado 9 o 10 años en la Dirección Distrital Número 12.",
+        proyectos: "Todo lo relacionado con el departamento de orientación: rendimiento académico, trabajo, beneficios sociales y beneficios para los estudiantes.",
+>>>>>>> Stashed changes
         foto: "../img/docentes/Carlos Fernando Medina.jpg"
     },
 
