@@ -149,6 +149,16 @@ function abrirPerfil(personaId) {
         "Información pendiente de completar.";
 
 
+    const modalWhatsapp = document.getElementById("modalWhatsapp");
+
+    if (persona.whatsapp) {
+        modalWhatsapp.href = `https://wa.me/${persona.whatsapp}`;
+        modalWhatsapp.hidden = false;
+    } else {
+        modalWhatsapp.hidden = true;
+    }
+
+
     document
         .getElementById("profileModal")
         .classList.add("active");

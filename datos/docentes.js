@@ -41,7 +41,7 @@ const docentes = [
 
     {
         nombre: "CLOSVIN FABRICIO YANEZ SANTOS",
-        cargo: "Docente de Estructuras Metalicas",
+        cargo: "Docente de Estructuras Metálicas",
         resena: "Closvin Fabricio Yánez Santos es docente del Taller de Estructuras Metálicas, con formación en Mecánica Industrial, un Diplomado en Educación Superior y una Maestría en Formulación, Gestión y Evaluación de Proyectos. Cuenta con experiencia docente en el Instituto Gubernamental Técnico Francisco Miranda, el Instituto Técnico Luis Bográn, el Instituto Central Vicente Cáceres, la Asociación Compartir y la Universidad Pedagógica Nacional Francisco Morazán. Se distingue por ser un profesional responsable, comprometido, disciplinado, respetuoso y dedicado a la formación de jóvenes para contribuir al desarrollo del país.",
         proyectos: "Docente del año (2018).\nReconocimiento por perseverancia y horas ad honorem.\nTres diplomas por participación en congresos de Educación Técnica Industrial.\nCertificado como Instructor en INFOP.\nFormación de jóvenes líderes con competencias para el campo laboral.",
         foto: "../img/docentes/Fabrio yanez.png"
@@ -73,7 +73,7 @@ const docentes = [
 
     {
         nombre: "FRANCIS ELIZABETH MONCADA SILVA",
-        cargo: "Docente del taller de Hogar area de Belleza,Cosmetologia,Corte,Nutrición y Alimentos.",
+        cargo: "Docente del taller de Hogar área de Belleza, Cosmetología, Corte, Nutrición y Alimentos.",
         resena: "Francis Elizabeth Moncada Silva, nacida el 8 de abril de 1970, es una destacada educadora con una sólida trayectoria de 21 años de servicio en el Instituto Técnico Francisco Miranda. Licenciada en Taller de Hogar en el Área de Belleza, Cosmetología, Corte, Nutrición y Alimentos, egresada de la UPNFM, con formación previa en instituciones como la Escuela Marcos Carías Reyes, el Instituto Técnico Mixto Hibueras y el Instituto Mixto Santa Teresita. A lo largo de su carrera, se ha desarrollado con alta vocación en el desarrollo de los talleres de nutrición, corte y confección, y belleza y cosmetología (incluyendo especialidades en cuidado facial, estética de uñas y cortes). Su labor se ha distinguido por fomentar el emprendimiento, la innovación práctica y la formación integral de los jóvenes, contribuyendo de manera significativa al fortalecimiento educativo del Instituto.",
         proyectos: "Proyectos de Belleza y Estética: Cursos y talleres prácticos de barbería, maquillaje, uñas acrílicas y cuidado facial.\nProyectos Manuales y Artesanales: Elaboración de manualidades, piñatas, jabones artesanales, pesos absorbentes y tarjetería.\nProyectos de Nutrición y Gastronomía: Cursos de comida navideña, elaboración de boquitas y talleres de salud y nutrición.",
         foto: "../img/Profe Francis.jpg"
@@ -105,7 +105,7 @@ const docentes = [
 
     {
         nombre: "JENNY ROSELI SOSA CHAVEZ",
-        cargo: "Docente en la facultad de ingles de educacion media",
+        cargo: "Docente en la facultad de inglés de educación media",
         resena: "Cargo actual: Docente en el Centro Educativo (con más de 17 años de experiencia docente y vinculada a la institución desde marzo de 2009).\nFilosofía de enseñanza: Se describe como una educadora responsable, con sólida ética profesional y valores. Su enfoque pedagógico busca transmitir responsabilidad, promover el trabajo colaborativo e impulsar a sus estudiantes a superarse y alcanzar proyectos de vida.",
         proyectos: "Iniciativas Culturales y Académicas: Participación activa en proyectos del área de identidad nacional y festivales.\nPromoción de la Lectura: Proyectos y actividades para el fomento de la lectura vinculados a su formación académica en el área de Lengua Extranjera.\nAcompañamiento y Motivación: Dinámicas enfocadas en motivar a los alumnos, fomentar el trabajo en equipo y ayudarlos a trazar metas a futuro.",
         foto: "../img/Jenny Sosa.png"
@@ -121,10 +121,11 @@ const docentes = [
 
     {
         nombre: "JUAN ANDRES IZAGUIRRE GONZALEZ",
-        cargo: "Subdirector del instituto Gubernamental Tecnico Francisco Miranda desde 1 de septiembre del 2020",
+        cargo: "Subdirector del Instituto Gubernamental Técnico Francisco Miranda desde 1 de septiembre del 2020",
         resena: "Maestría en Educación Primaria.\n\nLicenciado en Pedagogía y Ciencias de la Educación.\n\nPasante de la Carrera de Derecho.",
         proyectos: "Dirección de dos centros educativos, uno de educación básica y otro de modalidad nocturna para adultos.\n\nImpartió clases consecutivamente a 120 alumnos durante un año sin recibir remuneración, demostrando dedicación y compromiso con la educación.\n\nRecibió un reconocimiento de la televisión nacional por su destacada labor educativa.",
-        foto: "../img/Juan Izaguirre.png"
+        foto: "../img/Juan Izaguirre.png",
+        whatsapp: "50496279345"
     },
 
     {
@@ -145,7 +146,7 @@ const docentes = [
 
     {
         nombre: "KAREN LETICIA SANCHEZ BAUTISTA",
-        cargo: "Docente del Area de Ciencias Sociales",
+        cargo: "Docente del Área de Ciencias Sociales",
         resena: "Maestra de educación primaria, graduada en la Escuela \"Normal Mixta Pedro Nufio\" a nivel universitario soy Licenciada en Ciencias Sociales, graduada en la Universidad Pedagógica Nacional \"Francisco Morazán\" Experiencia Labore 2 años en un instituto privado llamado Federico Froebel. Posteriormente aquí en el Francisco Miranda desde el 2001 donde cuento con una antigüedad de 25 años en total tengo 27 años de experiencia. Cuento con un diplomado en Estudios Morazanicos",
         proyectos: "Ha participado en diversas actividades y proyectos educativos dentro del centro, como la organización y desarrollo del Día de las Américas y el Día de la Independencia, en colaboración con la profesora Wendy Andino. Asimismo, ha trabajado en jornadas de limpieza de los baños del colegio, así como en actividades relacionadas con el área de Ciencias Sociales, promoviendo la formación integral de los estudiantes.",
         foto: "../img/Karen Sanchez.png"
