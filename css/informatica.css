@@ -32,232 +32,9 @@ a {
 
 
 /* =====================================================
-   HEADER
+   BARRA SUPERIOR / HEADER / NAVEGACIÓN
+   (heredados de css/style.css para ser idénticos a la portada)
 ===================================================== */
-
-.header {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-
-    background: rgba(91, 31, 36, 0.97);
-
-    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.18);
-}
-
-.nav-container {
-    max-width: 1200px;
-    margin: auto;
-
-    min-height: 115px;
-
-    padding: 15px 25px;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    gap: 25px;
-}
-
-
-/* LOGO */
-
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-
-    color: white;
-
-    min-width: 220px;
-}
-
-.logo-placeholder {
-    width: 65px;
-    height: 65px;
-
-    flex-shrink: 0;
-
-    border-radius: 50%;
-
-    overflow: hidden;
-
-    border: 3px solid #d9ad45;
-
-    background: white;
-}
-
-.logo-placeholder img {
-    width: 100%;
-    height: 100%;
-
-    object-fit: cover;
-}
-
-.logo-text {
-    display: flex;
-    flex-direction: column;
-}
-
-.logo-text strong {
-    font-family: 'Poppins', sans-serif;
-
-    font-size: 13px;
-
-    line-height: 1.25;
-
-    color: white;
-}
-
-.logo-text span {
-    font-family: 'Dancing Script', cursive;
-
-    font-size: 24px;
-
-    color: #e0b95a;
-}
-
-
-/* =====================================================
-   NAVEGACIÓN
-===================================================== */
-
-.nav-menu {
-    display: flex;
-    align-items: center;
-
-    gap: 25px;
-}
-
-.nav-link {
-    position: relative;
-
-    color: white;
-
-    font-family: 'Dancing Script', cursive;
-
-    font-size: 20px;
-
-    transition: 0.3s ease;
-}
-
-.nav-link::after {
-    content: "";
-
-    position: absolute;
-
-    left: 50%;
-    bottom: -9px;
-
-    width: 0;
-    height: 3px;
-
-    background: #e0b95a;
-
-    transform: translateX(-50%);
-
-    transition: 0.3s ease;
-}
-
-.nav-link:hover,
-.nav-link.active {
-    color: #e0b95a;
-}
-
-.nav-link:hover::after,
-.nav-link.active::after {
-    width: 70%;
-}
-
-
-/* =====================================================
-   BOTÓN CONÓCENOS
-===================================================== */
-
-.btn-header {
-    display: inline-flex;
-    align-items: center;
-
-    gap: 8px;
-
-    background: #d9ad45;
-
-    color: #4b2023;
-
-    padding: 13px 20px;
-
-    border-radius: 30px;
-
-    font-weight: 800;
-
-    transition: 0.3s ease;
-}
-
-.btn-header:hover {
-    background: #edca72;
-
-    transform: translateY(-3px);
-
-    box-shadow: 0 8px 20px rgba(217, 173, 69, 0.3);
-}
-
-
-/* =====================================================
-   BOTÓN MENÚ
-===================================================== */
-
-.menu-toggle {
-    display: none;
-
-    border: none;
-
-    background: #d9ad45;
-
-    color: #4b2023;
-
-    width: 45px;
-    height: 45px;
-
-    border-radius: 50%;
-
-    font-size: 20px;
-
-    cursor: pointer;
-}
-
-
-/* =====================================================
-   MENÚ MÓVIL
-===================================================== */
-
-.mobile-menu {
-    display: none;
-
-    background: #5b1f24;
-
-    padding: 10px 25px 20px;
-
-    box-shadow: 0 8px 20px rgba(0,0,0,.15);
-}
-
-.mobile-menu.active {
-    display: flex;
-
-    flex-direction: column;
-}
-
-.mobile-menu a {
-    color: white;
-
-    padding: 13px;
-
-    border-bottom: 1px solid rgba(255,255,255,.1);
-
-    font-family: 'Dancing Script', cursive;
-
-    font-size: 20px;
-}
 
 
 /* =====================================================
@@ -931,6 +708,31 @@ footer {
     margin-bottom: 5px;
 }
 
+.footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin: 16px 0;
+}
+
+.footer-social a {
+    width: 36px;
+    height: 36px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background: rgba(217, 173, 69, 0.15);
+    border: 1px solid rgba(217, 173, 69, 0.4);
+    color: #e0b95a;
+    transition: .3s ease;
+}
+
+.footer-social a:hover {
+    background: #d9ad45;
+    color: #4b2023;
+    transform: translateY(-3px);
+}
+
 footer p {
     font-size: 14px;
 }
@@ -948,57 +750,7 @@ footer p {
    RESPONSIVE
 ===================================================== */
 
-@media (max-width: 1000px) {
-
-    .nav-menu {
-        gap: 14px;
-    }
-
-    .nav-link {
-        font-size: 17px;
-    }
-
-    .btn-header {
-        padding: 10px 14px;
-
-        font-size: 13px;
-    }
-
-}
-
-
 @media (max-width: 800px) {
-
-    .nav-menu,
-    .btn-header {
-        display: none;
-    }
-
-    .menu-toggle {
-        display: block;
-    }
-
-    .nav-container {
-        min-height: 85px;
-    }
-
-    .logo {
-        min-width: auto;
-    }
-
-    .logo-placeholder {
-        width: 55px;
-        height: 55px;
-    }
-
-    .logo-text strong {
-        font-size: 11px;
-    }
-
-    .logo-text span {
-        font-size: 21px;
-    }
-
 
     /* GALERÍA */
 
