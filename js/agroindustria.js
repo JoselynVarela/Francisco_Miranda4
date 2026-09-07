@@ -14,9 +14,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (menuToggle && mobileMenu) {
 
+
         menuToggle.addEventListener("click", function () {
 
             mobileMenu.classList.toggle("active");
+
 
             const icon =
                 menuToggle.querySelector("i");
@@ -25,11 +27,13 @@ document.addEventListener("DOMContentLoaded", function () {
             if (mobileMenu.classList.contains("active")) {
 
                 icon.classList.remove("fa-bars");
+
                 icon.classList.add("fa-xmark");
 
             } else {
 
                 icon.classList.remove("fa-xmark");
+
                 icon.classList.add("fa-bars");
 
             }
@@ -47,8 +51,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
                     mobileMenu.classList.remove("active");
 
+
                     const icon =
                         menuToggle.querySelector("i");
+
 
                     icon.classList.remove("fa-xmark");
 
@@ -61,77 +67,28 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 
+
     /* =====================================================
        ANIMACIÓN DE LA LÍNEA DEL TIEMPO
     ===================================================== */
 
-    const timelineItems =
+    const elementos =
         document.querySelectorAll(".timeline-item");
 
 
-    const timelineObserver =
+    const observador =
         new IntersectionObserver(
 
-            function (entries) {
+            function (entradas) {
 
-                entries.forEach(function (entry) {
+                entradas.forEach(function (entrada) {
 
-                    if (entry.isIntersecting) {
+                    if (entrada.isIntersecting) {
 
-                        entry.target.classList.add("visible");
+                        entrada.target.classList.add("mostrar");
 
-                        timelineObserver.unobserve(
-                            entry.target
-                        );
-
-                    }
-
-                });
-
-            },
-
-            {
-                threshold: 0.12
-            }
-
-        );
-
-
-    timelineItems.forEach(
-        function (item, index) {
-
-            item.style.transitionDelay =
-                (index * 0.10) + "s";
-
-            timelineObserver.observe(item);
-
-        }
-    );
-
-
-    /* =====================================================
-       ANIMACIÓN DE LA GALERÍA
-    ===================================================== */
-
-    const galleryItems =
-        document.querySelectorAll(".gallery-item");
-
-
-    const galleryObserver =
-        new IntersectionObserver(
-
-            function (entries) {
-
-                entries.forEach(function (entry) {
-
-                    if (entry.isIntersecting) {
-
-                        entry.target.classList.add(
-                            "gallery-visible"
-                        );
-
-                        galleryObserver.unobserve(
-                            entry.target
+                        observador.unobserve(
+                            entrada.target
                         );
 
                     }
@@ -147,16 +104,14 @@ document.addEventListener("DOMContentLoaded", function () {
         );
 
 
-    galleryItems.forEach(
-        function (item, index) {
+    elementos.forEach(function (elemento, indice) {
 
-            item.style.transitionDelay =
-                (index * 0.10) + "s";
+        elemento.style.transitionDelay =
+            `${indice * 0.10}s`;
 
-            galleryObserver.observe(item);
+        observador.observe(elemento);
 
-        }
-    );
+    });
 
 
 });

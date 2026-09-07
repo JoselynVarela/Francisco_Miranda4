@@ -557,7 +557,47 @@ body {
 
     font-size: 28px;
 
-    margin: 7px 0 30px;
+    margin: 7px 0 20px;
+
+}
+
+.modal-whatsapp {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    margin-bottom: 25px;
+
+    padding: 10px 18px;
+
+    border-radius: 30px;
+
+    background: #25d366;
+
+    color: #fff;
+
+    font-weight: 800;
+
+    font-size: 13px;
+
+    transition: 0.3s ease;
+
+}
+
+.modal-whatsapp:hover {
+
+    background: #1ebc59;
+
+    transform: translateY(-2px);
+
+}
+
+.modal-whatsapp i {
+
+    font-size: 16px;
 
 }
 
