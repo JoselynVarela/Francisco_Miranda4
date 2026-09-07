@@ -1,6 +1,13 @@
-/* =========================================
+/* =====================================================
+   INFORMÁTICA
+   ESTILO INSTITUTO FRANCISCO MIRANDA
+   ROJO + DORADO + CREMA
+===================================================== */
+
+
+/* =====================================================
    CONFIGURACIÓN GENERAL
-========================================= */
+===================================================== */
 
 * {
     margin: 0;
@@ -13,9 +20,9 @@ html {
 }
 
 body {
-    font-family: 'Nunito', sans-serif;
-    background: #f4f7fb;
-    color: #263238;
+    font-family: "Nunito", sans-serif;
+    background: #f4eee7;
+    color: #332525;
     line-height: 1.7;
 }
 
@@ -23,96 +30,203 @@ h1,
 h2,
 h3,
 h4 {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
+}
+
+.contenedor {
+    width: min(1150px, 90%);
+    margin: auto;
 }
 
 
-/* =========================================
+/* =====================================================
    HEADER
-========================================= */
+===================================================== */
 
-.info-header {
-    background: #ffffff;
-    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.08);
+.header {
     position: sticky;
     top: 0;
     z-index: 1000;
+
+    background: #651b1b;
+
+    box-shadow:
+        0 5px 25px rgba(0, 0, 0, .25);
 }
 
-.header-content {
-    max-width: 1200px;
+.nav-container {
+    width: min(1200px, 94%);
     margin: auto;
-    padding: 15px 25px;
+
+    min-height: 90px;
 
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 20px;
+
+    gap: 25px;
 }
 
-.logo-area {
+
+/* LOGO */
+
+.logo {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 12px;
+
+    text-decoration: none;
 }
 
-.logo-area img {
-    width: 65px;
-    height: 65px;
+.logo-placeholder img {
+    width: 58px;
+    height: 58px;
+
     object-fit: cover;
+
     border-radius: 50%;
+
+    border: 3px solid #d5a72a;
 }
 
-.logo-area h1 {
-    font-size: 17px;
-    color: #173b67;
-    line-height: 1.3;
+.logo-text {
+    display: flex;
+    flex-direction: column;
 }
 
-.logo-area span {
+.logo-text strong {
+    color: white;
+
     font-size: 13px;
-    color: #6b7280;
+
+    line-height: 1.2;
+
+    max-width: 170px;
+}
+
+.logo-text span {
+    color: #d8a82c;
+
+    font-family: "Dancing Script", cursive;
+
+    font-size: 20px;
+
+    font-weight: 700;
 }
 
 
-/* =========================================
-   BOTÓN INICIO
-========================================= */
+/* NAVEGACIÓN */
 
-.btn-inicio,
-.btn-volver {
-    display: inline-flex;
+.nav-menu {
+    display: flex;
     align-items: center;
-    gap: 9px;
+    gap: 26px;
+}
 
-    background: #173b67;
-    color: #ffffff;
+.nav-link {
+    color: #fff;
 
     text-decoration: none;
 
-    padding: 12px 20px;
+    font-family: "Dancing Script", cursive;
+
+    font-size: 20px;
+
+    transition: .3s ease;
+
+    position: relative;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #e2b63b;
+}
+
+.nav-link.active::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    right: 0;
+
+    bottom: -10px;
+
+    height: 3px;
+
+    background: #e2b63b;
+
+    border-radius: 10px;
+}
+
+
+/* BOTÓN CONÓCENOS */
+
+.btn-header {
+    display: inline-flex;
+
+    align-items: center;
+    gap: 8px;
+
+    padding: 13px 20px;
+
+    background: #d4a72c;
+
+    color: #4d1919;
+
+    text-decoration: none;
 
     border-radius: 30px;
 
-    font-weight: 700;
+    font-weight: 800;
 
-    transition: all 0.3s ease;
+    transition: .3s ease;
 }
 
-.btn-inicio:hover,
-.btn-volver:hover {
-    background: #0e2949;
+.btn-header:hover {
+    background: #f0ca55;
+
     transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(23, 59, 103, 0.25);
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, .25);
 }
 
 
-/* =========================================
+/* MENÚ MÓVIL */
+
+.menu-toggle {
+    display: none;
+
+    border: none;
+
+    background: #d4a72c;
+
+    color: #4d1919;
+
+    width: 45px;
+    height: 45px;
+
+    border-radius: 50%;
+
+    font-size: 20px;
+
+    cursor: pointer;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+
+/* =====================================================
    HERO
-========================================= */
+===================================================== */
 
 .hero-informatica {
-    min-height: 430px;
+    min-height: 570px;
+
+    position: relative;
 
     display: flex;
     align-items: center;
@@ -120,138 +234,340 @@ h4 {
 
     text-align: center;
 
-    padding: 80px 20px;
+    background-image:
+        url("../img/Informatica/historia.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+}
+
+.hero-overlay {
+    position: absolute;
+
+    inset: 0;
 
     background:
         linear-gradient(
             135deg,
-            #173b67,
-            #2563a6
+            rgba(83, 17, 17, .94),
+            rgba(112, 29, 24, .78),
+            rgba(143, 93, 20, .55)
         );
+}
+
+.hero-content {
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 850px;
+
+    padding: 40px 20px;
 
     color: white;
 }
 
-.hero-content {
-    max-width: 800px;
-}
+
+/* ICONO */
 
 .hero-icon {
     width: 90px;
     height: 90px;
 
     display: flex;
+
     align-items: center;
     justify-content: center;
 
-    margin: 0 auto 25px;
+    margin: 0 auto 20px;
 
     border-radius: 50%;
 
-    background: rgba(255, 255, 255, 0.15);
+    background: rgba(212, 167, 44, .22);
 
-    font-size: 42px;
+    border: 2px solid rgba(232, 194, 79, .7);
+
+    color: #f1c84a;
+
+    font-size: 40px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, .25);
 }
 
-.small-title {
-    letter-spacing: 4px;
-    font-size: 14px;
-    font-weight: 700;
-    margin-bottom: 10px;
+
+/* ETIQUETA */
+
+.hero-label {
+    display: inline-block;
+
+    padding: 8px 18px;
+
+    border-radius: 30px;
+
+    border: 1px solid rgba(255, 255, 255, .55);
+
+    font-size: 13px;
+
+    font-weight: 800;
+
+    letter-spacing: 3px;
 }
 
-.hero-informatica h2 {
-    font-size: clamp(40px, 6vw, 70px);
-    margin-bottom: 15px;
+
+/* TÍTULO */
+
+.hero-content h1 {
+    margin: 22px 0 18px;
+
+    font-family: "Dancing Script", cursive;
+
+    font-size: clamp(3.5rem, 8vw, 6rem);
+
+    line-height: 1;
+
+    color: #fff;
+
+    text-shadow:
+        0 4px 15px rgba(0, 0, 0, .35);
 }
 
-.hero-informatica p:last-child {
-    font-size: 18px;
-    max-width: 650px;
+.hero-content p {
+    max-width: 700px;
+
     margin: auto;
-    opacity: 0.9;
+
+    font-size: 1.15rem;
+
+    color: #fff;
+
+    opacity: .95;
 }
 
 
-/* =========================================
+/* =====================================================
+   TÍTULOS
+===================================================== */
+
+.titulo-seccion {
+    text-align: center;
+
+    margin-bottom: 60px;
+}
+
+.titulo-seccion span {
+    color: #b98717;
+
+    font-size: .85rem;
+
+    font-weight: 900;
+
+    letter-spacing: 3px;
+}
+
+.titulo-seccion h2 {
+    margin-top: 8px;
+
+    color: #671d1d;
+
+    font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.titulo-seccion p {
+    max-width: 700px;
+
+    margin: 12px auto 0;
+
+    color: #6c5b55;
+}
+
+
+/* =====================================================
    INTRODUCCIÓN
-========================================= */
+===================================================== */
 
-.intro {
-    max-width: 900px;
+.introduccion {
+    padding: 100px 0;
 
-    margin: 70px auto;
-
-    padding: 0 25px;
-
-    text-align: center;
+    background:
+        linear-gradient(
+            135deg,
+            #f5e9dc,
+            #ead9c9
+        );
 }
 
-.intro h2 {
-    color: #173b67;
-    font-size: 34px;
-    margin-bottom: 15px;
+.intro-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 60px;
+
+    align-items: center;
 }
 
-.intro p {
-    font-size: 17px;
-    color: #59636e;
+.intro-texto {
+    background: rgba(255, 255, 255, .42);
+
+    padding: 35px;
+
+    border-left: 5px solid #c49a28;
+
+    border-radius: 0 20px 20px 0;
+}
+
+.intro-texto p {
+    margin-bottom: 18px;
+
+    font-size: 1.07rem;
+
+    color: #554541;
+}
+
+.intro-texto strong {
+    color: #701f1f;
 }
 
 
-/* =========================================
-   TÍTULO HISTORIA
-========================================= */
+/* FOTO INTRO */
 
-.historia {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 30px 25px 80px;
+.foto-intro {
+    height: 390px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    border-radius: 25px;
+
+    border: 5px solid #c59b2d;
+
+    box-shadow:
+        0 20px 50px rgba(91, 31, 31, .28);
 }
 
-.section-title {
-    text-align: center;
-    margin-bottom: 70px;
+.foto-intro img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: .5s ease;
 }
 
-.section-title > span {
-    width: 70px;
-    height: 70px;
+.foto-intro:hover img {
+    transform: scale(1.06);
+}
+
+.foto-overlay {
+    position: absolute;
+
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    padding: 18px;
 
     display: flex;
+
     align-items: center;
-    justify-content: center;
+    gap: 10px;
 
-    margin: auto auto 20px;
+    background:
+        linear-gradient(
+            transparent,
+            rgba(72, 17, 17, .9)
+        );
 
-    border-radius: 50%;
-
-    background: #173b67;
     color: white;
 
-    font-size: 30px;
+    font-size: 20px;
+
+    font-weight: 800;
 }
 
-.section-title h2 {
-    color: #173b67;
-    font-size: 38px;
-    margin-bottom: 8px;
-}
-
-.section-title p {
-    color: #6b7280;
+.foto-overlay i {
+    color: #e4b637;
 }
 
 
-/* =========================================
+/* =====================================================
+   HISTORIA
+===================================================== */
+
+.historia {
+    padding: 105px 0;
+
+    background:
+        linear-gradient(
+            135deg,
+            #701f1f,
+            #541616
+        );
+
+    position: relative;
+}
+
+.historia::before {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    opacity: .12;
+
+    background-image:
+        radial-gradient(
+            circle at 20% 20%,
+            #d7a72c 1px,
+            transparent 1px
+        );
+
+    background-size: 35px 35px;
+
+    pointer-events: none;
+}
+
+.historia .contenedor {
+    position: relative;
+    z-index: 2;
+}
+
+
+/* TÍTULO SOBRE FONDO OSCURO */
+
+.titulo-historia span {
+    color: #e0b53d;
+}
+
+.titulo-historia h2 {
+    color: white;
+}
+
+.titulo-historia p {
+    color: #ead9d0;
+}
+
+
+/* =====================================================
    LÍNEA DEL TIEMPO
-========================================= */
+===================================================== */
 
 .timeline {
     position: relative;
-    max-width: 900px;
+
+    max-width: 1000px;
+
     margin: auto;
+
+    padding-bottom: 10px;
 }
+
+
+/* Línea central */
 
 .timeline::before {
     content: "";
@@ -260,210 +576,647 @@ h4 {
 
     top: 0;
     bottom: 0;
+
     left: 50%;
 
     width: 4px;
 
-    background: #173b67;
+    background:
+        linear-gradient(
+            #d5a72c,
+            #e5bd55,
+            #d5a72c
+        );
 
     transform: translateX(-50%);
 
     border-radius: 10px;
+
+    box-shadow:
+        0 0 12px rgba(218, 174, 48, .4);
 }
 
 
-/* =========================================
+/* =====================================================
    ELEMENTOS
-========================================= */
+===================================================== */
 
 .timeline-item {
     position: relative;
 
     width: 50%;
 
-    padding: 15px 40px;
+    padding: 10px 45px 30px;
 
-    margin-bottom: 35px;
+    margin-bottom: 12px;
+
+    opacity: 0;
+
+    transform: translateY(30px);
+
+    transition:
+        opacity .65s ease,
+        transform .65s ease;
 }
+
+.timeline-item.visible {
+    opacity: 1;
+
+    transform: translateY(0);
+}
+
+
+/* IZQUIERDA */
 
 .timeline-item:nth-child(odd) {
     left: 0;
+
     text-align: right;
 }
 
+
+/* DERECHA */
+
 .timeline-item:nth-child(even) {
     left: 50%;
+
+    text-align: left;
 }
 
 
-/* =========================================
-   CÍRCULO DEL AÑO
-========================================= */
+/* =====================================================
+   ICONOS
+===================================================== */
 
-.timeline-dot {
+.timeline-icon {
     position: absolute;
 
-    top: 20px;
+    top: 14px;
 
-    width: 65px;
-    height: 65px;
+    width: 58px;
+    height: 58px;
 
     display: flex;
+
     align-items: center;
     justify-content: center;
 
     border-radius: 50%;
 
-    background: #173b67;
+    background: #d3a52a;
 
-    color: white;
+    color: #571717;
 
-    font-size: 12px;
-
-    font-weight: 800;
-
-    border: 5px solid #f4f7fb;
+    border: 5px solid #701f1f;
 
     z-index: 5;
 
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
-}
-
-.timeline-item:nth-child(odd) .timeline-dot {
-    right: -32px;
-}
-
-.timeline-item:nth-child(even) .timeline-dot {
-    left: -32px;
-}
-
-
-/* =========================================
-   TARJETAS
-========================================= */
-
-.timeline-card {
-    background: white;
-
-    padding: 30px;
-
-    border-radius: 20px;
+    font-size: 21px;
 
     box-shadow:
-        0 10px 30px rgba(0, 0, 0, 0.08);
+        0 5px 18px rgba(0, 0, 0, .3);
+}
 
-    transition: all 0.4s ease;
+.timeline-item:nth-child(odd) .timeline-icon {
+    right: -29px;
+}
 
-    border: 1px solid #e8edf3;
+.timeline-item:nth-child(even) .timeline-icon {
+    left: -29px;
+}
+
+
+/* =====================================================
+   TARJETAS
+===================================================== */
+
+.timeline-card {
+    background:
+        linear-gradient(
+            145deg,
+            #fff8ed,
+            #ead8c5
+        );
+
+    padding: 26px;
+
+    border-radius: 18px;
+
+    border-top: 4px solid #d2a32b;
+
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, .22);
+
+    transition: .35s ease;
 }
 
 .timeline-card:hover {
-    transform: translateY(-7px);
+    transform: translateY(-6px);
 
     box-shadow:
-        0 18px 40px rgba(0, 0, 0, 0.13);
+        0 20px 42px rgba(0, 0, 0, .3);
 }
 
-.year {
+
+/* AÑO */
+
+.timeline-card .año {
     display: inline-block;
 
-    background: #e9f1fb;
-
-    color: #173b67;
+    margin-bottom: 9px;
 
     padding: 5px 13px;
 
+    background: #701f1f;
+
+    color: #f1c54c;
+
     border-radius: 20px;
 
-    font-size: 13px;
+    font-size: .78rem;
 
-    font-weight: 800;
+    font-weight: 900;
 
-    margin-bottom: 10px;
+    letter-spacing: 1px;
 }
 
+
+/* TÍTULOS */
+
 .timeline-card h3 {
-    color: #173b67;
-    font-size: 24px;
     margin-bottom: 12px;
+
+    color: #671c1c;
+
+    font-size: 1.35rem;
 }
 
 .timeline-card h4 {
-    color: #2563a6;
-    margin-top: 20px;
-    margin-bottom: 7px;
+    margin-top: 18px;
+
+    margin-bottom: 6px;
+
+    color: #986f0d;
 }
 
 .timeline-card p {
-    color: #59636e;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
+
+    color: #554c47;
+
+    font-size: .96rem;
+}
+
+.timeline-card strong {
+    color: #6d1e1e;
 }
 
 
-/* =========================================
-   BOTÓN FINAL
-========================================= */
+/* =====================================================
+   FOTOGRAFÍAS DE LA LÍNEA DEL TIEMPO
+===================================================== */
 
-.volver {
+.foto-timeline {
+    width: 100%;
+
+    height: 180px;
+
+    margin-top: 17px;
+
+    overflow: hidden;
+
+    border-radius: 13px;
+
+    border: 3px solid #c79b2d;
+
+    box-shadow:
+        0 7px 20px rgba(65, 22, 22, .2);
+}
+
+.foto-timeline img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: .5s ease;
+}
+
+.foto-timeline:hover img {
+    transform: scale(1.07);
+}
+
+
+/* =====================================================
+   ÁREAS DE FORMACIÓN
+===================================================== */
+
+.areas {
+    padding: 100px 0;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ead7c2,
+            #f4e8d7
+        );
+}
+
+.areas-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+.area-card {
+    padding: 35px 23px;
+
     text-align: center;
-    padding: 20px 20px 80px;
-}
 
+    background:
+        linear-gradient(
+            145deg,
+            #671d1d,
+            #4e1414
+        );
 
-/* =========================================
-   FOOTER
-========================================= */
+    border-radius: 20px;
 
-footer {
-    background: #173b67;
+    border-bottom: 4px solid #d3a52b;
+
     color: white;
 
+    transition: .3s ease;
+
+    box-shadow:
+        0 10px 25px rgba(72, 24, 24, .2);
+}
+
+.area-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 18px 35px rgba(72, 24, 24, .3);
+}
+
+.area-card i {
+    font-size: 2.4rem;
+
+    color: #e1b538;
+
+    margin-bottom: 18px;
+}
+
+.area-card h3 {
+    margin-bottom: 10px;
+
+    color: white;
+}
+
+.area-card p {
+    color: #eaded7;
+}
+
+
+/* =====================================================
+   GALERÍA
+===================================================== */
+
+.galeria {
+    padding: 100px 0;
+
+    background:
+        linear-gradient(
+            135deg,
+            #711f1f,
+            #8a3029
+        );
+}
+
+.galeria .titulo-seccion span {
+    color: #edc54c;
+}
+
+.galeria .titulo-seccion h2 {
+    color: white;
+}
+
+.galeria .titulo-seccion p {
+    color: #f0ded5;
+}
+
+.galeria-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+.gallery-item {
+    height: 260px;
+
+    overflow: hidden;
+
+    border-radius: 18px;
+
+    border: 4px solid #d3a52b;
+
+    background: #4c1414;
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, .3);
+
+    opacity: 0;
+
+    transform: translateY(30px);
+
+    transition:
+        opacity .6s ease,
+        transform .6s ease;
+}
+
+.gallery-item.gallery-visible {
+    opacity: 1;
+
+    transform: translateY(0);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: .5s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.08);
+}
+
+
+/* =====================================================
+   MENSAJE FINAL
+===================================================== */
+
+.mensaje-final {
+    padding: 100px 20px;
+
     text-align: center;
 
+    color: white;
+
+    background:
+        linear-gradient(
+            135deg,
+            #4d1313,
+            #711f1f,
+            #8b5f13
+        );
+}
+
+.mensaje-final i {
+    font-size: 3rem;
+
+    color: #e1b538;
+
+    margin-bottom: 20px;
+}
+
+.mensaje-final h2 {
+    font-family: "Dancing Script", cursive;
+
+    font-size: clamp(2.5rem, 6vw, 4rem);
+
+    color: white;
+
+    margin-bottom: 15px;
+}
+
+.mensaje-final p {
+    max-width: 650px;
+
+    margin: auto auto 30px;
+
+    color: #f1e3da;
+}
+
+.btn-inicio {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 13px 25px;
+
+    background: #d5a72c;
+
+    color: #541616;
+
+    border-radius: 30px;
+
+    text-decoration: none;
+
+    font-weight: 900;
+
+    transition: .3s ease;
+}
+
+.btn-inicio:hover {
+    background: #efc64e;
+
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 8px 22px rgba(0, 0, 0, .3);
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+footer {
     padding: 30px 20px;
+
+    text-align: center;
+
+    background: #3f1010;
+
+    color: white;
 
     font-size: 14px;
 }
 
 footer p:first-child {
-    font-weight: 700;
+    font-weight: 800;
+
     margin-bottom: 5px;
 }
 
 footer p:last-child {
-    opacity: 0.8;
+    color: #d9b96b;
 }
 
 
-/* =========================================
-   RESPONSIVE - CELULARES
-========================================= */
+/* =====================================================
+   RESPONSIVE TABLET
+===================================================== */
+
+@media (max-width: 1000px) {
+
+    .nav-menu {
+        gap: 15px;
+    }
+
+    .nav-link {
+        font-size: 17px;
+    }
+
+    .btn-header {
+        display: none;
+    }
+
+    .areas-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .galeria-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
+/* =====================================================
+   RESPONSIVE CELULAR
+===================================================== */
 
 @media (max-width: 768px) {
 
-    .header-content {
-        flex-direction: column;
-        text-align: center;
+    .nav-container {
+        min-height: 75px;
     }
 
-    .logo-area {
+    .logo-text strong {
+        font-size: 11px;
+    }
+
+    .logo-text span {
+        font-size: 18px;
+    }
+
+    .logo-placeholder img {
+        width: 50px;
+        height: 50px;
+    }
+
+
+    /* OCULTAR NAV */
+
+    .nav-menu {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    /* MENÚ MÓVIL */
+
+    .mobile-menu {
+        display: none;
+
+        position: fixed;
+
+        top: 75px;
+
+        left: 0;
+        right: 0;
+
+        z-index: 999;
+
+        background: #591717;
+
+        padding: 15px;
+
+        box-shadow:
+            0 10px 25px rgba(0, 0, 0, .3);
+    }
+
+    .mobile-menu.active {
+        display: flex;
+
         flex-direction: column;
     }
 
-    .logo-area h1 {
-        font-size: 15px;
+    .mobile-menu a {
+        padding: 13px 15px;
+
+        color: white;
+
+        text-decoration: none;
+
+        border-bottom: 1px solid rgba(255,255,255,.1);
+
+        font-family: "Poppins", sans-serif;
     }
+
+    .mobile-menu a:hover {
+        background: #7a2925;
+
+        color: #e2b63b;
+    }
+
+
+    /* HERO */
 
     .hero-informatica {
-        min-height: 380px;
+        min-height: 500px;
     }
 
-    .hero-informatica h2 {
-        font-size: 40px;
+    .hero-content h1 {
+        font-size: 3.7rem;
     }
 
-    .section-title h2 {
-        font-size: 28px;
+
+    /* INTRO */
+
+    .introduccion {
+        padding: 75px 0;
+    }
+
+    .intro-grid {
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+    }
+
+    .foto-intro {
+        height: 300px;
+    }
+
+
+    /* HISTORIA */
+
+    .historia {
+        padding: 80px 0;
     }
 
     .timeline::before {
@@ -471,44 +1224,98 @@ footer p:last-child {
     }
 
     .timeline-item,
+    .timeline-item:nth-child(odd),
     .timeline-item:nth-child(even) {
+
         width: 100%;
+
         left: 0;
-        text-align: left;
 
-        padding-left: 75px;
+        padding-left: 70px;
+
         padding-right: 0;
-    }
 
-    .timeline-item:nth-child(odd) {
         text-align: left;
+
+        margin-bottom: 25px;
     }
 
-    .timeline-item:nth-child(odd) .timeline-dot,
-    .timeline-item:nth-child(even) .timeline-dot {
-        left: -7px;
+    .timeline-item:nth-child(odd) .timeline-icon,
+    .timeline-item:nth-child(even) .timeline-icon {
+
+        left: -4px;
+
         right: auto;
     }
 
     .timeline-card {
-        padding: 23px;
+        padding: 22px;
     }
 
-    .btn-inicio {
-        width: 100%;
-        justify-content: center;
+    .foto-timeline {
+        height: 190px;
+    }
+
+
+    /* ÁREAS */
+
+    .areas {
+        padding: 75px 0;
+    }
+
+    .areas-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* GALERÍA */
+
+    .galeria {
+        padding: 75px 0;
+    }
+
+    .galeria-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-item {
+        height: 240px;
+    }
+
+
+    /* FINAL */
+
+    .mensaje-final {
+        padding: 80px 20px;
     }
 
 }
-.timeline-item {
-    opacity: 0;
-    transform: translateY(40px);
-    transition:
-        opacity 0.7s ease,
-        transform 0.7s ease;
-}
 
-.timeline-item.visible {
-    opacity: 1;
-    transform: translateY(0);
+
+/* =====================================================
+   CELULARES PEQUEÑOS
+===================================================== */
+
+@media (max-width: 450px) {
+
+    .logo-text strong {
+        max-width: 120px;
+    }
+
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .timeline-card {
+        padding: 18px;
+    }
+
+    .foto-timeline {
+        height: 170px;
+    }
+
 }

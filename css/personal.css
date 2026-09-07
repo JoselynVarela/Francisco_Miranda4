@@ -379,7 +379,6 @@ body {
 
 }
 
-
 .staff-person-summary {
 
     color: #666;
@@ -557,10 +556,28 @@ body {
 
     font-size: 28px;
 
-    margin: 7px 0 30px;
+    margin: 7px 0 20px;
 
 }
 
+.modal-phone {
+    display: inline-block;
+    margin-top: -8px;
+    padding: 8px 13px;
+    border: 1px solid rgba(var(--ocre-rgb), 0.35);
+    border-radius: 10px;
+    background: linear-gradient(135deg, var(--vino), var(--ocre-rojo));
+    color: var(--hueso);
+    font-size: 13px;
+    font-weight: 800;
+    text-decoration: none;
+    box-shadow: 0 6px 14px rgba(100, 16, 39, 0.18);
+}
+
+.modal-phone:hover {
+    color: white;
+    transform: translateY(-1px);
+}
 
 .modal-section {
 
