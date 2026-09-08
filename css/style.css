@@ -1506,18 +1506,24 @@ img {
     grid-template-columns:
         repeat(5, 1fr);
 
+    grid-auto-rows: 158px;
+
     gap: 15px;
 }
 
 .stat-card {
     background:
         linear-gradient(135deg, rgba(26,19,16,0.6), rgba(21,21,21,0.5));
-    min-height: 115px;
+    height: 158px;
+    min-height: 158px;
+    width: 100%;
     border-radius: 24px;
     padding: 22px 24px;
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 16px;
+    text-align: center;
     box-shadow:
         0 18px 42px rgba(0, 0, 0, 0.3),
         inset 0 1px 1px rgba(var(--ocre-rgb),0.1);
@@ -1550,18 +1556,25 @@ img {
     font-size: 21px;
 }
 
-.stat-card strong {
+.stat-card .stat-title {
     display: block;
-    font-family: var(--font-alt);
-    font-size: 24px;
+    font-family: "Playfair Display", serif;
+    font-size: 22px;
+    font-weight: 700;
     color: var(--amarillo);
+    line-height: 1.1;
 }
 
-.stat-card span {
+.stat-card .stat-value {
     display: block;
     color: #d4c9b8;
     font-size: 12px;
     font-weight: 700;
+    line-height: 1.35;
+}
+
+.stats-container .stat-icon {
+    color: var(--vino-dark);
 }
 
 .special-stat .stat-icon {
@@ -1569,9 +1582,14 @@ img {
     color: #e8b6a8;
 }
 
+.stats-container .stat-icon {
+    background: rgba(var(--vino-rgb), 0.22);
+    color: #e8b6a8;
+}
+
 .special-stat {
     position: relative;
-    padding-bottom: 36px;
+    padding-bottom: 22px;
 }
 
 .stat-card-link {
