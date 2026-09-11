@@ -58,8 +58,8 @@ const docentes = [
     {
         nombre: "ENEDAS ALFONSO BERRIOS ALVARADO",
         cargo: "Docente del Taller de Madera",
-        resena: "",
-        proyectos: "Lleva 16 años laborando; Lleguo en el 2009, Actualmente cuenta con 31 años dentro de la institución.",
+        resena: "Docente con una amplia trayectoria en la institución y experiencia en el área de educación técnica. Es Maestro de Educación Primaria, Bachiller en Educación, Licenciado en Educación Básica y Licenciado en Educación Técnica Industrial. Cuenta con 31 años de servicio en la institución.",
+        proyectos: "Formación técnica en el Taller de Madera:Desde su incorporación en 2009, ha contribuido a la formación práctica de los estudiantes, desarrollando sus habilidades y conocimientos en el área de madera.",
         foto: "../img/Enedas Berrios.jpeg"
     },
 
