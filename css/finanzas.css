@@ -1,0 +1,1363 @@
+/* =====================================================
+   CONFIGURACIÓN
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background: #f8f5f1;
+    color: #332d2b;
+    line-height: 1.7;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+}
+
+.contenedor {
+    width: min(1150px, 90%);
+    margin: auto;
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    background: rgba(91, 31, 36, .97);
+
+    box-shadow:
+        0 5px 25px rgba(0, 0, 0, .18);
+}
+
+.nav-container {
+    width: min(1200px, 94%);
+
+    min-height: 115px;
+
+    margin: auto;
+    padding: 15px 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+
+/* =====================================================
+   LOGO
+===================================================== */
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    flex-shrink: 0;
+}
+
+.logo-placeholder {
+    width: 65px;
+    height: 65px;
+
+    border-radius: 50%;
+    overflow: hidden;
+
+    background: white;
+
+    border: 3px solid #d9ad45;
+}
+
+.logo-placeholder img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+
+    line-height: 1.15;
+}
+
+.logo-text strong {
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 12px;
+
+    color: white;
+}
+
+.logo-text span {
+    font-family: 'Dancing Script', cursive;
+
+    font-size: 25px;
+
+    color: #e0b95a;
+}
+
+
+/* =====================================================
+   NAVEGACIÓN
+===================================================== */
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+
+    gap: 23px;
+}
+
+.nav-link {
+    position: relative;
+
+    font-family: 'Dancing Script', cursive;
+
+    font-size: 20px;
+
+    color: white;
+
+    transition: .3s ease;
+}
+
+.nav-link::after {
+    content: "";
+
+    position: absolute;
+
+    left: 50%;
+    bottom: -9px;
+
+    width: 0;
+    height: 3px;
+
+    background: #e0b95a;
+
+    transform: translateX(-50%);
+
+    transition: .3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #e0b95a;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+    width: 70%;
+}
+
+
+/* =====================================================
+   BOTÓN HEADER
+===================================================== */
+
+.btn-header {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 13px 20px;
+
+    border-radius: 30px;
+
+    background: #d9ad45;
+
+    color: #4b2023;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 13px;
+    font-weight: 800;
+
+    white-space: nowrap;
+
+    transition: .3s ease;
+}
+
+.btn-header:hover {
+    background: #edca72;
+
+    transform: translateY(-3px);
+}
+
+
+/* =====================================================
+   MENÚ MÓVIL
+===================================================== */
+
+.menu-toggle {
+    display: none;
+
+    width: 45px;
+    height: 45px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: #d9ad45;
+
+    color: #4b2023;
+
+    font-size: 20px;
+
+    cursor: pointer;
+}
+
+.mobile-menu {
+    display: none;
+
+    background: #5b1f24;
+
+    padding: 10px 25px 20px;
+}
+
+.mobile-menu.active {
+    display: flex;
+    flex-direction: column;
+}
+
+.mobile-menu a {
+    padding: 13px;
+
+    color: white;
+
+    border-bottom:
+        1px solid rgba(255,255,255,.12);
+
+    font-family: 'Dancing Script', cursive;
+
+    font-size: 21px;
+}
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.hero-finanzas {
+    position: relative;
+
+    min-height: 520px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    background-image:
+        url("../img/Finanzas/historia.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    overflow: hidden;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(91, 31, 36, .94),
+            rgba(91, 31, 36, .72),
+            rgba(104, 124, 74, .55)
+        );
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+
+    width: min(900px, 90%);
+
+    padding: 50px 20px;
+
+    color: white;
+}
+
+
+/* =====================================================
+   ICONO
+===================================================== */
+
+.hero-icon {
+    width: 90px;
+    height: 90px;
+
+    margin: 0 auto 22px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    border: 2px solid #d9ad45;
+
+    background: rgba(224,185,90,.15);
+
+    color: #e0b95a;
+
+    font-size: 40px;
+}
+
+
+/* =====================================================
+   TEXTO PEQUEÑO
+===================================================== */
+
+.small-title {
+    margin-bottom: 10px;
+
+    color: #e0b95a;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 13px;
+    font-weight: 800;
+
+    letter-spacing: 4px;
+}
+
+
+/* =====================================================
+   TÍTULO HERO
+===================================================== */
+
+.hero-content h1 {
+    font-family: 'Dancing Script', cursive;
+
+    font-size: clamp(55px, 8vw, 90px);
+
+    font-weight: 600;
+
+    line-height: 1.02;
+
+    color: white;
+}
+
+
+/* =====================================================
+   LÍNEA
+===================================================== */
+
+.gold-line {
+    width: 75px;
+    height: 4px;
+
+    margin: 23px auto;
+
+    background: #d9ad45;
+
+    border-radius: 10px;
+}
+
+
+/* =====================================================
+   DESCRIPCIÓN HERO
+===================================================== */
+
+.hero-description {
+    max-width: 720px;
+
+    margin: auto;
+
+    font-size: 18px;
+
+    color: rgba(255,255,255,.93);
+}
+
+
+/* =====================================================
+   TÍTULOS DE SECCIÓN
+===================================================== */
+
+.section-heading {
+    max-width: 850px;
+
+    margin: 0 auto 55px;
+
+    text-align: center;
+}
+
+.section-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    color: #9b7530;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 12px;
+    font-weight: 800;
+
+    letter-spacing: 2px;
+}
+
+.section-heading h2 {
+    margin-top: 10px;
+
+    color: #5b1f24;
+
+    font-family: 'Playfair Display', serif;
+
+    font-size: clamp(32px, 5vw, 50px);
+
+    line-height: 1.2;
+}
+
+.section-heading p {
+    margin-top: 12px;
+}
+
+.titulo-linea {
+    width: 70px;
+    height: 3px;
+
+    margin: 20px auto 0;
+
+    background: #d9ad45;
+
+    border-radius: 10px;
+}
+
+
+/* =====================================================
+   INTRODUCCIÓN
+===================================================== */
+
+.introduccion {
+    padding: 100px 20px;
+
+    background: white;
+}
+
+.intro-box {
+    max-width: 1000px;
+
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+
+    gap: 30px;
+
+    padding: 35px;
+
+    background: #faf7f1;
+
+    border-left: 5px solid #d9ad45;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 10px 30px rgba(91,31,36,.08);
+}
+
+.intro-icon {
+    min-width: 80px;
+    height: 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #5b1f24;
+
+    color: #e0b95a;
+
+    font-size: 30px;
+}
+
+.intro-text p + p {
+    margin-top: 15px;
+}
+
+
+/* =====================================================
+   HISTORIA
+===================================================== */
+
+.historia {
+    padding: 100px 20px;
+
+    background: #f5f0e9;
+}
+
+
+/* =====================================================
+   TIMELINE
+===================================================== */
+
+.timeline {
+    position: relative;
+
+    max-width: 1150px;
+
+    margin: auto;
+
+    padding: 25px 0;
+}
+
+
+/* Línea central */
+
+.timeline::before {
+    content: "";
+
+    position: absolute;
+
+    top: 35px;
+    bottom: 35px;
+
+    left: 50%;
+
+    width: 4px;
+
+    background: #d9ad45;
+
+    transform: translateX(-50%);
+
+    border-radius: 10px;
+}
+
+
+/* =====================================================
+   ELEMENTOS
+===================================================== */
+
+.timeline-item {
+    position: relative;
+
+    width: 50%;
+
+    padding: 20px 55px 45px;
+
+    opacity: 0;
+
+    transform: translateY(35px);
+
+    transition:
+        opacity .7s ease,
+        transform .7s ease;
+}
+
+.timeline-item.mostrar {
+    opacity: 1;
+
+    transform: translateY(0);
+}
+
+
+/* Izquierda */
+
+.timeline-item:nth-child(odd) {
+    left: 0;
+
+    text-align: right;
+
+    padding-left: 10px;
+    padding-right: 65px;
+}
+
+
+/* Derecha */
+
+.timeline-item:nth-child(even) {
+    left: 50%;
+
+    text-align: left;
+
+    padding-left: 65px;
+    padding-right: 10px;
+}
+
+
+/* =====================================================
+   ICONOS TIMELINE
+===================================================== */
+
+.timeline-icon {
+    position: absolute;
+
+    top: 20px;
+
+    width: 58px;
+    height: 58px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #5b1f24;
+
+    color: #e0b95a;
+
+    border: 5px solid #f5f0e9;
+
+    box-shadow:
+        0 5px 18px rgba(0,0,0,.18);
+
+    z-index: 5;
+
+    font-size: 19px;
+}
+
+.timeline-item:nth-child(odd) .timeline-icon {
+    right: -29px;
+}
+
+.timeline-item:nth-child(even) .timeline-icon {
+    left: -29px;
+}
+
+
+/* =====================================================
+   CUADROS
+===================================================== */
+
+.timeline-card {
+    position: relative;
+
+    width: 100%;
+
+    max-width: 470px;
+
+    padding: 28px;
+
+    background: white;
+
+    border: 1px solid #eadfd7;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 10px 30px rgba(91,31,36,.10);
+
+    transition: .35s ease;
+
+    overflow: hidden;
+}
+
+.timeline-item:nth-child(odd) .timeline-card {
+    margin-left: auto;
+}
+
+.timeline-item:nth-child(even) .timeline-card {
+    margin-right: auto;
+}
+
+.timeline-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 15px 35px rgba(91,31,36,.16);
+}
+
+
+/* =====================================================
+   TEXTO TIMELINE
+===================================================== */
+
+.timeline-year {
+    display: inline-block;
+
+    padding: 5px 13px;
+
+    background: #f3e4bc;
+
+    color: #5b1f24;
+
+    border-radius: 20px;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 11px;
+    font-weight: 800;
+
+    letter-spacing: 1px;
+}
+
+.timeline-card h3 {
+    margin-top: 12px;
+
+    color: #5b1f24;
+
+    font-family: 'Playfair Display', serif;
+
+    font-size: 25px;
+
+    line-height: 1.25;
+}
+
+.timeline-card h4 {
+    margin-top: 5px;
+
+    color: #687c4a;
+
+    font-family: 'Dancing Script', cursive;
+
+    font-size: 23px;
+}
+
+.timeline-card p {
+    margin-top: 13px;
+
+    font-size: 15px;
+}
+
+
+/* =====================================================
+   DESTACADO
+===================================================== */
+
+.timeline-item.destacado .timeline-card {
+    border: 2px solid #d9ad45;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fffdf9,
+            #f8f1df
+        );
+}
+
+.timeline-item.destacado .timeline-icon {
+    background: #687c4a;
+}
+
+
+/* =====================================================
+   DATO IMPORTANTE
+===================================================== */
+
+.dato-importante {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-top: 18px;
+
+    padding: 12px 15px;
+
+    background: #f6eedb;
+
+    border-left: 4px solid #d9ad45;
+
+    border-radius: 8px;
+
+    color: #5b1f24;
+}
+
+.dato-importante i {
+    color: #687c4a;
+}
+
+
+/* =====================================================
+   FOTOS DE TIMELINE
+===================================================== */
+
+.foto-timeline {
+    position: relative;
+
+    width: 100%;
+
+    height: 210px;
+
+    margin-top: 22px;
+
+    overflow: hidden;
+
+    border-radius: 14px;
+
+    background: #f5f0e9;
+
+    border: 1px solid #eadfd7;
+}
+
+.foto-timeline img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    transition: transform .4s ease;
+}
+
+.foto-timeline img:hover {
+    transform: scale(1.05);
+}
+
+
+/* =====================================================
+   PLACEHOLDER
+===================================================== */
+
+.foto-placeholder {
+    position: absolute;
+
+    inset: 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f7f1e5,
+            #eee4d4
+        );
+
+    color: #9b7530;
+
+    font-size: 14px;
+
+    text-align: center;
+
+    padding: 15px;
+}
+
+.foto-placeholder i {
+    font-size: 32px;
+}
+
+
+/* =====================================================
+   ESENCIA
+===================================================== */
+
+.esencia {
+    padding: 100px 20px;
+
+    background: white;
+}
+
+.esencia-box {
+    max-width: 950px;
+
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+
+    gap: 30px;
+
+    padding: 35px;
+
+    background: #f8f3e9;
+
+    border-radius: 22px;
+
+    border-top: 4px solid #d9ad45;
+
+    box-shadow:
+        0 10px 30px rgba(91,31,36,.08);
+}
+
+.esencia-icon {
+    min-width: 75px;
+    height: 75px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #5b1f24;
+
+    color: #e0b95a;
+
+    font-size: 28px;
+}
+
+
+/* =====================================================
+   GALERÍA
+===================================================== */
+
+.galeria {
+    padding: 100px 20px;
+
+    background: #f5f0e9;
+}
+
+.galeria-grid {
+    max-width: 1050px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 22px;
+}
+
+.galeria-item {
+    position: relative;
+
+    height: 230px;
+
+    overflow: hidden;
+
+    border-radius: 18px;
+
+    background: white;
+
+    border: 2px solid #eadfd7;
+
+    box-shadow:
+        0 10px 25px rgba(91,31,36,.10);
+}
+
+.galeria-item img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: transform .4s ease;
+}
+
+.galeria-item:hover img {
+    transform: scale(1.05);
+}
+
+.galeria-placeholder {
+    position: absolute;
+
+    inset: 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f7f1e5,
+            #eee4d4
+        );
+
+    color: #9b7530;
+
+    font-weight: 700;
+}
+
+.galeria-placeholder i {
+    font-size: 38px;
+}
+
+
+/* =====================================================
+   MENSAJE FINAL
+===================================================== */
+
+.mensaje-final {
+    padding: 110px 20px;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #5b1f24,
+            #722a30,
+            #687c4a
+        );
+
+    color: white;
+}
+
+.mensaje-content {
+    max-width: 750px;
+
+    margin: auto;
+}
+
+.mensaje-content > i {
+    color: #e0b95a;
+
+    font-size: 45px;
+}
+
+.mensaje-content h2 {
+    margin-top: 15px;
+
+    font-family: 'Dancing Script', cursive;
+
+    font-size: 50px;
+
+    font-weight: 600;
+}
+
+.mensaje-content p {
+    margin-top: 15px;
+
+    font-size: 17px;
+}
+
+.btn-final {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    margin-top: 30px;
+
+    padding: 13px 23px;
+
+    background: #d9ad45;
+
+    color: #5b1f24;
+
+    border-radius: 30px;
+
+    font-weight: 800;
+
+    transition: .3s ease;
+}
+
+.btn-final:hover {
+    background: white;
+
+    transform: translateY(-3px);
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+.footer {
+    background: #351316;
+
+    color: white;
+}
+
+.footer-content {
+    width: min(1200px, 90%);
+
+    margin: auto;
+
+    padding: 45px 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 30px;
+}
+
+.footer-logo {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+}
+
+.footer-logo img {
+    width: 60px;
+    height: 60px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 2px solid #d9ad45;
+}
+
+.footer-logo h3 {
+    color: #e0b95a;
+
+    font-size: 16px;
+}
+
+.footer-logo p {
+    font-size: 13px;
+}
+
+.footer-info {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 8px;
+
+    font-size: 14px;
+}
+
+.footer-info i {
+    color: #e0b95a;
+
+    margin-right: 7px;
+}
+
+.footer-bottom {
+    padding: 15px;
+
+    text-align: center;
+
+    border-top:
+        1px solid rgba(224,185,90,.2);
+
+    font-size: 13px;
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 1000px) {
+
+    .nav-menu {
+        gap: 14px;
+    }
+
+    .nav-link {
+        font-size: 17px;
+    }
+
+    .btn-header {
+        padding: 11px 14px;
+    }
+}
+
+
+/* =====================================================
+   MENÚ MÓVIL
+===================================================== */
+
+@media (max-width: 850px) {
+
+    .nav-menu,
+    .btn-header {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-container {
+        min-height: 90px;
+    }
+
+    .mobile-menu {
+        display: none;
+    }
+
+    .mobile-menu.active {
+        display: flex;
+    }
+
+
+    /* TIMELINE */
+
+    .timeline::before {
+        left: 28px;
+
+        top: 30px;
+        bottom: 30px;
+    }
+
+    .timeline-item,
+    .timeline-item:nth-child(odd),
+    .timeline-item:nth-child(even) {
+
+        width: 100%;
+
+        left: 0;
+
+        text-align: left;
+
+        padding-left: 75px;
+        padding-right: 5px;
+        padding-bottom: 30px;
+    }
+
+    .timeline-item:nth-child(odd) .timeline-icon,
+    .timeline-item:nth-child(even) .timeline-icon {
+
+        left: -1px;
+        right: auto;
+    }
+
+    .timeline-card,
+    .timeline-item:nth-child(odd) .timeline-card,
+    .timeline-item:nth-child(even) .timeline-card {
+
+        width: 100%;
+
+        max-width: none;
+
+        margin: 0;
+
+        padding: 24px;
+    }
+
+    .galeria-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+}
+
+
+/* =====================================================
+   CELULAR
+===================================================== */
+
+@media (max-width: 600px) {
+
+    .logo-placeholder {
+        width: 55px;
+        height: 55px;
+    }
+
+    .logo-text strong {
+        font-size: 10px;
+    }
+
+    .logo-text span {
+        font-size: 21px;
+    }
+
+    .hero-finanzas {
+        min-height: 540px;
+    }
+
+    .hero-icon {
+        width: 75px;
+        height: 75px;
+
+        font-size: 32px;
+    }
+
+    .hero-content h1 {
+        font-size: 50px;
+    }
+
+    .hero-description {
+        font-size: 16px;
+    }
+
+    .intro-box,
+    .esencia-box {
+        flex-direction: column;
+
+        text-align: center;
+
+        padding: 25px;
+    }
+
+
+    /* TIMELINE */
+
+    .timeline::before {
+        left: 24px;
+
+        top: 25px;
+        bottom: 25px;
+    }
+
+    .timeline-item,
+    .timeline-item:nth-child(odd),
+    .timeline-item:nth-child(even) {
+
+        padding-left: 62px;
+        padding-right: 0;
+    }
+
+    .timeline-item:nth-child(odd) .timeline-icon,
+    .timeline-item:nth-child(even) .timeline-icon {
+
+        left: -1px;
+    }
+
+    .timeline-card,
+    .timeline-item:nth-child(odd) .timeline-card,
+    .timeline-item:nth-child(even) .timeline-card {
+
+        padding: 20px;
+
+        border-radius: 16px;
+    }
+
+    .timeline-card h3 {
+        font-size: 22px;
+    }
+
+    .foto-timeline {
+        height: 175px;
+    }
+
+    .galeria-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-content {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+}
