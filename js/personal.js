@@ -31,6 +31,52 @@ const personal = docentes.map((persona, index) => {
     };
 });
 
+function obtenerAjusteFoto(persona) {
+    const nombre = (persona.nombre || "").toUpperCase();
+
+    if (nombre.includes("WILMER ALEXIS GUEVARA CARDENAS")) {
+        return { tarjeta: "62% center", modal: "62% center" };
+    }
+
+    if (nombre.includes("WILMER JAVIER AGUILAR DOMINGUEZ")) {
+        return { tarjeta: "center 30%", modal: "center center" };
+    }
+
+    if (nombre.includes("WENDY PATRICIA ANDINO AMADOR")) {
+        return { tarjeta: "center 14%", modal: "center 14%" };
+    }
+
+    if (nombre.includes("ENEDAS ALFONSO BERRIOS ALVARADO")) {
+        return { tarjeta: "center 20%", modal: "center center" };
+    }
+
+    if (nombre.includes("RODYN JAVIER FIGUEROA OSORTO")) {
+        return { tarjeta: "center 28%", modal: "center center" };
+    }
+
+    if (nombre.includes("MIRIAM JANETH ORTEZ NOVOA")) {
+        return { tarjeta: "center 25%", modal: "center center" };
+    }
+
+    if (nombre.includes("FREDIS ARMANDO DOMINGUEZ MEDINA")) {
+        return { tarjeta: "center 27%", modal: "center center" };
+    }
+
+    if (nombre.includes("FATIMA YANETH RODRIGUEZ")) {
+        return { tarjeta: "center 28%", modal: "center center" };
+    }
+
+    if (nombre.includes("IRMA YOLANDA ERAZO LAGOS")) {
+        return { tarjeta: "center 25%", modal: "center center" };
+    }
+
+    if (nombre.includes("CLOSVIN FABRICIO YANEZ SANTOS")) {
+        return { tarjeta: "center 27%", modal: "center center" };
+    }
+
+    return { tarjeta: "center center", modal: "center center" };
+}
+
 const staffContainer =
     document.getElementById("staffContainer");
 
@@ -87,6 +133,7 @@ function mostrarPersonal(lista) {
                 <img
                     src="${persona.foto}"
                     alt="${persona.nombre}"
+                    style="object-position: ${obtenerAjusteFoto(persona).tarjeta};"
                     onerror="this.style.display='none'"
                 >
 
@@ -131,8 +178,11 @@ function abrirPerfil(personaId) {
         return;
     }
 
-    document.getElementById("modalPhoto").src =
-        persona.foto;
+    const modalPhoto = document.getElementById("modalPhoto");
+    const ajusteFoto = obtenerAjusteFoto(persona);
+    modalPhoto.src = persona.foto;
+    modalPhoto.style.objectPosition = ajusteFoto.modal;
+    modalPhoto.style.objectFit = ajusteFoto.modalFit || "cover";
 
     document.getElementById("modalNombre").textContent =
         persona.nombre;
@@ -148,14 +198,14 @@ function abrirPerfil(personaId) {
         persona.proyectos ||
         "Información pendiente de completar.";
 
-
-    const modalWhatsapp = document.getElementById("modalWhatsapp");
+    const modalTelefono = document.getElementById("modalTelefono");
 
     if (persona.whatsapp) {
-        modalWhatsapp.href = `https://wa.me/${persona.whatsapp}`;
-        modalWhatsapp.hidden = false;
+        modalTelefono.href = `tel:+${persona.whatsapp}`;
+        modalTelefono.textContent = `Tel. ${persona.whatsapp.slice(-8, -4)}-${persona.whatsapp.slice(-4)}`;
+        modalTelefono.hidden = false;
     } else {
-        modalWhatsapp.hidden = true;
+        modalTelefono.hidden = true;
     }
 
 
